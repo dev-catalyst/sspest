@@ -1,0 +1,29 @@
+.home-pestControl2 {
+  background: url("../../../assets/home/pest-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #dde4ec;
+
+  &-container {
+    max-width: 1520px;
+    margin: auto;
+    padding-top: 280px;
+    padding-bottom: 299px;
+    h1 {
+      text-align: center;
+      margin: auto;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1619.98px) {
+  .home-pestControl2 {
+    &-container {
+      max-width: 1300px;
+      margin: auto;
+      padding-top: 180px;
+      padding-bottom: 199px;
+    }
+  }
+}

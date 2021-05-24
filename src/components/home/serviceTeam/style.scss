@@ -1,0 +1,45 @@
+.home-service-team {
+  background-color: #eff2f7;
+  background: url("../../../assets/home/team-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  &-container {
+    max-width: 1620px;
+    margin: auto;
+    padding-top: 150px;
+    padding-bottom: 363px;
+    h1 {
+      color: #fff;
+      text-align: center;
+      margin: auto;
+      margin-bottom: 68px;
+    }
+    .home-service-team-images {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .home-service-team-description {
+      color: #fff;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1619.98px) {
+  .home-service-team {
+    &-container {
+      max-width: 1300px;
+      margin: auto;
+      padding-top: 100px;
+      padding-bottom: 263px;
+      .home-service-team-images {
+        img {
+          border-radius: 20px;
+          width: 250px;
+        }
+      }
+    }
+  }
+}

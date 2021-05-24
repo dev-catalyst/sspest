@@ -1,0 +1,200 @@
+.home-service-types {
+  background-color: #eff2f7;
+  &-container {
+    max-width: 1820px;
+    margin: auto;
+    padding-top: 130px;
+    padding-bottom: 145px;
+
+    .home-service-type-residential {
+      display: flex;
+      justify-content: space-between;
+      &-content {
+        max-width: 660px;
+        padding-top: 200px;
+        padding-left: 50px;
+        position: relative;
+        &-stone {
+          position: absolute;
+          top: 140px;
+          left: -50px;
+        }
+      }
+      &-image {
+        .residential-image {
+          position: relative;
+          h1 {
+            position: absolute;
+            color: #fff;
+            font-size: 60px;
+            top: calc(50% - 85px);
+            left: 25%;
+          }
+        }
+        h4 {
+          color: #fff;
+          text-align: center;
+          background: #017cc0;
+          border-radius: 0px 0px 20px 20px;
+          cursor: pointer;
+          margin-top: -20px;
+          padding-bottom: 22px;
+          padding-top: 42px;
+        }
+      }
+    }
+
+    .home-service-type-commercial {
+      display: flex;
+      &-content {
+        max-width: 660px;
+        padding-top: 200px;
+        margin-left: 160px;
+        position: relative;
+        &-stone {
+          position: absolute;
+          top: 140px;
+          left: -50px;
+        }
+      }
+      &-image {
+        .commercial-image {
+          position: relative;
+          h1 {
+            position: absolute;
+            color: #fff;
+            font-size: 60px;
+            top: calc(50% - 85px);
+            left: 25%;
+          }
+        }
+        h4 {
+          color: #fff;
+          text-align: center;
+          background: #017cc0;
+          border-radius: 0px 0px 20px 20px;
+          cursor: pointer;
+          margin-top: -20px;
+          padding-bottom: 22px;
+          padding-top: 42px;
+        }
+      }
+    }
+
+    .home-service-type-termite {
+      display: flex;
+      justify-content: space-between;
+      &-content {
+        max-width: 704px;
+        padding-left: 50px;
+        position: relative;
+        padding-top: 200px;
+        &-stone {
+          position: absolute;
+          top: 140px;
+          left: -50px;
+        }
+      }
+      &-image {
+        .termite-image {
+          position: relative;
+          h1 {
+            position: absolute;
+            color: #fff;
+            font-size: 60px;
+            top: calc(50% - 85px);
+            left: 15%;
+          }
+        }
+        h4 {
+          color: #fff;
+          text-align: center;
+          background: #017cc0;
+          border-radius: 0px 0px 20px 20px;
+          cursor: pointer;
+          margin-top: -20px;
+          padding-bottom: 22px;
+          padding-top: 42px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1619.98px) {
+  .home-service-types {
+    background-color: #eff2f7;
+    &-container {
+      max-width: 1300px;
+      margin: auto;
+      .home-service-type-residential {
+        &-content {
+          padding-top: 150px;
+          max-width: 600px;
+          padding-left: 0;
+        }
+        &-image {
+          .residential-image {
+            img {
+              max-width: 100%;
+              height: 450px;
+            }
+            h1 {
+              font-size: 45px;
+            }
+          }
+          h4 {
+            padding-bottom: 12px;
+            padding-top: 32px;
+          }
+        }
+      }
+
+      .home-service-type-commercial {
+        &-content {
+          padding-top: 150px;
+          max-width: 600px;
+          margin-left: 100px;
+        }
+        &-image {
+          .commercial-image {
+            img {
+              max-width: 100%;
+              height: 450px;
+            }
+            h1 {
+              font-size: 45px;
+            }
+          }
+          h4 {
+            padding-bottom: 12px;
+            padding-top: 32px;
+          }
+        }
+      }
+
+      .home-service-type-termite {
+        &-content {
+          padding-top: 150px;
+          max-width: 600px;
+          padding-left: 0;
+        }
+        &-image {
+          .termite-image {
+            img {
+              max-width: 100%;
+              height: 450px;
+            }
+            h1 {
+              font-size: 45px;
+            }
+          }
+          h4 {
+            padding-bottom: 12px;
+            padding-top: 32px;
+          }
+        }
+      }
+    }
+  }
+}

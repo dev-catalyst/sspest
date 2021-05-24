@@ -1,0 +1,90 @@
+@import "../../../styles/index.scss";
+
+header {
+  position: absolute;
+  left: 95px;
+
+  .header-container {
+    max-width: 1720px;
+    margin: auto;
+    padding-top: 58px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+
+    .logo {
+      margin-right: 42px;
+    }
+    .navbar {
+      a:link {
+        color: $tertiary-color;
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: none;
+        margin-right: 30px;
+      }
+      a:visited {
+        color: $tertiary-color;
+      }
+      a:hover {
+        color: $tertiary-color;
+      }
+      a:active {
+        color: $primary-color;
+      }
+    }
+  }
+}
+.header-telephone {
+  position: absolute;
+  top: 54px;
+  right: 94px;
+  img {
+    margin-right: 16px;
+  }
+  a:link {
+    color: $primary-color;
+    font-size: 45px;
+    line-height: 55px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  a:visited {
+    color: $primary-color;
+  }
+  a:hover {
+    color: $primary-color;
+  }
+  a:active {
+    color: $primary-color;
+  }
+}
+
+@media only screen and (max-width: 1619.98px) {
+  header {
+    .header-container {
+      max-width: 1420px;
+      margin: auto;
+      flex-direction: column;
+      .navbar {
+        padding-top: 40px;
+        padding-left: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1419.98px) {
+  header {
+    .header-container {
+      max-width: 1220px;
+      margin: auto;
+      .navbar {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1199.98px) {
+}

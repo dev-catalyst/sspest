@@ -1,0 +1,63 @@
+@import "../../../styles/utilities/variables/variables.scss";
+.home-whoAreWe {
+  background-color: #eff2f7;
+  margin-top: -5px;
+  &-container {
+    max-width: 1720px;
+    margin: auto;
+    padding-top: 150px;
+    padding-bottom: 137px;
+    display: flex;
+    justify-content: space-between;
+    &-content {
+      max-width: 700px;
+      padding-top: 100px;
+      position: relative;
+      h4 {
+        margin-bottom: 0;
+      }
+      h1 {
+        margin-top: 0;
+      }
+      .whoAreWe-control-stone {
+        position: absolute;
+        top: 50px;
+        left: -80px;
+      }
+      .btn {
+        color: #fff;
+        background-color: $primary-color;
+        border: none;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        padding: 22px 35px;
+        font-size: 22px;
+        margin-top: 20px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.video {
+  height: 562.5px;
+  width: 900px;
+}
+
+@media only screen and (max-width: 1619.98px) {
+  .home-whoAreWe {
+    &-container {
+      max-width: 1300px;
+      margin: auto;
+      &-content {
+        max-width: 600px;
+        padding-top: 0;
+      }
+    }
+  }
+  .video {
+    height: 400.5px;
+    width: 600px;
+  }
+}

@@ -1,0 +1,33 @@
+.home-pestControl3 {
+  background: url("../../../assets/home/pest3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #eff2f7;
+
+  &-container {
+    max-width: 1520px;
+    margin: auto;
+    padding-top: 290px;
+    padding-bottom: 400px;
+    h1 {
+      text-align: center;
+      margin: auto;
+      margin-bottom: 30px;
+      color: #fff;
+    }
+    p {
+      color: #fff;
+    }
+  }
+}
+
+@media only screen and (max-width: 1619.98px) {
+  .home-pestControl3 {
+    &-container {
+      max-width: 1300px;
+      margin: auto;
+      padding-top: 190px;
+      padding-bottom: 200px;
+    }
+  }
+}

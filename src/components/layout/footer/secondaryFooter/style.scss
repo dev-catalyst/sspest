@@ -1,0 +1,43 @@
+.secondary-footer {
+  .secondary-footer-container {
+    max-width: 1920px;
+    margin: auto;
+    padding-top: 28px;
+    padding-bottom: 80px;
+    .secondary-footer-links {
+      display: flex;
+      flex-direction: row-reverse;
+      .link-container {
+        background-image: url("../../../../assets/layout/footer/nav.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-left: 195px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-right: 350px;
+        max-width: 1600px;
+        a:link {
+          color: #fff;
+          text-decoration: none;
+          font-size: 18px;
+          margin: 32px;
+        }
+        a:visited {
+          color: #fff;
+        }
+        a:hover {
+          color: #fff;
+        }
+        a:active {
+          color: #fff;
+        }
+      }
+    }
+    .secondary-footer-copyright {
+      text-align: center;
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Montez:wght@200;400;600;700;800;900&display=swap");
+
+.home-choose {
+  background-color: #dde4ec;
+  &-container {
+    max-width: 1520px;
+    margin: auto;
+    padding-top: 150px;
+    padding-bottom: 153px;
+    h1 {
+      text-align: center;
+      margin: auto;
+      margin-bottom: 33px;
+      text-transform: uppercase;
+    }
+    h4 {
+      color: #7b7b7b;
+      font-style: italic;
+      font-size: 29px;
+      margin-bottom: 60px;
+    }
+    .why-and-card {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .why-container {
+        margin-top: 36px;
+        display: grid;
+        grid-template-columns: auto auto;
+        .why {
+          display: flex;
+          min-width: 417px;
+          img {
+            margin-right: 20px;
+          }
+        }
+      }
+      .card {
+        background-color: #017cc0;
+        border-radius: 20px;
+        margin: auto;
+        position: relative;
+        .card-para {
+          color: #fff;
+          font-style: italic;
+          font-weight: 600;
+          font-size: 25px;
+          padding: 68px 44px;
+          text-align: center;
+        }
+        .quote-top {
+          color: #fff;
+          font-family: "Montez";
+          font-size: 170px;
+          position: absolute;
+          left: 0;
+          font-weight: 400;
+          top: 3px;
+          margin: 19px;
+        }
+        .quote-bottom {
+          color: #fff;
+          font-family: "Montez";
+          font-size: 170px;
+          position: absolute;
+          right: 0;
+          font-weight: 400;
+          top: 193px;
+          margin: 19px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1619.98px) {
+  .home-choose {
+    &-container {
+      max-width: 1300px;
+      margin: auto;
+      .why-and-card {
+        .why-container {
+          .why {
+            min-width: 350px;
+            img {
+              margin-right: 10px;
+              width: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
