@@ -1,8 +1,8 @@
 .fixed-widget {
   position: fixed;
   right: 0px;
-  top: 126px;
-  z-index: 2147483640;
+  top: 76px;
+  z-index: 9;
   display: flex;
   flex-direction: column;
   cursor: pointer;
@@ -17,7 +17,7 @@
 
   .pest-widget-price {
     position: absolute;
-    top: 0px;
+    top: 0;
     display: none;
     right: 0px;
     background: #ffde4d;
@@ -37,6 +37,7 @@
     p {
       font-size: 26px;
       line-height: 22px;
+      margin-top: 5px;
     }
     &:hover {
       display: block;

@@ -8,7 +8,6 @@ export default function secondaryFooter() {
       <div className="secondary-footer-container">
         <div className="secondary-footer-links">
           <ul className="link-container">
-            {/* <img src={nav} alt="" /> */}
             <Link to="">HOME</Link>
             <Link to="">PEST CONTROL SERVICES</Link>
             <Link to="">PEST SOLUTIONS</Link>

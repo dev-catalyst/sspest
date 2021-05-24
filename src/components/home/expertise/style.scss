@@ -28,11 +28,40 @@
   .home-expertise {
     &-container {
       max-width: 1300px;
-      margin: auto;
       padding-top: 100px;
       padding-bottom: 100px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1419.98px) {
+  .home-expertise {
+    &-container {
+      max-width: 1150px;
       .home-expertise-conatiner-content {
-        padding-left: 150px;
+        padding-left: 100px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1199.98px) {
+  .home-expertise {
+    &-container {
+      max-width: 900px;
+      .home-expertise-conatiner-content {
+        padding-left: 70px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  .home-expertise {
+    &-container {
+      max-width: 90%;
+      .home-expertise-conatiner-content {
+        padding-left: 20px;
       }
     }
   }

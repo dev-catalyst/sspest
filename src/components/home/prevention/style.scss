@@ -33,8 +33,35 @@
   .home-prevention {
     &-conatiner {
       max-width: 1300px;
-      margin: auto;
       padding-top: 100px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1419.98px) {
+  .home-prevention {
+    &-conatiner {
+      max-width: 1150px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1199.98px) {
+  .home-prevention {
+    &-conatiner {
+      max-width: 900px;
+    }
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  .home-prevention {
+    &-conatiner {
+      max-width: 90%;
+      .prevent {
+        font-size: 25px;
+        margin-top: 34px;
+      }
     }
   }
 }

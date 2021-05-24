@@ -31,6 +31,9 @@
         max-width: 72%;
         margin: auto;
         padding: 50px;
+        position: relative;
+        z-index: 99;
+        margin-top: -70px;
         p {
           font-size: 18px;
         }
@@ -56,9 +59,54 @@
   .home-blog {
     &-container {
       max-width: 1300px;
-      margin: auto;
       h1 {
         margin-bottom: 63px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1419.98px) {
+  .home-blog {
+    &-container {
+      max-width: 1150px;
+      .posts {
+        .post-card {
+          max-width: 68%;
+          padding: 45px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1199.98px) {
+  .home-blog {
+    &-container {
+      max-width: 900px;
+      padding-top: 100px;
+      .posts {
+        .post-card {
+          max-width: 62%;
+          padding: 45px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  .home-blog {
+    &-container {
+      max-width: 90%;
+      padding-top: 100px;
+      text-align: center;
+      .posts {
+        flex-direction: column;
+        .post-card {
+          margin-bottom: 50px;
+          max-width: 50%;
+        }
       }
     }
   }

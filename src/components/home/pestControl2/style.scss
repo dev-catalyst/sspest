@@ -21,9 +21,35 @@
   .home-pestControl2 {
     &-container {
       max-width: 1300px;
-      margin: auto;
       padding-top: 180px;
-      padding-bottom: 199px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1419.98px) {
+  .home-pestControl2 {
+    &-container {
+      max-width: 1150px;
+      padding-top: 180px;
+      padding-bottom: 149px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1199.98px) {
+  .home-pestControl2 {
+    &-container {
+      max-width: 900px;
+      padding-top: 100px;
+      padding-bottom: 149px;
+    }
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  .home-pestControl2 {
+    &-container {
+      max-width: 90%;
     }
   }
 }

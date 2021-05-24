@@ -31,13 +31,56 @@
   .home-service-team {
     &-container {
       max-width: 1300px;
-      margin: auto;
       padding-top: 100px;
       padding-bottom: 263px;
       .home-service-team-images {
         img {
-          border-radius: 20px;
           width: 250px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1419.98px) {
+  .home-service-team {
+    &-container {
+      max-width: 1150px;
+      padding-bottom: 163px;
+      .home-service-team-images {
+        img {
+          width: 225px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1199.98px) {
+  .home-service-team {
+    &-container {
+      max-width: 900px;
+      .home-service-team-images {
+        img {
+          width: 180px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  .home-service-team {
+    &-container {
+      max-width: 90%;
+      padding-bottom: 450px;
+      .home-service-team-images {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        img {
+          width: 300px;
+          margin-bottom: 20px;
         }
       }
     }

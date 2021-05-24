@@ -123,10 +123,8 @@
 
 @media only screen and (max-width: 1619.98px) {
   .home-service-types {
-    background-color: #eff2f7;
     &-container {
       max-width: 1300px;
-      margin: auto;
       .home-service-type-residential {
         &-content {
           padding-top: 150px;
@@ -149,7 +147,6 @@
           }
         }
       }
-
       .home-service-type-commercial {
         &-content {
           padding-top: 150px;
@@ -172,7 +169,6 @@
           }
         }
       }
-
       .home-service-type-termite {
         &-content {
           padding-top: 150px;
@@ -192,6 +188,171 @@
           h4 {
             padding-bottom: 12px;
             padding-top: 32px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1419.98px) {
+  .home-service-types {
+    &-container {
+      max-width: 1150px;
+      .home-service-type-residential {
+        &-content {
+          max-width: 500px;
+          padding-top: 100px;
+        }
+      }
+      .home-service-type-commercial {
+        justify-content: space-between;
+        &-content {
+          max-width: 500px;
+          margin-left: 0px;
+          padding-top: 100px;
+          &-image {
+            .residential-image {
+              margin-right: 40px;
+              img {
+                max-width: 100%;
+                height: 450px;
+              }
+            }
+          }
+        }
+      }
+      .home-service-type-termite {
+        &-content {
+          max-width: 500px;
+          padding-top: 100px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1199.98px) {
+  .home-service-types {
+    &-container {
+      max-width: 900px;
+      .home-service-type-residential {
+        &-content {
+          max-width: 480px;
+          padding-top: 100px;
+        }
+        &-image {
+          .residential-image {
+            img {
+              max-width: 100%;
+              height: 300px;
+            }
+            h1 {
+              font-size: 30px;
+              top: 35%;
+            }
+          }
+        }
+      }
+      .home-service-type-commercial {
+        &-content {
+          max-width: 480px;
+          padding-top: 60px;
+        }
+        &-image {
+          .commercial-image {
+            img {
+              max-width: 110%;
+              height: 300px;
+            }
+            h1 {
+              font-size: 30px;
+              top: 35%;
+            }
+          }
+        }
+      }
+      .home-service-type-termite {
+        &-content {
+          max-width: 480px;
+          padding-top: 50px;
+        }
+        &-image {
+          .termite-image {
+            img {
+              max-width: 100%;
+              height: 300px;
+            }
+            h1 {
+              font-size: 30px;
+              top: 35%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  .home-service-types {
+    &-container {
+      max-width: 90%;
+      .home-service-type-residential {
+        flex-direction: column;
+        &-content {
+          max-width: 480px;
+          padding-top: 0;
+        }
+        &-image {
+          .residential-image {
+            img {
+              width: fit-content;
+              height: 300px;
+            }
+            h1 {
+              font-size: 30px;
+              top: 35%;
+            }
+          }
+        }
+      }
+      .home-service-type-commercial {
+        flex-direction: column-reverse;
+        &-content {
+          max-width: 480px;
+          padding-top: 0;
+        }
+        &-image {
+          .commercial-image {
+            img {
+              width: fit-content;
+              height: 300px;
+              max-width: 100%;
+            }
+            h1 {
+              font-size: 30px;
+              top: 35%;
+            }
+          }
+        }
+      }
+      .home-service-type-termite {
+        flex-direction: column;
+        &-content {
+          max-width: 480px;
+          padding-top: 0;
+        }
+        &-image {
+          .termite-image {
+            img {
+              width: fit-content;
+              height: 300px;
+            }
+            h1 {
+              font-size: 30px;
+              top: 35%;
+            }
           }
         }
       }

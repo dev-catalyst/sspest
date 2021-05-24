@@ -77,7 +77,6 @@
   .home-choose {
     &-container {
       max-width: 1300px;
-      margin: auto;
       .why-and-card {
         .why-container {
           .why {
@@ -86,6 +85,72 @@
               margin-right: 10px;
               width: 40px;
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1419.98px) {
+  .home-choose {
+    &-container {
+      max-width: 1150px;
+      .why-and-card {
+        .why-container {
+          .why {
+            min-width: 310px;
+            img {
+              margin-right: 10px;
+              width: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1199.98px) {
+  .home-choose {
+    &-container {
+      max-width: 900px;
+      padding-top: 50px;
+      h4 {
+        margin-bottom: 5px;
+      }
+      .why-and-card {
+        flex-direction: column;
+        .card {
+          margin-top: 30px;
+          .quote-bottom {
+            top: 153px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  .home-choose {
+    &-container {
+      max-width: 90%;
+      padding-top: 50px;
+      h4 {
+        text-align: center;
+        margin: auto;
+      }
+      .why-and-card {
+        .why-container {
+          text-align: center;
+          margin: auto;
+        }
+        .card {
+          margin-top: 30px;
+          max-width: 90%;
+          .quote-bottom {
+            top: 193px;
           }
         }
       }

@@ -23,9 +23,11 @@ export default function whoAreWe() {
             Find out more about Us, Why we are different from the crowd, why we
             know our customers better than other pest companies.
           </p>
-          <Button themeType="contained" className="btn">
-            MORE ABOUT SSPEST
-          </Button>
+          <div className="btn-container">
+            <Button themeType="contained" className="btn">
+              MORE ABOUT SSPEST
+            </Button>
+          </div>
         </div>
       </div>
     </div>

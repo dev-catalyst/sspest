@@ -16,130 +16,6 @@
       margin-right: 100px;
       margin-bottom: 200px;
     }
-
-    .home-hero-features {
-      width: 450px;
-      margin-right: 72px;
-
-      &-general {
-        background-color: #fff;
-        border-radius: 20px 20px 0px 0px;
-        text-align: center;
-        margin: auto;
-        padding: 30px;
-        h4 {
-          font-size: 35px;
-          font-weight: bold;
-          line-height: 43px;
-          color: $primary-color;
-          margin: 0;
-        }
-        h2 {
-          font-size: 60px;
-          font-weight: bold;
-          line-height: 73px;
-          color: $primary-color;
-          margin: 0;
-        }
-        .place {
-          font-size: 12px;
-          font-weight: bold;
-          line-height: 15px;
-          color: #000;
-        }
-        img {
-          margin-left: 10px;
-          margin-right: 10px;
-        }
-        .get-quote {
-          background-color: #017cc0;
-          border-radius: 100px;
-          padding-top: 12px;
-          padding-bottom: 12px;
-          margin-top: 10px;
-          a {
-            color: #fff;
-            text-decoration: none;
-            .call {
-              display: flex;
-              flex-direction: row;
-              justify-content: center;
-              img {
-                margin-right: 5px;
-              }
-              p {
-                color: #fff;
-                line-height: 26px;
-                margin: 0;
-                span {
-                  font-size: 30px;
-                  font-weight: 700;
-                  margin-top: 5px;
-                }
-              }
-            }
-            a:visited {
-              color: #fff;
-            }
-            a:hover {
-              color: #fff;
-            }
-            a:active {
-              color: #fff;
-            }
-          }
-        }
-        .quote-conatiner {
-          display: flex;
-          flex-direction: row;
-          align-items: flex-start;
-          .quote-img {
-            margin-top: 10px;
-          }
-          .quote {
-            font-size: 12px;
-            font-style: italic;
-            line-height: 15px;
-            text-align: start;
-            margin: auto;
-            margin-top: 15px;
-            span {
-              color: $secondary-color;
-            }
-          }
-        }
-      }
-
-      &-cost {
-        background: linear-gradient(180deg, #00aad8 0%, #017cc0 100%);
-        border-radius: 0px 0px 20px 20px;
-        padding: 34px;
-        text-align: center;
-        .title {
-          color: #fff;
-          font-weight: 600;
-          font-size: 22px;
-          font-family: "Montserrat";
-          margin-top: 30px;
-          letter-spacing: 0.03em;
-          span {
-            font-weight: bold;
-            font-size: 24px;
-          }
-        }
-        p {
-          color: #fff;
-          font-size: 18px;
-          text-align: left;
-          padding-left: 46px;
-          display: flex;
-
-          img {
-            margin-right: 16px;
-          }
-        }
-      }
-    }
   }
 }
 
@@ -147,10 +23,50 @@
   .home-hero {
     &-container {
       max-width: 1420px;
-      margin: auto;
       padding-top: 300px;
       .google-ratings {
         margin-right: 50px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1199.98px) {
+  .home-hero {
+    &-container {
+      max-width: 900px;
+      padding-top: 300px;
+      .google-ratings {
+        margin-right: 20px;
+      }
+      .home-hero-features {
+        width: 400px;
+        &-cost {
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  .home-hero {
+    &-container {
+      max-width: 90%;
+      padding-top: 300px;
+      flex-direction: column-reverse;
+      justify-content: center;
+      text-align: center;
+      .google-ratings {
+        margin: auto;
+        margin-bottom: 50px;
+      }
+      .home-hero-features {
+        width: 400px;
+        margin: auto;
+        &-cost {
+          padding-left: 10px;
+        }
       }
     }
   }

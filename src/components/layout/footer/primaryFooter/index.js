@@ -7,6 +7,7 @@ import facebook from "../../../../assets/layout/footer/facebook.svg"
 import insta from "../../../../assets/layout/footer/insta.svg"
 import twitter from "../../../../assets/layout/footer/twitter.svg"
 import logo from "../../../../assets/layout/footer/logo.svg"
+import logoSmall from "../../../../assets/layout/footer/logo-small.svg"
 
 import "./style.scss"
 
@@ -33,7 +34,7 @@ export default function primaryFooter() {
             <img src={map} alt="" className="map" />
             <p>
               12 Kawana St,
-              <br /> Bass Hill 2197
+              <br className="hide" /> Bass Hill 2197
             </p>
           </div>
         </div>
@@ -48,8 +49,11 @@ export default function primaryFooter() {
             <img src={insta} alt="insta" />
           </a>
         </div>
-        <div className="primary-footer-logo">
+        <div className="primary-footer-logo-xl">
           <img src={logo} alt="logo" />
+        </div>
+        <div className="primary-footer-logo-l">
+          <img src={logoSmall} alt="logo" />
         </div>
       </div>
     </div>
