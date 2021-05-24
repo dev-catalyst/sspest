@@ -30,7 +30,6 @@
   .home-call {
     .home-call-container {
       max-width: 1300px;
-      margin: auto;
       .home-call-content {
         h1 {
           font-size: 60px;
@@ -43,6 +42,84 @@
       .home-call-image {
         img {
           max-width: 90%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1419.98px) {
+  .home-call {
+    .home-call-container {
+      max-width: 1150px;
+      .home-call-content {
+        h1 {
+          font-size: 55px;
+        }
+        p {
+          max-width: 700px;
+        }
+      }
+      .home-call-image {
+        img {
+          max-width: 85%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1199.98px) {
+  .home-call {
+    .home-call-container {
+      max-width: 900px;
+      .home-call-content {
+        h1 {
+          font-size: 35px;
+        }
+        p {
+          max-width: 500px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  .home-call {
+    .home-call-container {
+      max-width: 90%;
+      flex-direction: column;
+      .home-call-content {
+        padding-bottom: 30px;
+        max-width: 80%;
+
+        h1 {
+          font-size: 30px;
+          text-align: center;
+          margin: auto;
+        }
+        p {
+          max-width: unset;
+        }
+      }
+      .home-call-image {
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 756.98px) {
+  .home-call {
+    .home-call-container {
+      max-width: 90%;
+      padding-bottom: 60px;
+      .home-call-content {
+        h1 {
+          font-size: 25px;
         }
       }
     }
