@@ -96,13 +96,15 @@
   }
 }
 
-@media only screen and (max-width: 756.98px) {
+@media only screen and (max-width: 767.98px) {
   .secondary-footer {
     .secondary-footer-container {
       padding-top: 0px;
       padding-bottom: 50px;
       .secondary-footer-copyright {
-        font-size: 10px;
+        p {
+          font-size: 10px;
+        }
       }
     }
   }

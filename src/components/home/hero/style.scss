@@ -23,7 +23,6 @@
   .home-hero {
     &-container {
       max-width: 1420px;
-      padding-top: 300px;
       .google-ratings {
         margin-right: 50px;
       }
@@ -35,15 +34,8 @@
   .home-hero {
     &-container {
       max-width: 900px;
-      padding-top: 300px;
       .google-ratings {
         margin-right: 20px;
-      }
-      .home-hero-features {
-        width: 400px;
-        &-cost {
-          padding-left: 10px;
-        }
       }
     }
   }
@@ -61,12 +53,8 @@
         margin: auto;
         margin-bottom: 50px;
       }
-      .home-hero-features {
-        width: 400px;
-        margin: auto;
-        &-cost {
-          padding-left: 10px;
-        }
+      .general {
+        display: none;
       }
     }
   }

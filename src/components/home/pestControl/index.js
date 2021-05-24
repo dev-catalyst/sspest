@@ -1,5 +1,5 @@
 import React from "react"
-
+import GeneralPest from "../generalPest"
 import stone from "../../../assets/layout/stone.svg"
 import cylinder from "../../../assets/home/cylinder.png"
 
@@ -9,6 +9,9 @@ export default function pestControl() {
   return (
     <div className="home-pest-control">
       <div className="home-pest-control-container">
+        <div className="general-pest">
+          <GeneralPest />
+        </div>
         <div className="home-pest-control-container-content">
           <h1>PEST CONTROL SYDNEY</h1>
           <img src={stone} alt="stone" className="pest-control-stone" />

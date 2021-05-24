@@ -86,3 +86,33 @@
     font-size: 25px;
   }
 }
+
+.btn-container {
+  background-color: #017cc0;
+  border-radius: 100px;
+  width: 200px;
+  margin: auto;
+  padding: 10px;
+
+  a:link {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    img {
+      margin-right: 10px;
+    }
+    p {
+      color: #fff;
+    }
+  }
+  a:visited {
+    color: #fff;
+  }
+  a:hover {
+    color: #fff;
+  }
+  a:active {
+    color: #fff;
+  }
+}

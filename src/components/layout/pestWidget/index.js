@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import { Row, Col, Button, Divider } from "antd"
-
 import "./style.scss"
 
 import Flea from "../../../assets/layout/widget/pests/flea.svg"
@@ -18,6 +17,7 @@ import Sydney from "../../../assets/layout/widget/cardFooter/sydney.svg"
 import Crew from "../../../assets/layout/widget/cardFooter/crew.svg"
 import Ten from "../../../assets/layout/widget/cardFooter/ten.svg"
 import Shield from "../../../assets/layout/widget/cardFooter/shield.svg"
+import callIcon from "../../../assets/home/icons/call-icon.svg"
 
 import { CloseCircleOutlined, PhoneOutlined } from "@ant-design/icons"
 
@@ -68,15 +68,12 @@ const PestWidgetInner = () => {
           </p>
         </div>
 
-        <Button
-          type="primary"
-          shape="round"
-          icon={<PhoneOutlined />}
-          size={"large"}
-          className="btncall"
-        >
-          CALL NOW
-        </Button>
+        <div className="btn-container">
+          <a href="tel:1300 007 772">
+            <img src={callIcon} />
+            <p> CALL NOW</p>
+          </a>
+        </div>
       </div>
       <div>
         <div className="pest-widget-holder">

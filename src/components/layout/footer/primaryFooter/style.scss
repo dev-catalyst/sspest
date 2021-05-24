@@ -13,8 +13,11 @@
         flex-direction: row;
         margin-bottom: 20px;
         margin-top: 0;
-        img {
+        .primary-footer-contact-details-icons-desktop {
           margin-right: 10px;
+        }
+        .primary-footer-contact-details-icons-mobile {
+          display: none;
         }
         p {
           margin: 0;
@@ -34,7 +37,7 @@
         }
       }
     }
-    .primary-footer-social-media {
+    .primary-footer-social-media-desktop {
       margin-top: 66px;
       a {
         img {
@@ -42,6 +45,9 @@
           margin-right: 50px;
         }
       }
+    }
+    .primary-footer-social-media-mobile {
+      display: none;
     }
     .primary-footer-logo-xl {
       margin-top: 42px;
@@ -60,12 +66,12 @@
       .primary-footer-contact-details {
         margin-left: 0px;
         div {
-          img {
+          .primary-footer-contact-details-icons-desktop {
             margin-right: 8px;
           }
         }
       }
-      .primary-footer-social-media {
+      .primary-footer-social-media-desktop {
         margin-top: 56px;
         a {
           img {
@@ -93,7 +99,7 @@
   .primary-footer {
     .primary-footer-container {
       max-width: 900px;
-      .primary-footer-social-media {
+      .primary-footer-social-media-desktop {
         a {
           img {
             margin-left: 15px;
@@ -118,7 +124,7 @@
       justify-content: center;
       padding: 50px;
       padding-bottom: 20px;
-      .primary-footer-social-media {
+      .primary-footer-social-media-desktop {
         margin: 50px;
         a {
           img {
@@ -134,5 +140,51 @@
   }
   .hide {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  .primary-footer {
+    .primary-footer-container {
+      flex-direction: column;
+      max-width: 90%;
+      margin: auto;
+      align-items: center;
+      justify-content: center;
+      padding: 50px;
+      padding-bottom: 20px;
+      .primary-footer-contact-details {
+        margin-bottom: 0;
+        div {
+          .primary-footer-contact-details-icons-desktop {
+            display: none;
+          }
+          .primary-footer-contact-details-icons-mobile {
+            display: block;
+            margin-right: 10px;
+          }
+        }
+      }
+      .primary-footer-social-media-desktop {
+        display: none;
+      }
+      .primary-footer-social-media-mobile {
+        display: block;
+        margin: 50px;
+        margin-top: 30px;
+        a {
+          img {
+            margin-left: 30px;
+            margin-right: 30px;
+          }
+        }
+      }
+      .primary-footer-logo-xl {
+        display: none;
+      }
+      .primary-footer-logo-l {
+        display: block;
+      }
+    }
   }
 }

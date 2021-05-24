@@ -297,14 +297,22 @@
 @media only screen and (max-width: 991.98px) {
   .home-service-types {
     &-container {
-      max-width: 90%;
+      max-width: 80%;
+      padding-bottom: 50px;
       .home-service-type-residential {
         flex-direction: column;
         &-content {
           max-width: 480px;
           padding-top: 0;
+          &-stone {
+            top: -60px;
+            left: -90px;
+          }
         }
         &-image {
+          width: 75%;
+          margin: auto;
+          margin-bottom: 60px;
           .residential-image {
             img {
               width: fit-content;
@@ -313,6 +321,7 @@
             h1 {
               font-size: 30px;
               top: 35%;
+              left: 35%;
             }
           }
         }
@@ -322,8 +331,15 @@
         &-content {
           max-width: 480px;
           padding-top: 0;
+          &-stone {
+            top: -60px;
+            left: -90px;
+          }
         }
         &-image {
+          width: 75%;
+          margin: auto;
+          margin-bottom: 60px;
           .commercial-image {
             img {
               width: fit-content;
@@ -333,6 +349,7 @@
             h1 {
               font-size: 30px;
               top: 35%;
+              left: 35%;
             }
           }
         }
@@ -342,8 +359,15 @@
         &-content {
           max-width: 480px;
           padding-top: 0;
+          &-stone {
+            top: -60px;
+            left: -90px;
+          }
         }
         &-image {
+          width: 75%;
+          margin: auto;
+          margin-bottom: 60px;
           .termite-image {
             img {
               width: fit-content;
@@ -352,6 +376,7 @@
             h1 {
               font-size: 30px;
               top: 35%;
+              left: 28%;
             }
           }
         }

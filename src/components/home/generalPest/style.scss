@@ -12,14 +12,14 @@
       font-size: 35px;
       font-weight: bold;
       line-height: 43px;
-      color: $primary-color;
+      color: #017cc0;
       margin: 0;
     }
     h2 {
       font-size: 60px;
       font-weight: bold;
       line-height: 73px;
-      color: $primary-color;
+      color: #017cc0;
       margin: 0;
     }
     .place {
@@ -85,7 +85,7 @@
         margin: auto;
         margin-top: 15px;
         span {
-          color: $secondary-color;
+          color: #3c4856;
         }
       }
     }
@@ -118,6 +118,26 @@
       img {
         margin-right: 16px;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 1199.98px) {
+  .features {
+    width: 400px;
+    &-cost {
+      padding-left: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  .features {
+    width: 400px;
+    margin-right: 0;
+    margin: auto;
+    &-cost {
+      padding-left: 10px;
     }
   }
 }
