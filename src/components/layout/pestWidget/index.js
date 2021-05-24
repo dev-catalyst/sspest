@@ -68,7 +68,7 @@ const PestWidgetInner = () => {
           </p>
         </div>
 
-        <div className="btn-container">
+        <div className="btn-container-widget">
           <a href="tel:1300 007 772">
             <img src={callIcon} />
             <p> CALL NOW</p>
