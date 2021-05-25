@@ -2,7 +2,7 @@
   background-color: #eff2f7;
 
   &-container {
-    max-width: 1520px;
+    max-width: 1600px;
     margin: auto;
     padding-top: 150px;
     padding-bottom: 150px;
@@ -36,14 +36,17 @@
           font-size: 70px;
         }
       }
+      .review-image {
+        margin-right: 60px;
+      }
     }
   }
 }
 
-@media only screen and (max-width: 1619.98px) {
+@media only screen and (max-width: 1789.98px) {
   .home-reviews {
     &-container {
-      max-width: 1300px;
+      max-width: 1320px;
       .customer-review {
         justify-content: start;
         .quote-block {
@@ -54,16 +57,16 @@
   }
 }
 
-@media only screen and (max-width: 1419.98px) {
+@media only screen and (max-width: 1519.98px) {
   .home-reviews {
     &-container {
-      max-width: 1150px;
+      max-width: 1120px;
       padding-top: 80px;
     }
   }
 }
 
-@media only screen and (max-width: 1199.98px) {
+@media only screen and (max-width: 1289.98px) {
   .home-reviews {
     &-container {
       max-width: 900px;
@@ -94,6 +97,9 @@
           .quote-comma {
             margin-top: 30px;
           }
+        }
+        .review-image {
+          margin-right: 0;
         }
       }
     }

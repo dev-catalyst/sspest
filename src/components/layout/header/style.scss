@@ -2,37 +2,28 @@
 
 header {
   position: absolute;
-  //left: 95px;
   width: 100%;
-  @media only screen and (max-width: 1619.98px) {
-    left: 95px;
-  }
-  @media only screen and (max-width: 767px) {
-    left: 20px;
-  }
   .header-container {
     max-width: 1720px;
     margin: auto;
     padding-top: 58px;
-    // display: flex;
-    // flex-direction: row;
-    // align-items: baseline;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    position: relative;
     .header-logo {
-      -ms-flex: 0 0 26%;
-      flex: 0 0 26%;
+      // -ms-flex: 0 0 26%;
+      // flex: 0 0 26%;
       max-width: 26%;
     }
     .logo {
       margin-right: 42px;
       width: 100%;
-      @media only screen and (max-width: 1220px) {
-        width: 175px;
-        position: relative;
-        z-index: 999;
+      position: relative;
+      z-index: 999;
+      @media only screen and (max-width: 1420px) {
+        width: 200px;
       }
       @media only screen and (max-width: 767px) {
         width: 100px;
@@ -41,7 +32,6 @@ header {
     .navbar {
       -ms-flex: 0 0 74%;
       flex: 0 0 74%;
-      // max-width: 70%;
       a:link {
         color: $tertiary-color;
         font-size: 16px;
@@ -53,7 +43,8 @@ header {
         color: $tertiary-color;
       }
       a:hover {
-        color: $tertiary-color;
+        color: rgba(1, 124, 192, 0.9);
+        text-shadow: 2px 2px rgba(1, 124, 192, 0.25);
       }
       a:active {
         color: $primary-color;
@@ -64,9 +55,16 @@ header {
 .header-telephone {
   position: absolute;
   top: 54px;
-  right: 94px;
-  @media only screen and (max-width: 1220px) {
-    top: 25px;
+  right: 0;
+  @media only screen and (max-width: 1799.98px) {
+    right: 40px;
+  }
+  @media only screen and (max-width: 1619.98px) {
+    right: 0;
+  }
+  @media only screen and (max-width: 1420px) {
+    top: 65px;
+    right: 93px;
   }
   @media only screen and (max-width: 767px) {
     top: 7px;
@@ -89,23 +87,38 @@ header {
     color: $primary-color;
   }
   a:hover {
-    color: $primary-color;
+    color: rgba(1, 124, 192, 0.9);
+    text-shadow: 2px 2px rgba(1, 124, 192, 0.25);
   }
   a:active {
     color: $primary-color;
   }
 }
 
+@media only screen and (max-width: 1799.98px) {
+  header {
+    .header-container {
+      max-width: 1600px;
+      margin: auto;
+      flex-direction: column;
+      padding-left: 40px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1701.98px) {
+  header {
+    .header-container {
+      max-width: 1520px;
+    }
+  }
+}
+
 @media only screen and (max-width: 1619.98px) {
   header {
     .header-container {
-      max-width: 1420px;
-      margin: auto;
-      flex-direction: column;
-      .navbar {
-        // padding-top: 40px;
-        // padding-left: 20px;
-      }
+      max-width: 1320px;
+      padding-left: 0;
     }
   }
 }
@@ -113,23 +126,29 @@ header {
 @media only screen and (max-width: 1419.98px) {
   header {
     .header-container {
-      max-width: 1220px;
-      margin: auto;
-      .navbar {
-        padding-left: 0;
-      }
+      max-width: 1150px;
     }
   }
 }
 
-@media only screen and (max-width: 1199.98px) {
+@media only screen and (max-width: 1219.98px) {
+  header {
+    .header-container {
+      max-width: 90%;
+    }
+  }
 }
+
 ul.main-menu {
   list-style-type: none;
   padding: 0;
-  margin: 60px 0 0;
-  @media only screen and (max-width: 1619.98px) {
+  margin: 70px 0 0;
+  @media only screen and (max-width: 1799.98px) {
     margin: 30px 0 0;
+    text-align: end;
+  }
+  @media only screen and (max-width: 1619.98px) {
+    text-align: start;
   }
   li {
     display: inline-block;
@@ -220,7 +239,7 @@ ul.main-menu li:hover .submenu {
 }
 .toggle-menu {
   position: absolute;
-  top: 30px;
+  top: 70px;
   right: 20px;
   width: 40px;
   height: 30px;
@@ -236,7 +255,7 @@ ul.main-menu li:hover .submenu {
   -o-border-radius: 5px;
   z-index: 999;
   display: none;
-  @media only screen and (max-width: 1220px) {
+  @media only screen and (max-width: 1420px) {
     display: flex;
   }
   @media only screen and (max-width: 767px) {
@@ -330,7 +349,7 @@ a.nav-link.accordion-header {
     max-width: 85%;
   }
 }
-@media only screen and (max-width: 1220px) {
+@media only screen and (max-width: 1420px) {
   .navbar {
     display: none;
   }
@@ -341,11 +360,18 @@ a.nav-link.accordion-header {
   }
   header {
     .header-container {
-      padding-top: 25px;
+      padding-top: 70px;
     }
   }
   .toggle .logo {
     position: fixed !important;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  header {
+    .header-container {
+      padding-top: 26px;
+    }
   }
 }
 // homepage responsive css
@@ -454,6 +480,7 @@ a.nav-link.accordion-header {
         img {
           height: auto !important;
           width: 100% !important;
+          margin-top: 20px;
         }
       }
     }
@@ -478,7 +505,8 @@ a.nav-link.accordion-header {
   }
   .home-service-type-commercial,
   .home-service-type-residential {
-    margin-bottom: 60px;
+    // margin-bottom: 60px;
+    margin-bottom: 0;
   }
   .home-service-types-container
     .home-service-type-termite-image
@@ -486,6 +514,15 @@ a.nav-link.accordion-header {
     img {
     width: 100% !important;
     height: auto !important;
+    margin-top: 20px;
+  }
+  .home-service-types-container
+    .home-service-type-commercial-image
+    .commercial-image
+    img {
+    width: 100% !important;
+    height: auto !important;
+    margin-top: 20px;
   }
   .home-prevention-conatiner {
     max-width: 100% !important;
@@ -506,18 +543,19 @@ a.nav-link.accordion-header {
     max-width: 100%;
     padding: 0 42px;
   }
-  .home-expertise-container {
-    .home-expertise-conatiner-content {
-      padding-left: 0 !important;
-      display: flex !important;
-      flex-wrap: wrap !important;
-      .points {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-      }
-    }
-  }
+  // .home-expertise-container {
+  //   .home-expertise-conatiner-content {
+  //     padding-left: 0 !important;
+  //     display: flex !important;
+  //     flex-direction: column;
+  //     justify-content: center;
+  //     .points {
+  //       display: flex;
+  //       flex-direction: row;
+  //       width: 100%;
+  //     }
+  //   }
+  // }
   .home-pestControl2 {
     padding: 50px 0 117px;
   }
@@ -525,7 +563,7 @@ a.nav-link.accordion-header {
     max-width: 100%;
     padding-bottom: 70px;
     padding: 0 42px 70px;
-    padding-top: 0 !important;
+    // padding-top: 0 !important;
     margin-top: -46px !important;
   }
   .home-pestControl2-container {
@@ -648,7 +686,7 @@ a.nav-link.accordion-header {
     width: 100% !important;
     height: auto !important;
   }
-}
-.fixed-widget {
-  display: none !important;
+  .fixed-widget-layout {
+    display: none !important;
+  }
 }

@@ -9,6 +9,7 @@ import Sydney from "../../../assets/home/icons/sydney.svg"
 import Crew from "../../../assets/home/icons/crew.svg"
 import Ten from "../../../assets/home/icons/ten.svg"
 import Shield from "../../../assets/home/icons/shield.svg"
+import callSmall from "../../../assets/home/icons/hero-call.svg"
 
 import "./style.scss"
 
@@ -26,7 +27,8 @@ export default function generalPest() {
         <div className="get-quote">
           <a href="tel:1300 007 772">
             <div className="call">
-              <img src={call} />
+              <img src={call} alt="" />
+              <img src={callSmall} alt="" />
               <p className="free-quote">
                 FREE QUOTE! CALL NOW
                 <br></br>

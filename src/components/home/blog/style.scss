@@ -55,16 +55,23 @@
           padding: 14px 20px;
           border: none;
           outline: none;
+          cursor: pointer;
+          transition: all 0.3s ease-in;
+          &:hover {
+            transform: scaleY(1.045);
+            box-shadow: none;
+            opacity: 0.95;
+          }
         }
       }
     }
   }
 }
 
-@media only screen and (max-width: 1619.98px) {
+@media only screen and (max-width: 1789.98px) {
   .home-blog {
     &-container {
-      max-width: 1300px;
+      max-width: 1320px;
       h1 {
         margin-bottom: 63px;
       }
@@ -72,10 +79,10 @@
   }
 }
 
-@media only screen and (max-width: 1419.98px) {
+@media only screen and (max-width: 1519.98px) {
   .home-blog {
     &-container {
-      max-width: 1150px;
+      max-width: 1120px;
       .posts {
         .post-card {
           max-width: 68%;
@@ -86,7 +93,7 @@
   }
 }
 
-@media only screen and (max-width: 1199.98px) {
+@media only screen and (max-width: 1289.98px) {
   .home-blog {
     &-container {
       max-width: 900px;

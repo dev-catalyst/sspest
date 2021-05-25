@@ -21,6 +21,10 @@
           text-decoration: none;
           font-size: 18px;
           margin: 32px;
+          &:hover {
+            opacity: 0.8;
+            text-shadow: 2px 2px rgba(255, 255, 255, 0.25);
+          }
         }
         a:visited {
           color: #fff;

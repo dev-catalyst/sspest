@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   .home-call-container {
-    max-width: 1740px;
+    max-width: 1600px;
     margin: auto;
     padding-bottom: 130px;
     padding-top: 50px;
@@ -15,8 +15,8 @@
       h1 {
         font-size: 65px;
         color: #fff;
-        text-align: center;
-        margin: auto;
+        // text-align: center;
+        // margin: auto;
         font-weight: 800px;
       }
       p {
@@ -27,10 +27,10 @@
   }
 }
 
-@media only screen and (max-width: 1619.98px) {
+@media only screen and (max-width: 1789.98px) {
   .home-call {
     .home-call-container {
-      max-width: 1300px;
+      max-width: 1320px;
       .home-call-content {
         h1 {
           font-size: 60px;
@@ -49,10 +49,10 @@
   }
 }
 
-@media only screen and (max-width: 1419.98px) {
+@media only screen and (max-width: 1519.98px) {
   .home-call {
     .home-call-container {
-      max-width: 1150px;
+      max-width: 1120px;
       .home-call-content {
         h1 {
           font-size: 55px;
@@ -70,7 +70,7 @@
   }
 }
 
-@media only screen and (max-width: 1199.98px) {
+@media only screen and (max-width: 1289.98px) {
   .home-call {
     .home-call-container {
       max-width: 900px;

@@ -5,7 +5,7 @@
   background-color: #eff2f7;
 
   &-container {
-    max-width: 1520px;
+    max-width: 1600px;
     margin: auto;
     padding-top: 290px;
     padding-bottom: 400px;
@@ -21,27 +21,27 @@
   }
 }
 
-@media only screen and (max-width: 1619.98px) {
+@media only screen and (max-width: 1789.98px) {
   .home-pestControl3 {
     &-container {
-      max-width: 1300px;
+      max-width: 1320px;
       padding-top: 190px;
       padding-bottom: 200px;
     }
   }
 }
 
-@media only screen and (max-width: 1419.98px) {
+@media only screen and (max-width: 1519.98px) {
   .home-pestControl3 {
     &-container {
-      max-width: 1150px;
+      max-width: 1120px;
       padding-top: 190px;
       padding-bottom: 200px;
     }
   }
 }
 
-@media only screen and (max-width: 1199.98px) {
+@media only screen and (max-width: 1289.98px) {
   .home-pestControl3 {
     &-container {
       max-width: 900px;
@@ -58,5 +58,13 @@
       padding-top: 100px;
       padding-bottom: 200px;
     }
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  .home-pestControl3 {
+    background: url("../../../assets/home/mobile/pest3-bgs.png");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }

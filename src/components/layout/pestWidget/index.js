@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Row, Col, Button, Divider } from "antd"
+import { Button } from "antd"
 import "./style.scss"
 
 import Flea from "../../../assets/layout/widget/pests/flea.svg"
@@ -19,7 +19,7 @@ import Ten from "../../../assets/layout/widget/cardFooter/ten.svg"
 import Shield from "../../../assets/layout/widget/cardFooter/shield.svg"
 import callIcon from "../../../assets/home/icons/call-icon.svg"
 
-import { CloseCircleOutlined, PhoneOutlined } from "@ant-design/icons"
+import { CloseCircleOutlined } from "@ant-design/icons"
 
 const PestWidget = () => {
   return <PestWidgetInner />
@@ -29,14 +29,14 @@ const PestWidgetInner = () => {
   const [show, setShow] = useState("none")
 
   const handleClick = () => {
-    if (show == "block") {
+    if (show === "block") {
       setShow("none")
     } else {
       setShow("block")
     }
   }
   return (
-    <div className="fixed-widget">
+    <div className="fixed-widget-layout">
       <div className="pest-widget-general" style={{ display: show }}>
         <Button className="close-widget" onClick={handleClick}>
           <CloseCircleOutlined />
@@ -44,40 +44,40 @@ const PestWidgetInner = () => {
         <div className="pest-widget-general-inner">
           <h3>THE GERMAN</h3>
           <p className="widget-info">
-            <img src={Home} /> Flat rate $170 any house
+            <img src={Home} alt="" /> Flat rate $170 any house
           </p>
 
           <p className="widget-info">
-            <img src={Pest} /> Includes rodent treatment
+            <img src={Pest} alt="" /> Includes rodent treatment
           </p>
 
           <p className="widget-info">
-            <img src={Sydney} /> Servicing all of Sydney
+            <img src={Sydney} alt="" /> Servicing all of Sydney
           </p>
 
           <p className="widget-info">
-            <img src={Crew} /> Servicing all of Sydney
+            <img src={Crew} alt="" /> Servicing all of Sydney
           </p>
 
           <p className="widget-info">
-            <img src={Ten} /> 10 Years experience
+            <img src={Ten} alt="" /> 10 Years experience
           </p>
 
           <p className="widget-info">
-            <img src={Shield} /> All pests & bugs treated
+            <img src={Shield} alt="" /> All pests & bugs treated
           </p>
         </div>
 
         <div className="btn-container-widget">
           <a href="tel:1300 007 772">
-            <img src={callIcon} />
+            <img src={callIcon} alt="" />
             <p> CALL NOW</p>
           </a>
         </div>
       </div>
       <div>
         <div className="pest-widget-holder">
-          <img src={Flea} />
+          <img src={Flea} alt="" />
           <Button className="pest-widget-price" onClick={handleClick}>
             <span>the flea</span>
             <p>$160</p>
@@ -85,7 +85,7 @@ const PestWidgetInner = () => {
         </div>
 
         <div className="pest-widget-holder">
-          <img src={CockRoach} />
+          <img src={CockRoach} alt="" />
           <Button className="pest-widget-price" onClick={handleClick}>
             <span>the cockroach</span>
             <p>$260</p>
@@ -93,7 +93,7 @@ const PestWidgetInner = () => {
         </div>
 
         <div className="pest-widget-holder">
-          <img src={BedBug} />
+          <img src={BedBug} alt="" />
           <Button className="pest-widget-price" onClick={handleClick}>
             <span>the BedBug</span>
             <p>$340</p>
@@ -101,7 +101,7 @@ const PestWidgetInner = () => {
         </div>
 
         <div className="pest-widget-holder">
-          <img src={Spider} />
+          <img src={Spider} alt="" />
           <Button className="pest-widget-price" onClick={handleClick}>
             <span>the spider</span>
             <p>$120</p>
@@ -109,7 +109,7 @@ const PestWidgetInner = () => {
         </div>
 
         <div className="pest-widget-holder">
-          <img src={Termite} />
+          <img src={Termite} alt="" />
           <Button className="pest-widget-price" onClick={handleClick}>
             <span>the termite</span>
             <p>$189</p>
@@ -117,7 +117,7 @@ const PestWidgetInner = () => {
         </div>
 
         <div className="pest-widget-holder">
-          <img src={Rodent} />
+          <img src={Rodent} alt="" />
           <Button className="pest-widget-price" onClick={handleClick}>
             <span>the rodent</span>
             <p>$260</p>
@@ -125,7 +125,7 @@ const PestWidgetInner = () => {
         </div>
 
         <div className="pest-widget-holder">
-          <img src={AntPest} />
+          <img src={AntPest} alt="" />
           <Button className="pest-widget-price" onClick={handleClick}>
             <span>the ant</span>
             <p>$160</p>

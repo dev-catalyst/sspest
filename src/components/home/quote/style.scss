@@ -5,7 +5,7 @@
   background-color: #dde4ec;
 
   &-container {
-    max-width: 1520px;
+    max-width: 1600px;
     margin: auto;
     padding-top: 290px;
     padding-bottom: 290px;
@@ -22,25 +22,25 @@
   }
 }
 
-@media only screen and (max-width: 1619.98px) {
+@media only screen and (max-width: 1789.98px) {
   .home-quote {
     &-container {
-      max-width: 1300px;
+      max-width: 1320px;
       padding-top: 190px;
       padding-bottom: 190px;
     }
   }
 }
 
-@media only screen and (max-width: 1619.98px) {
+@media only screen and (max-width: 1519.98px) {
   .home-quote {
     &-container {
-      max-width: 1150px;
+      max-width: 1120px;
     }
   }
 }
 
-@media only screen and (max-width: 1199.98px) {
+@media only screen and (max-width: 1289.98px) {
   .home-quote {
     &-container {
       max-width: 900px;
@@ -57,6 +57,18 @@
       h2 {
         margin-bottom: 10px;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  .home-quote {
+    background-image: url("../../../assets/home/mobile/free-bgs.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    &-container {
+      padding-top: 60px;
+      padding-bottom: 60px;
     }
   }
 }

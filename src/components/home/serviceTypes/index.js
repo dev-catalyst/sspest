@@ -4,6 +4,9 @@ import stone from "../../../assets/layout/stone.svg"
 import residential from "../../../assets/home/residential.png"
 import commercial from "../../../assets/home/commercial.png"
 import termite from "../../../assets/home/termite.png"
+import residentialS from "../../../assets/home/mobile/resi-small.png"
+import commercialS from "../../../assets/home/mobile/com-small.png"
+import termiteS from "../../../assets/home/mobile/term-small.png"
 import "./style.scss"
 
 export default function serviceType() {
@@ -27,6 +30,7 @@ export default function serviceType() {
           <div className="home-service-type-residential-image">
             <div className="residential-image">
               <img src={residential} alt="" className="btn2" />
+              <img src={residentialS} alt="" className="btn2" />
               <h1>RESIDENTIAL</h1>
             </div>
             <h4>FIND OUT MORE</h4>
@@ -37,6 +41,7 @@ export default function serviceType() {
           <div className="home-service-type-commercial-image">
             <div className="commercial-image">
               <img src={commercial} alt="" className="btn2" />
+              <img src={commercialS} alt="" className="btn2" />
               <h1>COMMERCIAL</h1>
             </div>
             <h4>FIND OUT MORE</h4>
@@ -76,6 +81,7 @@ export default function serviceType() {
           <div className="home-service-type-termite-image">
             <div className="termite-image">
               <img src={termite} alt="" className="btn2" />
+              <img src={termiteS} alt="" className="btn2" />
               <h1>TERMITE CONTROL</h1>
             </div>
             <h4>FIND OUT MORE</h4>

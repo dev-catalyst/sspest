@@ -8,7 +8,7 @@
   &-container {
     max-width: 1620px;
     margin: auto;
-    padding-top: 200px;
+    padding-top: 250px;
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-end;
@@ -27,6 +27,13 @@
       .google-ratings {
         margin-right: 50px;
       }
+    }
+  }
+}
+@media only screen and (max-width: 1419.98px) {
+  .home-hero {
+    &-container {
+      padding-top: 200px;
     }
   }
 }

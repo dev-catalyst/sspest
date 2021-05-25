@@ -1,7 +1,7 @@
 .home-service-types {
   background-color: #eff2f7;
   &-container {
-    max-width: 1820px;
+    max-width: 1700px;
     margin: auto;
     padding-top: 130px;
     padding-bottom: 145px;
@@ -23,6 +23,9 @@
       &-image {
         .residential-image {
           position: relative;
+          img:last-of-type {
+            display: none;
+          }
           h1 {
             position: absolute;
             color: #fff;
@@ -59,6 +62,9 @@
       }
       &-image {
         .commercial-image {
+          img:last-of-type {
+            display: none;
+          }
           position: relative;
           h1 {
             position: absolute;
@@ -98,6 +104,9 @@
       &-image {
         .termite-image {
           position: relative;
+          img:last-of-type {
+            display: none;
+          }
           h1 {
             position: absolute;
             color: #fff;
@@ -121,10 +130,18 @@
   }
 }
 
-@media only screen and (max-width: 1619.98px) {
+@media only screen and (max-width: 1800.98px) {
   .home-service-types {
     &-container {
-      max-width: 1300px;
+      max-width: 1620px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1789.98px) {
+  .home-service-types {
+    &-container {
+      max-width: 1320px;
       .home-service-type-residential {
         &-content {
           padding-top: 150px;
@@ -195,10 +212,10 @@
   }
 }
 
-@media only screen and (max-width: 1419.98px) {
+@media only screen and (max-width: 1519.98px) {
   .home-service-types {
     &-container {
-      max-width: 1150px;
+      max-width: 1120px;
       .home-service-type-residential {
         &-content {
           max-width: 500px;
@@ -232,7 +249,7 @@
   }
 }
 
-@media only screen and (max-width: 1199.98px) {
+@media only screen and (max-width: 1289.98px) {
   .home-service-types {
     &-container {
       max-width: 900px;
@@ -302,7 +319,8 @@
       .home-service-type-residential {
         flex-direction: column;
         &-content {
-          max-width: 480px;
+          max-width: 90%;
+          margin: auto;
           padding-top: 0;
           &-stone {
             top: -60px;
@@ -329,7 +347,8 @@
       .home-service-type-commercial {
         flex-direction: column-reverse;
         &-content {
-          max-width: 480px;
+          max-width: 90%;
+          margin: auto;
           padding-top: 0;
           &-stone {
             top: -60px;
@@ -357,7 +376,8 @@
       .home-service-type-termite {
         flex-direction: column;
         &-content {
-          max-width: 480px;
+          max-width: 90%;
+          margin: auto;
           padding-top: 0;
           &-stone {
             top: -60px;
@@ -384,3 +404,16 @@
     }
   }
 }
+
+// @media only screen and (max-width: 576.98px) {
+//   .termite-image,
+//   .residential-image,
+//   .commercial-image {
+//     img:last-of-type {
+//       display: unset;
+//     }
+//     img:first-of-type {
+//       display: none;
+//     }
+//   }
+// }
