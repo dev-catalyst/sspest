@@ -22,7 +22,7 @@ header {
       width: 100%;
       position: relative;
       z-index: 999;
-      @media only screen and (max-width: 1420px) {
+      @media only screen and (max-width: 1220px) {
         width: 200px;
       }
       @media only screen and (max-width: 767px) {
@@ -38,6 +38,9 @@ header {
         font-weight: 600;
         text-decoration: none;
         margin-right: 30px;
+        @media only screen and (max-width: 1419.98px) {
+          font-size: 14px;
+        }
       }
       a:visited {
         color: $tertiary-color;
@@ -255,7 +258,7 @@ ul.main-menu li:hover .submenu {
   -o-border-radius: 5px;
   z-index: 999;
   display: none;
-  @media only screen and (max-width: 1420px) {
+  @media only screen and (max-width: 1220px) {
     display: flex;
   }
   @media only screen and (max-width: 767px) {
@@ -349,7 +352,7 @@ a.nav-link.accordion-header {
     max-width: 85%;
   }
 }
-@media only screen and (max-width: 1420px) {
+@media only screen and (max-width: 1220px) {
   .navbar {
     display: none;
   }

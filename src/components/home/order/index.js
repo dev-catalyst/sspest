@@ -3,11 +3,11 @@ import React from "react"
 import { Button } from "@react-md/button"
 import "./style.scss"
 
-export default function order() {
+export default function order(props) {
   return (
     <div className="home-order">
       <div className="home-order-container">
-        <h2>Order Pest Control Services in Sydney now!</h2>
+        <h2>{props.text}</h2>
         <p>
           Get in touch with us and one of our friendly team members will arrange
           a free of charge appointment at your convenience.

@@ -11,7 +11,7 @@ export default function Blog() {
     <div className="home-blog">
       <div className="home-blog-container">
         <h1>
-          <img src={stone} slt="" className="h1-stone" />
+          <img src={stone} slt="" className="h1-stone" alt="" />
           BLOG POSTS
         </h1>
         <div className="posts">

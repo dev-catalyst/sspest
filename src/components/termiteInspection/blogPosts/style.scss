@@ -1,0 +1,153 @@
+.termite-blog {
+  &-container {
+    max-width: 1600px;
+    margin: auto;
+    padding-top: 165px;
+    padding-bottom: 100px;
+    h1 {
+      text-align: center;
+      margin: auto;
+      position: relative;
+      margin-bottom: 83px;
+      color: #231f20;
+      .termite-stone {
+        position: absolute;
+        top: -80px;
+        left: 450px;
+      }
+    }
+    p {
+      margin-bottom: 50px;
+    }
+    .termite-posts {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      div {
+        text-align: center;
+        margin: 0 20px;
+      }
+      .termite-post-image {
+        width: 100%;
+      }
+      .termite-post-card {
+        background: #ffffff;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 0 0 20px 20px;
+        max-width: 99%;
+        margin: auto;
+        margin-top: -3px;
+        padding: 50px;
+        text-align: start;
+        p {
+          font-size: 18px;
+        }
+        h4 {
+          margin: 0;
+          color: #7b7b7b;
+        }
+        .read {
+          color: #fff;
+          background: #017cc0;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          border-radius: 10px;
+          font-size: 18px;
+          padding: 14px 20px;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          transition: all 0.3s ease-in;
+          &:hover {
+            transform: scaleY(1.045);
+            box-shadow: none;
+            opacity: 0.95;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1789.98px) {
+  .termite-blog {
+    &-container {
+      max-width: 1320px;
+      h1 {
+        margin-bottom: 63px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1519.98px) {
+  .termite-blog {
+    &-container {
+      max-width: 1120px;
+      .termite-posts {
+        .termite-post-card {
+          max-width: 68%;
+          padding: 45px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1289.98px) {
+  .termite-blog {
+    &-container {
+      max-width: 900px;
+      padding-top: 100px;
+      .termite-posts {
+        .termite-post-card {
+          max-width: 62%;
+          padding: 45px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  .termite-blog {
+    &-container {
+      max-width: 90%;
+      padding-top: 100px;
+      text-align: center;
+      .termite-posts {
+        flex-direction: column;
+        .termite-post-card {
+          margin-bottom: 50px;
+          max-width: 50%;
+        }
+      }
+    }
+  }
+}
+
+// @media only screen and (max-width: 767.98px) {
+//   .home-blog {
+//     &-container {
+//       padding-bottom: 60px;
+//       h1 {
+//         .h1-stone {
+//           position: absolute;
+//           top: -100px;
+//           left: 80px;
+//         }
+//       }
+//       .posts {
+//         .post-card {
+//           max-width: 55%;
+//           h4 {
+//             font-size: 18px;
+//           }
+//           .learn {
+//             font-size: 12px;
+//             padding: 15px 25px;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

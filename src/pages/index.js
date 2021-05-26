@@ -23,7 +23,7 @@ export default function Home() {
     <div>
       <Layout>
         <Hero />
-        <img src={divider1} style={{ width: "100%" }} />
+        <img src={divider1} style={{ width: "100%" }} alt="" />
         <PestControl />
         <WhoAreWe />
         <ServiceTeam />
@@ -36,7 +36,7 @@ export default function Home() {
         <Reviews />
         <Quote />
         <Choose />
-        <Order />
+        <Order text="Order Pest Control Services in Sydney now!" />
         <Blog />
         <Call />
       </Layout>

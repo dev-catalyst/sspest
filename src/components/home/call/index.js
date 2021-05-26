@@ -2,7 +2,6 @@ import React from "react"
 import divider5 from "../../../assets/home/divider5.png"
 import "./style.scss"
 import callImg from "../../../assets/home/call-img.png"
-import callImgS from "../../../assets/home/mobile/call-img.png"
 export default function Call() {
   return (
     <div className="home-call">

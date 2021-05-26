@@ -1,0 +1,96 @@
+.termite-whyTermite {
+  background-color: #eff2f7;
+  margin-top: -5px;
+  &-container {
+    max-width: 1600px;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .termite-general-pest {
+      display: none;
+    }
+    .termite-whyTermite-inspection {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 180px;
+      &-image {
+        max-width: 90%;
+        margin-right: 0;
+        img {
+          max-width: 90%;
+        }
+        .termite1 {
+          margin-left: 80px;
+        }
+      }
+      &-content {
+        max-width: 800px;
+        h1 {
+          margin-top: 10px;
+          position: relative;
+          img {
+            position: absolute;
+            top: -60px;
+            left: -80px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1789.98px) {
+  .termite-whyTermite {
+    &-container {
+      max-width: 1320px;
+      padding-bottom: 50px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1519.98px) {
+  .termite-whyTermite {
+    &-container {
+      max-width: 1120px;
+      .termite-whyTermite-inspection {
+        &-content {
+          max-width: 600px;
+        }
+        .content2 {
+          margin-left: 120px;
+        }
+        &-image {
+          margin-right: 0;
+          img {
+            max-width: 100%;
+            padding-top: 100px;
+          }
+          .termite2 {
+            max-width: 110%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1289.98px) {
+  .termite-whyTermite {
+    &-container {
+      max-width: 900px;
+    }
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  .termite-whyTermite {
+    &-container {
+      max-width: 90%;
+      .termite-general-pest {
+        display: block;
+        text-align: center;
+        margin: auto;
+      }
+    }
+  }
+}
