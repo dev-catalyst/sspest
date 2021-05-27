@@ -4,7 +4,7 @@ import Hero from "../components/home/hero"
 import PestControl from "../components/home/pestControl"
 import WhoAreWe from "../components/home/whoAreWe"
 import ServiceTeam from "../components/home/serviceTeam"
-import ServiceTypes from "../components/home/serviceTypes"
+import BusinessTypes from "../components/home/businessTy"
 import Prevention from "../components/home/prevention"
 import Expertise from "../components/home/expertise"
 import PestControl2 from "../components/home/pestControl2"
@@ -27,7 +27,7 @@ export default function Home() {
         <PestControl />
         <WhoAreWe />
         <ServiceTeam />
-        <ServiceTypes />
+        <BusinessTypes />
         <Prevention />
         <Expertise />
         <PestControl2 />

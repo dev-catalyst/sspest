@@ -1,0 +1,131 @@
+@import "../../../styles/utilities/variables/variables.scss";
+.transport-pest {
+  background-color: #eff2f7;
+  margin-top: -5px;
+  &-container {
+    max-width: 1600px;
+    margin: auto;
+    padding-top: 150px;
+    padding-bottom: 137px;
+    display: flex;
+    justify-content: space-between;
+    .transport-general-pest {
+      display: none;
+    }
+    &-content {
+      max-width: 700px;
+      padding-top: 100px;
+      position: relative;
+      h1 {
+        margin-top: 0;
+      }
+      .transport-pest-stone {
+        position: absolute;
+        top: 50px;
+        left: -80px;
+      }
+    }
+  }
+}
+
+.video {
+  height: 542.5px;
+  width: 800px;
+}
+
+@media only screen and (max-width: 1789.98px) {
+  .transport-pest {
+    &-container {
+      max-width: 1320px;
+      &-content {
+        max-width: 600px;
+        padding-top: 0;
+      }
+    }
+  }
+  .video {
+    height: 400.5px;
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 1519.98px) {
+  .transport-pest {
+    &-container {
+      max-width: 1120px;
+      &-content {
+        max-width: 550px;
+        h1 {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  .video {
+    height: 370.5px;
+    width: 520px;
+  }
+}
+
+@media only screen and (max-width: 1289.98px) {
+  .transport-pest {
+    &-container {
+      max-width: 900px;
+      &-content {
+        max-width: 450px;
+        margin-left: 40px;
+      }
+    }
+  }
+  .video {
+    height: 340.5px;
+    width: 480px;
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  .transport-pest {
+    &-container {
+      flex-direction: column;
+      padding-top: 50px;
+      text-align: center;
+      justify-content: center;
+      max-width: 90%;
+      .transport-general-pest {
+        display: block;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 50px;
+      }
+      &-content {
+        margin-left: 0;
+        max-width: 90%;
+        margin: auto;
+        text-align: start;
+        margin-bottom: 20px;
+        p {
+          max-width: 90%;
+        }
+      }
+    }
+  }
+  .video {
+    height: 370.5px;
+    width: 480px;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 576.98px) {
+  .transport-pest {
+    &-container {
+      padding-bottom: 30px;
+    }
+  }
+  .video {
+    height: auto;
+    width: auto;
+    margin-bottom: 0;
+  }
+}

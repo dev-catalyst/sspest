@@ -37,7 +37,7 @@ function NextArrow(props) {
       }}
       onClick={onClick}
     >
-      <img src={right} />
+      <img src={right} alt="" />
     </div>
   )
 }
@@ -60,7 +60,7 @@ function PrevArrow(props) {
       }}
       onClick={onClick}
     >
-      <img src={left} />
+      <img src={left} alt="" />
     </div>
   )
 }

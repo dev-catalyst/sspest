@@ -35,7 +35,7 @@ export default function WhyTermite() {
             <img src={termite1} alt="" className="termite1" />
           </div>
         </div>
-        <div className="termite-whyTermite-inspection">
+        <div className="termite-whyTermite-inspection container2">
           <div className="termite-whyTermite-inspection-image">
             <img src={termite2} alt="" className="termite2" />
           </div>

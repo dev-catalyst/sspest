@@ -1,0 +1,101 @@
+.info-extermination {
+  background: url("../../../assets/info/extermination-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #dde4ec;
+
+  &-container {
+    max-width: 1600px;
+    margin: auto;
+    padding-top: 300px;
+    padding-bottom: 275px;
+    h1 {
+      color: #231f20;
+      text-align: center;
+      margin: auto;
+      margin-bottom: 48px;
+    }
+    .info-extermination-btn-container {
+      margin: auto;
+      text-align: center;
+      .info-extermination-btn {
+        color: #fff;
+        background-color: #017cc0;
+        border: none;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        padding: 22px 35px;
+        font-size: 22px;
+        margin-top: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease-in;
+        &:hover {
+          transform: scaleY(1.045);
+          box-shadow: none;
+          opacity: 0.95;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1789.98px) {
+  .info-extermination {
+    &-container {
+      max-width: 1320px;
+      padding-top: 180px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1519.98px) {
+  .info-extermination {
+    &-container {
+      max-width: 1120px;
+      padding-top: 200px;
+      padding-bottom: 149px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1289.98px) {
+  .info-extermination {
+    &-container {
+      max-width: 900px;
+      .info-extermination-btn-container btn-container {
+        .info-extermination-btn {
+          padding: 18px 30px;
+          font-size: 18px;
+          margin-top: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  .info-extermination {
+    &-container {
+      max-width: 90%;
+    }
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  .info-extermination {
+    background: url("../../../assets/info/exter-small.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    &-container {
+      padding-top: 80px;
+      .info-extermination-btn-container {
+        .info-extermination-btn {
+          padding: 18px 30px;
+          font-size: 12px !important;
+          margin-top: 16px;
+        }
+      }
+    }
+  }
+}

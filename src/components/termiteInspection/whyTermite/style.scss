@@ -14,17 +14,16 @@
       justify-content: space-between;
       padding-bottom: 180px;
       &-image {
-        max-width: 90%;
-        margin-right: 0;
+        max-width: 48.5%;
         img {
-          max-width: 90%;
+          max-width: 100%;
         }
-        .termite1 {
-          margin-left: 80px;
-        }
+        // .termite1 {
+        //   margin-left: 80px;
+        // }
       }
       &-content {
-        max-width: 800px;
+        max-width: 48.5%;
         h1 {
           margin-top: 10px;
           position: relative;
@@ -34,6 +33,9 @@
             left: -80px;
           }
         }
+      }
+      .content2 {
+        max-width: 46%;
       }
     }
   }
@@ -53,20 +55,12 @@
     &-container {
       max-width: 1120px;
       .termite-whyTermite-inspection {
-        &-content {
-          max-width: 600px;
-        }
-        .content2 {
-          margin-left: 120px;
-        }
+        padding-bottom: 100px;
         &-image {
           margin-right: 0;
           img {
             max-width: 100%;
-            padding-top: 100px;
-          }
-          .termite2 {
-            max-width: 110%;
+            padding-top: 40px;
           }
         }
       }
@@ -78,6 +72,23 @@
   .termite-whyTermite {
     &-container {
       max-width: 900px;
+      .termite-whyTermite-inspection {
+        flex-direction: column;
+        &-content {
+          max-width: 90%;
+          margin: auto;
+        }
+        .content2 {
+          max-width: 90%;
+        }
+        &-image {
+          max-width: 90%;
+          margin: auto;
+        }
+      }
+      .container2 {
+        flex-direction: column-reverse;
+      }
     }
   }
 }
@@ -90,6 +101,7 @@
         display: block;
         text-align: center;
         margin: auto;
+        margin-bottom: 100px;
       }
     }
   }

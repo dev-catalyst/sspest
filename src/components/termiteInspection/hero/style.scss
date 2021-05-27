@@ -65,11 +65,25 @@
       justify-content: center;
       text-align: center;
       .termite-google-ratings {
-        margin: auto;
+        margin-right: 20px;
         margin-bottom: 50px;
       }
       .termite-general {
         display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  .termite-hero {
+    &-container {
+      padding-top: 273px;
+      .termite-google-ratings {
+        img {
+          width: 119px;
+          height: auto;
+        }
       }
     }
   }

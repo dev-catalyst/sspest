@@ -328,12 +328,10 @@
           }
         }
         &-image {
-          width: 75%;
-          margin: auto;
           margin-bottom: 60px;
           .residential-image {
             img {
-              width: fit-content;
+              width: 400px;
               height: 300px;
             }
             h1 {

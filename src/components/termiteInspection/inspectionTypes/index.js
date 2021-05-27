@@ -31,15 +31,15 @@ export default function inspectionTypes() {
             </p>
           </div>
           <div className="termite-inspectionTypes-inspection-image">
-            <img src={inspection1} alt="" className="space" />
+            <img src={inspection1} alt="" />
           </div>
         </div>
         {/* row2 */}
-        <div className="termite-inspectionTypes-inspection">
+        <div className="termite-inspectionTypes-inspection col-rev">
           <div className="termite-inspectionTypes-inspection-image">
             <img src={inspection2} alt="" />
           </div>
-          <div className="termite-inspectionTypes-inspection-content">
+          <div className="termite-inspectionTypes-inspection-content space">
             <h1>
               <img src={stone} alt="" />
               THE INSPECTION
@@ -77,7 +77,7 @@ export default function inspectionTypes() {
             </p>
           </div>
           <div className="termite-inspectionTypes-inspection-image">
-            <img src={inspection3} alt="" className="space" />
+            <img src={inspection3} alt="" />
           </div>
         </div>
       </div>

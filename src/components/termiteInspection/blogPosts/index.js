@@ -22,7 +22,7 @@ export default function BlogPosts() {
           and learn!
         </p>
         <div className="termite-posts">
-          <div>
+          <div className="termite-post">
             <img src={post1} alt="" className="termite-post-image" />
             <div className="termite-post-card">
               <h4>Lorem Ipsum</h4>
@@ -35,7 +35,7 @@ export default function BlogPosts() {
               </Button>
             </div>
           </div>
-          <div>
+          <div className="termite-post">
             {" "}
             <img src={post2} alt="" className="termite-post-image" />
             <div className="termite-post-card">
@@ -49,7 +49,7 @@ export default function BlogPosts() {
               </Button>
             </div>
           </div>
-          <div>
+          <div className="termite-post">
             {" "}
             <img src={post3} alt="" className="termite-post-image" />
             <div className="termite-post-card">

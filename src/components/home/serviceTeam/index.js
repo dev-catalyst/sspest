@@ -7,7 +7,7 @@ import "./style.scss"
 export default function serviceTeam() {
   return (
     <div className="home-service-team">
-      <img src={divider2} style={{ width: "100%", marginTop: "-5px" }} />
+      <img src={divider2} style={{ width: "100%", marginTop: "-5px" }} alt="" />
       <div className="home-service-team-container">
         <h1>OUR SERVICE TEAM</h1>
         <div className="home-service-team-images">
