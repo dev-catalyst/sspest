@@ -2,7 +2,7 @@
   background-color: #eff2f7;
   margin-top: -5px;
   &-container {
-    max-width: 1600px;
+    max-width: 1620px;
     margin: auto;
     padding-top: 5px;
     padding-bottom: 100px;
@@ -13,7 +13,6 @@
     }
     &-content {
       max-width: 700px;
-      padding-left: 50px;
       padding-top: 200px;
       position: relative;
       .pest-control-stone {
@@ -22,28 +21,16 @@
         left: -30px;
       }
     }
-    .image-holder {
-      margin-right: 120px;
-    }
   }
 }
 
 @media only screen and (max-width: 1789.98px) {
   .home-pest-control {
     &-container {
-      max-width: 1320px;
+      max-width: 1400px;
       padding-bottom: 50px;
       &-content {
-        padding-top: 100px;
         max-width: 600px;
-        padding-left: 0;
-      }
-      .image-holder {
-        margin-right: 0px;
-        margin-left: 40px;
-        img {
-          max-width: 90%;
-        }
       }
     }
   }
@@ -52,10 +39,10 @@
 @media only screen and (max-width: 1519.98px) {
   .home-pest-control {
     &-container {
-      max-width: 1120px;
+      max-width: 1220px;
       &-content {
         max-width: 600px;
-        padding-top: 40px;
+        padding-top: 150px;
       }
     }
   }
@@ -64,15 +51,10 @@
 @media only screen and (max-width: 1289.98px) {
   .home-pest-control {
     &-container {
-      max-width: 900px;
+      max-width: 1000px;
       &-content {
         max-width: 450px;
-        padding-top: 40px;
-      }
-      .image-holder {
-        img {
-          margin-top: 80px;
-        }
+        padding-top: 120px;
       }
     }
   }
@@ -92,11 +74,6 @@
         max-width: 90%;
         padding-top: 120px;
         margin: auto;
-      }
-      .image-holder {
-        img {
-          margin-top: 80px;
-        }
       }
     }
   }

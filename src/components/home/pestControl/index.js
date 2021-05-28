@@ -1,7 +1,7 @@
 import React from "react"
 import GeneralPest from "../generalPest"
 import stone from "../../../assets/layout/stone.svg"
-import cylinder from "../../../assets/home/cylinder.png"
+import Image from "./image"
 
 import "./style.scss"
 
@@ -24,7 +24,7 @@ export default function pestControl() {
           </p>
         </div>
         <div className="image-holder">
-          <img src={cylinder} alt="" />
+          <Image />
         </div>
       </div>
     </div>

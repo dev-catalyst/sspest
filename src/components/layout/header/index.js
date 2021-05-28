@@ -14,7 +14,9 @@ export default function index() {
       <header>
         <div className="header-container">
           <div className="header-logo">
-            <img className="logo" src={logo} alt="logo" />
+            <Link to="/">
+              <img className="logo" src={logo} alt="logo" />
+            </Link>
           </div>
           <div className="navbar">
             <ul className="main-menu desktop-menu">

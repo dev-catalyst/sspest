@@ -1,0 +1,110 @@
+/// Mixin to place items on a circle
+
+/// @param {Integer} $item-count - Number of items on the circle
+/// @param {Length} $circle-size - Large circle size
+/// @param {Length} $item-size - Single item size
+
+@mixin on-circle($item-count, $circle-size, $item-size) {
+  position: relative;
+  width: $circle-size;
+  height: $circle-size;
+  padding: 0;
+  border-radius: 50%;
+  list-style: none;
+
+  > * {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: $item-size;
+    height: $item-size;
+    margin: -($item-size / 2);
+
+    $angle: (360 / $item-count);
+    $rot: 0;
+
+    @for $i from 1 through $item-count {
+      &:nth-of-type(#{$i}) {
+        transform: rotate($rot * 1deg)
+          translate($circle-size / 2)
+          rotate($rot * -1deg);
+      }
+
+      $rot: $rot + $angle;
+    }
+  }
+}
+
+.circle-container {
+  @include on-circle($item-count: 12, $circle-size: 30em, $item-size: 6.5em);
+  @media only screen and (max-width: 1519.98px) {
+    @include on-circle($item-count: 12, $circle-size: 25em, $item-size: 5em);
+  }
+  @media only screen and (max-width: 1289.98px) {
+    @include on-circle($item-count: 12, $circle-size: 22em, $item-size: 4em);
+  }
+  @media only screen and (max-width: 576.98px) {
+    @include on-circle($item-count: 12, $circle-size: 18em, $item-size: 3.5em);
+    margin: 3em auto 0;
+  }
+  @media only screen and (max-width: 479.98px) {
+    @include on-circle($item-count: 12, $circle-size: 13em, $item-size: 3em);
+    margin: 3em auto 0;
+  }
+  @media only screen and (max-width: 349.98px) {
+    @include on-circle($item-count: 12, $circle-size: 10em, $item-size: 2.5em);
+    margin: 3em auto 0;
+  }
+  margin: 5em auto 0;
+  ul {
+    padding-inline-start: 0 !important;
+    img {
+      display: block;
+      max-width: 100%;
+    }
+  }
+}
+
+.image-container {
+  position: relative;
+  .main-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 386px;
+    height: 504px;
+    margin-left: -193px;
+    margin-top: -252px;
+    @media only screen and (max-width: 1519.98px) {
+      width: 346px;
+      height: 460px;
+      margin-left: -173px;
+      margin-top: -230px;
+    }
+    @media only screen and (max-width: 1289.98px) {
+      width: 270px;
+      height: 400px;
+      margin-left: -135px;
+      margin-top: -200px;
+    }
+    @media only screen and (max-width: 576.98px) {
+      width: 230px;
+      height: 340px;
+      margin-left: -115px;
+      margin-top: -170px;
+    }
+    @media only screen and (max-width: 480.98px) {
+      width: 180px;
+      height: 240px;
+      margin-left: -90px;
+      margin-top: -117px;
+    }
+    @media only screen and (max-width: 349.98px) {
+      width: 140px;
+      height: 180px;
+      margin-left: -70px;
+      margin-top: -88px;
+    }
+  }
+}

@@ -1,5 +1,7 @@
 import React from "react"
 
+import { Link } from "gatsby"
+
 import mail from "../../../../assets/layout/footer/email.svg"
 import call from "../../../../assets/layout/footer/call.svg"
 import map from "../../../../assets/layout/footer/map.svg"
@@ -93,12 +95,16 @@ export default function primaryFooter() {
             <img src={instaS} alt="insta" />
           </a>
         </div>
-        <div className="primary-footer-logo-xl">
-          <img src={logo} alt="logo" />
-        </div>
-        <div className="primary-footer-logo-l">
-          <img src={logoSmall} alt="logo" />
-        </div>
+        <Link to="/">
+          <div className="primary-footer-logo-xl">
+            <img src={logo} alt="logo" />
+          </div>
+        </Link>
+        <Link to="/">
+          <div className="primary-footer-logo-l">
+            <img src={logoSmall} alt="logo" />
+          </div>
+        </Link>
       </div>
     </div>
   )
