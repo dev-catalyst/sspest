@@ -4,9 +4,7 @@
   background-size: cover;
   //   clip-path: polygon(36% 0, 100% 17%, 100% 89%, 59% 100%, 0 79%, 0 12%);
   //   clip-path: polygon(0 5%, 34% 13%, 100% 0, 100% 91%, 63% 99%, 0 84%);
-  &-container {
-    max-width: 1600px;
-    margin: auto;
+  .container {
     padding-top: 156px;
     padding-bottom: 238px;
     margin-top: -80px;
@@ -53,8 +51,7 @@
 
 @media only screen and (max-width: 1789.98px) {
   .info-pestPrevention {
-    &-container {
-      max-width: 1320px;
+    .container {
       padding-top: 180px;
     }
   }
@@ -62,26 +59,9 @@
 
 @media only screen and (max-width: 1519.98px) {
   .info-pestPrevention {
-    &-container {
-      max-width: 1120px;
+    .container {
       padding-top: 200px;
       padding-bottom: 149px;
-    }
-  }
-}
-
-@media only screen and (max-width: 1289.98px) {
-  .info-pestPrevention {
-    &-container {
-      max-width: 900px;
-    }
-  }
-}
-
-@media only screen and (max-width: 991.98px) {
-  .info-pestPrevention {
-    &-container {
-      max-width: 90%;
     }
   }
 }
@@ -91,7 +71,7 @@
     background: url("../../../assets/info/prev-small-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
-    &-container {
+    .container {
       padding-top: 60px;
       padding-bottom: 60px;
       .info-pestPrevention-btn-container {

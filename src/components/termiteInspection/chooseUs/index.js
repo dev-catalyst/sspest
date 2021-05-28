@@ -5,7 +5,7 @@ import "./style.scss"
 export default function chooseUs() {
   return (
     <div className="termite-chooseUs">
-      <div className="termite-chooseUs-container">
+      <div className="container">
         <h1>WHY CHOOSE US FOR YOUR TERMITE INSPECTION SERVICES IN SYDNEY?</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

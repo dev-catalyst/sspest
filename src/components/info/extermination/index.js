@@ -5,7 +5,7 @@ import "./style.scss"
 export default function extermination() {
   return (
     <div className="info-extermination">
-      <div className="info-extermination-container">
+      <div className="container">
         <h1>THE EXTERMINATION PROCESS</h1>
         <p>
           Our highly qualified pest experts will follow your treatment plan in

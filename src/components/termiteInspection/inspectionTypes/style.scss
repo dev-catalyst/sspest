@@ -1,9 +1,7 @@
 .termite-inspectionTypes {
   background-color: #dde4ec;
   margin-top: -5px;
-  &-container {
-    max-width: 1700px;
-    margin: auto;
+  .container {
     padding-top: 150px;
     padding-bottom: 100px;
     .termite-inspectionTypes-inspection {
@@ -42,8 +40,7 @@
 
 @media only screen and (max-width: 1789.98px) {
   .termite-inspectionTypes {
-    &-container {
-      max-width: 1320px;
+    .container {
       padding-bottom: 50px;
     }
   }
@@ -51,8 +48,7 @@
 
 @media only screen and (max-width: 1519.98px) {
   .termite-inspectionTypes {
-    &-container {
-      max-width: 1120px;
+    .container {
       .termite-inspectionTypes-inspection {
         padding-top: 40px;
         &-content {
@@ -65,8 +61,7 @@
 
 @media only screen and (max-width: 1289.98px) {
   .termite-inspectionTypes {
-    &-container {
-      max-width: 900px;
+    .container {
       padding-top: 100px;
       .termite-inspectionTypes-inspection {
         flex-direction: column;
@@ -99,8 +94,7 @@
 
 @media only screen and (max-width: 991.98px) {
   .termite-inspectionTypes {
-    &-container {
-      max-width: 90%;
+    .container {
       padding-top: 10px;
     }
   }

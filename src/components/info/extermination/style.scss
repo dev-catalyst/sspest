@@ -3,10 +3,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #dde4ec;
-
-  &-container {
-    max-width: 1600px;
-    margin: auto;
+  .container {
     padding-top: 300px;
     padding-bottom: 275px;
     h1 {
@@ -42,8 +39,7 @@
 
 @media only screen and (max-width: 1789.98px) {
   .info-extermination {
-    &-container {
-      max-width: 1320px;
+    .container {
       padding-top: 180px;
     }
   }
@@ -51,8 +47,7 @@
 
 @media only screen and (max-width: 1519.98px) {
   .info-extermination {
-    &-container {
-      max-width: 1120px;
+    .container {
       padding-top: 200px;
       padding-bottom: 149px;
     }
@@ -61,8 +56,7 @@
 
 @media only screen and (max-width: 1289.98px) {
   .info-extermination {
-    &-container {
-      max-width: 900px;
+    .container {
       .info-extermination-btn-container btn-container {
         .info-extermination-btn {
           padding: 18px 30px;
@@ -74,20 +68,12 @@
   }
 }
 
-@media only screen and (max-width: 991.98px) {
-  .info-extermination {
-    &-container {
-      max-width: 90%;
-    }
-  }
-}
-
 @media only screen and (max-width: 767.98px) {
   .info-extermination {
     background: url("../../../assets/info/exter-small.png");
     background-repeat: no-repeat;
     background-size: cover;
-    &-container {
+    .container {
       padding-top: 80px;
       .info-extermination-btn-container {
         .info-extermination-btn {

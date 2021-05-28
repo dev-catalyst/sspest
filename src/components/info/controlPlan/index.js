@@ -14,7 +14,7 @@ export default function controlPlan() {
         alt=""
         style={{ width: "100%", marginTop: "-5px" }}
       />
-      <div className="info-controlPlan-container">
+      <div className="container">
         <div className="info-controlPlan-inspection">
           <div className="info-controlPlan-inspection-content">
             <h1>

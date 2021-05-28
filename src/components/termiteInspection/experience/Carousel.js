@@ -67,17 +67,43 @@ function PrevArrow(props) {
 
 export default function Carousel() {
   var settings = {
-    // customPaging = {customPaging},
-    // appendDots = {appendDots},
+    // appendDots: dots => <ul>{dots}</ul>,
+    // customPaging: i => (
+    //   <div className="ft-slick__dots--custom">
+    //     <div className="loading" />
+    //   </div>
+    // ),
+
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    // nextArrow: <img src={right} alt="" className="left-arrow" />,
-    // prevArrow: <img src={left} alt="" className="right-arrow" />,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
+    // beforeChange: (prev, next) => {
+    //   this.setState({ currentSlide: next })
+    // },
+    // appendDots: dots => {
+    //   return (
+    //     <div>
+    //       <ul>
+    //         {dots.map((item, index) => {
+    //           return <li key={index}>{item.props.children}</li>
+    //         })}
+    //       </ul>
+    //     </div>
+    //   )
+    // },
+    // customPaging: index => {
+    //   return (
+    //     <button
+    //       className={index === this.state.currentSlide ? "testSettings" : null}
+    //     >
+    //       {index + 1}
+    //     </button>
+    //   )
+    // },
   }
 
   return (

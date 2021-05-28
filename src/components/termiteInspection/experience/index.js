@@ -6,7 +6,7 @@ import "./style.scss"
 export default function Experience() {
   return (
     <div className="termite-experience">
-      <div className="termite-experience-conatiner">
+      <div className="container">
         <Carousel />
       </div>
     </div>

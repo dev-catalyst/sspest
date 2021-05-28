@@ -17,7 +17,7 @@ const Reason = props => {
 export default function choosePest() {
   return (
     <div className="info-choosePest">
-      <div className="info-choosePest-container">
+      <div className="container">
         <h1>
           <img src={stone} alt="" />
           Why Choose Sydney Side Pest Control?

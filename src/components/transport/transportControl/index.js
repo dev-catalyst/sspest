@@ -8,11 +8,11 @@ import "./style.scss"
 export default function transportControl() {
   return (
     <div className="transport-pest">
-      <div className="transport-pest-container">
+      <div className="container">
         <div className="transport-general-pest">
           <GeneralPest />
         </div>
-        <div className="transport-pest-container-content">
+        <div className="transport-pest-content">
           <h1>TRANSPORT PEST CONTROL</h1>
           <img src={stone} alt="stone" className="transport-pest-stone" />
           <p>

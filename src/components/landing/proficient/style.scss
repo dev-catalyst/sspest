@@ -1,0 +1,38 @@
+.landing-proficient {
+  background-color: #dde4ec;
+  background-image: url("../../../assets/landing/proficient-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  .container {
+    padding-top: 288px;
+    padding-bottom: 289px;
+    .landing-proficient-content {
+      h1 {
+        text-align: center;
+        margin: auto;
+        text-transform: uppercase;
+        color: #fff;
+      }
+      p {
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1289.98px) {
+  .landing-proficient {
+    .container {
+      padding-bottom: 189px;
+    }
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  .landing-proficient {
+    .container {
+      padding-bottom: 150px;
+      padding-top: 150px;
+    }
+  }
+}

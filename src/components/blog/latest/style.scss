@@ -1,0 +1,47 @@
+.blog-latest {
+  background-color: #eff2f7;
+  margin-top: -7px;
+  .container {
+    padding-top: 68px;
+    padding-bottom: 100px;
+    .blog-general-pest {
+      display: none;
+    }
+    h1,
+    h4 {
+      text-align: center;
+      margin: auto;
+    }
+    h1 {
+      position: relative;
+      margin-bottom: 60px;
+      img {
+        position: absolute;
+        top: -90px;
+        left: 560px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  .blog-latest {
+    .container {
+      .blog-general-pest {
+        display: block;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 50px;
+      }
+      h1 {
+        position: relative;
+        margin-bottom: 30px;
+        img {
+          position: absolute;
+          top: -90px;
+          left: 100px;
+        }
+      }
+    }
+  }
+}

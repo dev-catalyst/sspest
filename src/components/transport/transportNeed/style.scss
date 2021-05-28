@@ -1,8 +1,6 @@
 .transport-need {
   background-color: #eff2f7;
-  &-container {
-    max-width: 1600px;
-    margin: auto;
+  .container {
     padding-top: 150px;
     padding-bottom: 70px;
     h1 {
@@ -62,8 +60,7 @@
 }
 @media only screen and (max-width: 1789.98px) {
   .transport-need {
-    &-container {
-      max-width: 1320px;
+    .container {
       padding-top: 180px;
     }
   }
@@ -71,9 +68,7 @@
 
 @media only screen and (max-width: 1519.98px) {
   .transport-need {
-    &-container {
-      max-width: 1120px;
-      padding-top: 180px;
+    .container {
       padding-bottom: 149px;
     }
   }
@@ -81,9 +76,8 @@
 
 @media only screen and (max-width: 1289.98px) {
   .transport-need {
-    &-container {
+    .container {
       max-width: 900px;
-      padding-top: 100px;
       padding-bottom: 149px;
     }
   }
@@ -91,7 +85,7 @@
 
 @media only screen and (max-width: 991.98px) {
   .transport-need {
-    &-container {
+    .container {
       max-width: 90%;
       padding-top: 150px;
       padding-bottom: 200px;
@@ -108,20 +102,11 @@
 
 @media only screen and (max-width: 767.98px) {
   .transport-need {
-    &-container {
-      max-width: 90%;
-      padding-top: 150px;
-      padding-bottom: 200px;
+    .container {
       h1 {
         img {
           left: -90px;
         }
-      }
-      .treatment-points-container {
-        // justify-content: center;
-        // align-items: center;
-        // max-width: 320px;
-        // margin: auto;
       }
     }
   }
@@ -129,15 +114,11 @@
 
 @media only screen and (max-width: 576.98px) {
   .transport-need {
-    &-container {
+    .container {
       padding-top: 50px;
       padding-bottom: 50px;
       h1 {
         margin-bottom: 25px;
-      }
-      .treatment-points-container {
-        // max-width: 250px;
-        // margin: auto;
       }
     }
   }

@@ -9,7 +9,7 @@ import "./style.scss"
 export default function BlogPosts() {
   return (
     <div className="termite-blog">
-      <div className="termite-blog-container">
+      <div className="container">
         <h1>
           <img src={stone} slt="" className="termite-stone" alt="" />
           OUR BLOG POSTS

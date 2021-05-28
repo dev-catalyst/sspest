@@ -9,7 +9,7 @@ import "./style.scss"
 export default function WhyTermite() {
   return (
     <div className="termite-whyTermite">
-      <div className="termite-whyTermite-container">
+      <div className="container">
         <div className="termite-general-pest">
           <GeneralPest />
         </div>

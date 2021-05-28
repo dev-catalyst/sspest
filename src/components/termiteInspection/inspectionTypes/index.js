@@ -10,7 +10,7 @@ import "./style.scss"
 export default function inspectionTypes() {
   return (
     <div className="termite-inspectionTypes">
-      <div className="termite-inspectionTypes-container">
+      <div className="container">
         {/* row1 */}
         <div className="termite-inspectionTypes-inspection">
           <div className="termite-inspectionTypes-inspection-content">

@@ -5,7 +5,7 @@ import "./style.scss"
 export default function transportPestServices() {
   return (
     <div className="transport-PestServices">
-      <div className="transport-PestServices-container">
+      <div className="container">
         <h1>TRANSPORT PEST CONTROL SERVICES</h1>
         <p>
           Pest control and general hygiene are vital to maintaining a satisfied

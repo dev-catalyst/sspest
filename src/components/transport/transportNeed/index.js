@@ -17,7 +17,7 @@ const Need = props => {
 export default function transportNeed() {
   return (
     <div className="transport-need">
-      <div className="transport-need-container">
+      <div className="container">
         <h1>
           <img src={stone} alt="" />
           Why do you need Transport Pest Control?

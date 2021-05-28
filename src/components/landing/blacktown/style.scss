@@ -1,0 +1,36 @@
+.landing-blackTown {
+  background-color: #eff2f7;
+  margin-top: -6px;
+  .container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .landing-general-pest {
+      display: none;
+    }
+    .landing-blackTown-content {
+      h1 {
+        text-align: center;
+        margin: auto;
+        position: relative;
+        img {
+          position: absolute;
+          top: -70px;
+          left: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  .landing-blackTown {
+    .container {
+      .landing-general-pest {
+        display: block;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}

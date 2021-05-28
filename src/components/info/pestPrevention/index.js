@@ -5,7 +5,7 @@ import "./style.scss"
 export default function pestPrevention() {
   return (
     <div className="info-pestPrevention">
-      <div className="info-pestPrevention-container">
+      <div className="container">
         <h1>PEST PREVENTION</h1>
         <p>
           Preventing the recurrence of pests is vital to the long-term health

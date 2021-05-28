@@ -2,9 +2,7 @@
 .info-commercialPest {
   background-color: #eff2f7;
   margin-top: -5px;
-  &-container {
-    max-width: 1600px;
-    margin: auto;
+  .container {
     padding-top: 150px;
     padding-bottom: 137px;
     display: flex;
@@ -12,7 +10,7 @@
     .info-general-pest {
       display: none;
     }
-    &-content {
+    .info-commercialPest-content {
       max-width: 700px;
       padding-top: 100px;
       position: relative;
@@ -35,9 +33,8 @@
 
 @media only screen and (max-width: 1789.98px) {
   .info-commercialPest {
-    &-container {
-      max-width: 1320px;
-      &-content {
+    .container {
+      .info-commercialPest-content {
         max-width: 600px;
         padding-top: 0;
       }
@@ -51,9 +48,8 @@
 
 @media only screen and (max-width: 1519.98px) {
   .info-commercialPest {
-    &-container {
-      max-width: 1120px;
-      &-content {
+    .container {
+      .info-commercialPest-content {
         max-width: 550px;
         h1 {
           margin-bottom: 10px;
@@ -69,9 +65,8 @@
 
 @media only screen and (max-width: 1289.98px) {
   .info-commercialPest {
-    &-container {
-      max-width: 900px;
-      &-content {
+    .container {
+      .info-commercialPest-content {
         max-width: 450px;
         margin-left: 40px;
       }
@@ -85,19 +80,18 @@
 
 @media only screen and (max-width: 991.98px) {
   .info-commercialPest {
-    &-container {
+    .container {
       flex-direction: column;
       padding-top: 50px;
       text-align: center;
       justify-content: center;
-      max-width: 90%;
       .info-general-pest {
         display: block;
         text-align: center;
         margin: auto;
         margin-bottom: 50px;
       }
-      &-content {
+      .info-commercialPest-content {
         margin-left: 0;
         max-width: 90%;
         margin: auto;
@@ -119,7 +113,7 @@
 
 @media only screen and (max-width: 576.98px) {
   .info-commercialPest {
-    &-container {
+    .container {
       padding-bottom: 30px;
     }
   }

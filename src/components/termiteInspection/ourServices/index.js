@@ -5,7 +5,7 @@ import "./style.scss"
 export default function ourServices() {
   return (
     <div className="termite-ourServices">
-      <div className="termite-ourServices-container">
+      <div className="container">
         <h1>OUR TERMITE INSPECTION SERVICES</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

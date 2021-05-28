@@ -8,11 +8,11 @@ import "./style.scss"
 export default function commercialPest() {
   return (
     <div className="info-commercialPest">
-      <div className="info-commercialPest-container">
+      <div className="container">
         <div className="info-general-pest">
           <GeneralPest />
         </div>
-        <div className="info-commercialPest-container-content">
+        <div className="info-commercialPest-content">
           <h1>COMMERCIAL PEST CONTROL SYDNEY</h1>
           <img src={stone} alt="stone" className="info-commercialPest-stone" />
           <p>

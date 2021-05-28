@@ -1,0 +1,136 @@
+.blog-blog3 {
+  background-color: #eff2f7;
+  background-image: url("../../../assets/blog/blog3-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  .container {
+    padding-top: 152px;
+    padding-bottom: 200px;
+  }
+}
+
+.blog-blog3-content {
+  max-width: 60%;
+  margin: auto;
+  margin-bottom: 20px;
+  &-image {
+    img {
+      width: 100%;
+    }
+  }
+  h3 {
+    color: #fff;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  p {
+    color: #fff;
+  }
+  .center-p {
+    text-align: center;
+    margin: auto;
+  }
+  .bottom-text {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .button-container {
+      display: flex;
+      justify-content: start;
+      .blog3-button {
+        color: #fff;
+        background-color: transparent;
+        border: 1px solid #ffffff;
+        border-radius: 10px;
+        padding: 10px 20px;
+        font-size: 22px;
+        cursor: pointer;
+        transition: all 0.3s ease-in;
+        margin-right: 10px;
+        @media only screen and (max-width: 1289.98px) {
+          font-size: 18px;
+        }
+        &:hover {
+          transform: scaleY(1.045);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          opacity: 0.95;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1289.98px) {
+  .blog-blog3 {
+    .container {
+      padding-top: 150px;
+    }
+  }
+  .blog-blog1-content {
+    max-width: 80%;
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  .blog-blog3-content {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  .blog-blog3-content {
+    .bottom-text {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 479.98px) {
+  .blog-blog3-content {
+    .bottom-text {
+      .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .blog3-button {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+.blog-carousel_section {
+  .slick-dots {
+    bottom: -80px;
+    display: flex !important;
+    justify-content: space-between;
+    width: 18%;
+    margin-left: 39%;
+    li button:before {
+      font-size: 0px;
+    }
+    li button {
+      font-size: 20px;
+      color: #fff;
+      border: 2px solid #ffffff;
+      border-radius: 10px;
+      width: 60px;
+      height: 60px;
+      margin: 10px;
+    }
+    li.slick-active button {
+      color: #017cc0;
+      background-color: #fff;
+      opacity: 1;
+    }
+  }
+}

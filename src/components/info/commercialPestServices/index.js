@@ -5,7 +5,7 @@ import "./style.scss"
 export default function commercialPestServices() {
   return (
     <div className="info-commercialPestServices">
-      <div className="info-commercialPestServices-container">
+      <div className="container">
         <h1>COMMERCIAL PEST CONTROL SERVICES</h1>
         <p>
           Pests can not only impact the health of your employees and customers,

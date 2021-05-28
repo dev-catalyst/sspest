@@ -152,3 +152,20 @@ ul {
     }
   }
 }
+
+.container {
+  max-width: 1600px;
+  margin: auto;
+  @media only screen and (max-width: 1789.98px) {
+    max-width: 1320px;
+  }
+  @media only screen and (max-width: 1519.98px) {
+    max-width: 1120px;
+  }
+  @media only screen and (max-width: 1289.98px) {
+    max-width: 900px;
+  }
+  @media only screen and (max-width: 991.98px) {
+    max-width: 90%;
+  }
+}

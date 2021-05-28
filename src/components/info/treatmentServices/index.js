@@ -17,7 +17,7 @@ const Point = props => {
 export default function treatmentServices() {
   return (
     <div className="info-treatment">
-      <div className="info-treatment-container">
+      <div className="container">
         <h1>
           <img src={stone} alt="" />
           TREATMENT SERVICES
