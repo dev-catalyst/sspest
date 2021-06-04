@@ -1,4 +1,5 @@
 .termite-blog {
+  background: #eff2f7;
   .container {
     padding-top: 165px;
     padding-bottom: 100px;
@@ -26,6 +27,7 @@
         margin: auto;
         &-image {
           width: 100%;
+          border-radius: 20px;
         }
         &-card {
           background: #ffffff;

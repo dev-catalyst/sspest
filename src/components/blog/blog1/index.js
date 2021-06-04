@@ -1,39 +1,26 @@
 import React from "react"
-
 import { Button } from "@react-md/button"
-import img1 from "../../../assets/blog/blog1-img.png"
+import { RichText } from "prismic-reactjs"
 import "./style.scss"
 
-export default function Blog1() {
-  const date = "February 26, 2021"
-  const count = 15
+export default function Blog1({ data, bg }) {
+  const date = RichText.asText(data.date.raw)
+  const count = data.comments
   return (
-    <div className="blog-blog1">
+    <div
+      className="blog-blog1"
+      style={{ backgroundImage: `url(${bg.bg_image.url})` }}
+    >
       <div className="container">
         <div className="blog-blog1-content">
           <div className="blog-blog1-content-image">
-            <img src={img1} alt="" />
+            <img src={data.image.url} alt="" />
           </div>
-          <h3>LOREM IPSUM DOLOR SIT AMET</h3>
+          <h3>{RichText.asText(data.title.raw)}</h3>
           <p className="center-p">Posted {date}</p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. A diam
-            maecenas sed enim ut. Quam id leo in vitae turpis. Eu facilisis sed
-            odio morbi quis commodo odio. Et tortor at risus viverra adipiscing
-            at in tellus integer. Nec dui nunc mattis enim ut tellus. Tellus
-            mauris a diam maecenas sed. Tortor vitae purus faucibus ornare
-            suspendisse sed nisi. Dignissim sodales ut eu sem integer vitae
-            justo eget. Diam donec adipiscing tristique risus nec. Pharetra
-            pharetra massa massa ultricies mi. Purus gravida quis blandit turpis
-            cursus in. Faucibus in ornare quam viverra orci sagittis eu volutpat
-            odio. Quis enim lobortis scelerisque fermentum dui faucibus.
-          </p>
+          <p>{RichText.asText(data.content.raw)}</p>
           <div className="bottom-text">
             <div className="button-container">
-              {/* <div className="button"></div>
-              <div className="button"></div>
-              <div className="button"></div> */}
               <Button themeType="outline" className="blog1-button">
                 Termites
               </Button>

@@ -1,10 +1,18 @@
-// @import "../../../styles/index.scss";
 @import "../../../styles/utilities/variables/variables.scss";
 .home-hero {
-  background-image: url("../../../assets/home/banner-bg-img.png");
   background-repeat: no-repeat;
+  // background-size: 100% 100%;
   background-size: cover;
-
+  margin-bottom: 80px;
+  position: relative;
+  @media only screen and (min-width: 2100.98px) {
+    background-size: 100% 100%;
+  }
+  // .po {
+  //   position: absolute;
+  //   bottom: 0;
+  //   left: 0;
+  // }
   &-container {
     max-width: 1620px;
     margin: auto;
@@ -43,6 +51,7 @@
 
 @media only screen and (max-width: 1199.98px) {
   .home-hero {
+    margin-bottom: 40px;
     &-container {
       max-width: 900px;
       padding-top: 150px;
@@ -73,5 +82,11 @@
         margin-right: 0;
       }
     }
+  }
+}
+
+@media only screen and (max-width: 576.98px) {
+  .home-hero {
+    background-size: cover;
   }
 }

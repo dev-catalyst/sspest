@@ -6,18 +6,107 @@ import Blog1 from "../components/blog/blog1"
 import Blog2 from "../components/blog/blog2"
 import Blog3 from "../components/blog/blog3"
 import divider1 from "../assets/home/divider1.png"
+import { graphql } from "gatsby"
 
-export default function Home() {
+export default function Home({ data }) {
+  if (!data) return null
+  const hero = data.allPrismicUniversalBlock1.edges[0].node.data
+  const blog1 = data.allPrismicBlogSection.edges[0].node.data
+  const blog2 = data.allPrismicBlogSection.edges[1].node.data
+  const blog3 = data.allPrismicBlogSection.edges
+  const latest = data.allPrismicBlogPageBodyLatest.edges[0].node.primary
+  const blog1_bg = data.allPrismicBlogPageBodyBlog1.edges[0].node.primary
+  const blog3_bg = data.allPrismicBlogPageBodyBlog3.edges[0].node.primary
+
+  const heroSection = {
+    src: hero.home_page_about_image,
+  }
   return (
     <div>
       <Layout>
-        <Hero />
+        <Hero data={heroSection} />
         <img src={divider1} style={{ width: "100%" }} alt="" />
-        <Latest />
-        <Blog1 />
-        <Blog2 />
-        <Blog3 />
+        <Latest data={latest} />
+        <Blog1 data={blog1} bg={blog1_bg} />
+        <Blog2 data={blog2} />
+        <Blog3 bg={blog3_bg} data={blog3} />
       </Layout>
     </div>
   )
 }
+
+export const query2 = graphql`
+  query blog {
+    allPrismicUniversalBlock1 {
+      edges {
+        node {
+          data {
+            home_page_about_image {
+              url
+            }
+          }
+        }
+      }
+    }
+    allPrismicBlogPageBodyLatest {
+      edges {
+        node {
+          primary {
+            description {
+              raw
+            }
+            title {
+              raw
+            }
+            subtitle {
+              raw
+            }
+          }
+        }
+      }
+    }
+    allPrismicBlogPageBodyBlog1 {
+      edges {
+        node {
+          primary {
+            bg_image {
+              url
+            }
+          }
+        }
+      }
+    }
+    allPrismicBlogPageBodyBlog3 {
+      edges {
+        node {
+          primary {
+            bg_image {
+              url
+            }
+          }
+        }
+      }
+    }
+    allPrismicBlogSection {
+      edges {
+        node {
+          data {
+            comments
+            content {
+              raw
+            }
+            date {
+              raw
+            }
+            image {
+              url
+            }
+            title {
+              raw
+            }
+          }
+        }
+      }
+    }
+  }
+`

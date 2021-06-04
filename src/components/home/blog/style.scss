@@ -1,4 +1,6 @@
 .home-blog {
+  background: #eff2f7;
+  margin-bottom: -7px;
   &-container {
     max-width: 1600px;
     margin: auto;
@@ -20,19 +22,22 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      div {
+      .post-conatiner {
         text-align: center;
         margin: auto;
+        max-width: 32%;
       }
       .post-image {
-        max-width: 98%;
+        width: 100%;
         margin: auto;
+        height: 350px;
+        border-radius: 20px;
       }
       .post-card {
         background: #ffffff;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 20px;
-        max-width: 72%;
+        width: 72%;
         margin: auto;
         padding: 50px;
         position: relative;
@@ -103,6 +108,9 @@
           max-width: 62%;
           padding: 45px;
         }
+        .post-image {
+          height: 250px;
+        }
       }
     }
   }
@@ -116,38 +124,23 @@
       text-align: center;
       .posts {
         flex-direction: column;
+        .post-conatiner {
+          max-width: 80%;
+        }
         .post-card {
+          max-width: 100%;
           margin-bottom: 50px;
-          max-width: 50%;
+        }
+        .post-image {
+          height: 350px;
         }
       }
     }
   }
 }
 
-// @media only screen and (max-width: 767.98px) {
-//   .home-blog {
-//     &-container {
-//       padding-bottom: 60px;
-//       h1 {
-//         .h1-stone {
-//           position: absolute;
-//           top: -100px;
-//           left: 80px;
-//         }
-//       }
-//       .posts {
-//         .post-card {
-//           max-width: 55%;
-//           h4 {
-//             font-size: 18px;
-//           }
-//           .learn {
-//             font-size: 12px;
-//             padding: 15px 25px;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
+@media only screen and (max-width: 576.98px) {
+  .post-image {
+    height: 250px !important;
+  }
+}

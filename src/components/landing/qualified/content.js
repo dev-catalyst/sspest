@@ -1,8 +1,8 @@
 import React from "react"
-
 import "./style.scss"
 
-export default function content() {
+export default function content({ data }) {
+  console.log(data)
   return (
     <div className="landing-carousel-content">
       <div className="landing-carousel-content-para">

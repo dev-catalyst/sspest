@@ -145,27 +145,27 @@ export default function index() {
               <span>1300 007 772</span>
             </a>
           </div>
-          <div class="toggle-menu">
-            <div class="line line1"></div>
-            <div class="line line2"></div>
-            <div class="line line3"></div>
+          <div className="toggle-menu">
+            <div className="line line1"></div>
+            <div className="line line2"></div>
+            <div className="line line3"></div>
           </div>
         </div>
 
-        <div class="mobile-menu">
-          <nav class="header__nav nav-bar">
-            <ul class="nav-list accordion">
-              <li class="nav-list-item">
-                <Link to="/" class="nav-link">
+        <div className="mobile-menu">
+          <nav className="header__nav nav-bar">
+            <ul className="nav-list accordion">
+              <li className="nav-list-item">
+                <Link to="/" className="nav-link">
                   Home
                 </Link>
               </li>
-              <li class="nav-list-item accordion-panel">
-                <Link to="#" class="nav-link accordion-header">
+              <li className="nav-list-item accordion-panel">
+                <Link to="#" className="nav-link accordion-header">
                   PEST CONTROL SERVICES{" "}
                   <img src={dropDownIcon} alt="dropDownIcon" />
                 </Link>
-                <div class="accordion-body">
+                <div className="accordion-body">
                   <ul>
                     <li>
                       <Link to="#">Option 1</Link>
@@ -179,11 +179,11 @@ export default function index() {
                   </ul>
                 </div>
               </li>
-              <li class="nav-list-item accordion-panel">
-                <Link to="#" class="nav-link accordion-header">
+              <li className="nav-list-item accordion-panel">
+                <Link to="#" className="nav-link accordion-header">
                   TERMITE CONTROL <img src={dropDownIcon} alt="dropDownIcon" />
                 </Link>
-                <div class="accordion-body">
+                <div className="accordion-body">
                   <ul>
                     <li>
                       <Link to="#">Option 1</Link>
@@ -197,11 +197,11 @@ export default function index() {
                   </ul>
                 </div>
               </li>
-              <li class="nav-list-item accordion-panel">
-                <Link to="#" class="nav-link accordion-header">
+              <li className="nav-list-item accordion-panel">
+                <Link to="#" className="nav-link accordion-header">
                   PEST SOLUTIONS <img src={dropDownIcon} alt="dropDownIcon" />
                 </Link>
-                <div class="accordion-body">
+                <div className="accordion-body">
                   <ul>
                     <li>
                       <Link to="#">Option 1</Link>
@@ -215,11 +215,11 @@ export default function index() {
                   </ul>
                 </div>
               </li>
-              <li class="nav-list-item accordion-panel">
-                <Link to="#" class="nav-link accordion-header">
+              <li className="nav-list-item accordion-panel">
+                <Link to="#" className="nav-link accordion-header">
                   PEST TYPES <img src={dropDownIcon} alt="dropDownIcon" />
                 </Link>
-                <div class="accordion-body">
+                <div className="accordion-body">
                   <ul>
                     <li>
                       <Link to="#">Option 1</Link>
@@ -233,11 +233,11 @@ export default function index() {
                   </ul>
                 </div>
               </li>
-              <li class="nav-list-item accordion-panel">
-                <Link to="#" class="nav-link accordion-header">
+              <li className="nav-list-item accordion-panel">
+                <Link to="#" className="nav-link accordion-header">
                   AREAS COVERED <img src={dropDownIcon} alt="dropDownIcon" />
                 </Link>
-                <div class="accordion-body">
+                <div className="accordion-body">
                   <ul>
                     <li>
                       <Link to="#">Option 1</Link>
@@ -251,11 +251,11 @@ export default function index() {
                   </ul>
                 </div>
               </li>
-              <li class="nav-list-item accordion-panel">
-                <Link to="#" class="nav-link accordion-header">
+              <li className="nav-list-item accordion-panel">
+                <Link to="#" className="nav-link accordion-header">
                   SHOP <img src={dropDownIcon} alt="dropDownIcon" />
                 </Link>
-                <div class="accordion-body">
+                <div className="accordion-body">
                   <ul>
                     <li>
                       <Link to="#">Option 1</Link>
@@ -269,11 +269,11 @@ export default function index() {
                   </ul>
                 </div>
               </li>
-              <li class="nav-list-item accordion-panel">
-                <Link to="#" class="nav-link accordion-header">
+              <li className="nav-list-item accordion-panel">
+                <Link to="#" className="nav-link accordion-header">
                   BLOG <img src={dropDownIcon} alt="dropDownIcon" />
                 </Link>
-                <div class="accordion-body">
+                <div className="accordion-body">
                   <ul>
                     <li>
                       <Link to="#">Option 1</Link>

@@ -1,7 +1,15 @@
 .home-call {
-  background: url("../../../assets/home/callBg.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
+  // clip-path: polygon(
+  //   0% 0%,
+  //   100% 0%,
+  //   100% 80%,
+  //   26.5% 100%,
+  //   25% 100%,
+  //   23.5% 100%,
+  //   0% 80%
+  // );
   .home-call-container {
     max-width: 1600px;
     margin: auto;
@@ -15,8 +23,6 @@
       h1 {
         font-size: 65px;
         color: #fff;
-        // text-align: center;
-        // margin: auto;
         font-weight: 800px;
       }
       p {
@@ -52,7 +58,7 @@
 @media only screen and (max-width: 1519.98px) {
   .home-call {
     .home-call-container {
-      max-width: 1120px;
+      max-width: 1180px;
       .home-call-content {
         h1 {
           font-size: 55px;
@@ -112,21 +118,3 @@
     }
   }
 }
-
-// @media only screen and (max-width: 767.98px) {
-//   .home-call {
-//     background: url("../../../assets/home/mobile/call-bg.png");
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     .home-call-container {
-//       max-width: 90%;
-//       padding-bottom: 60px;
-//       padding-top: 60px;
-//       .home-call-content {
-//         h1 {
-//           font-size: 25px;
-//         }
-//       }
-//     }
-//   }
-// }

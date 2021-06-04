@@ -1,8 +1,7 @@
 .home-order {
-  background-color: #eff2f7;
-  background-image: url("../../../assets/home/order-bg.png");
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
+  margin-top: -2px;
   &-container {
     max-width: 1600px;
     margin: auto;
@@ -71,8 +70,8 @@
   .home-order {
     &-container {
       max-width: 1120px;
-      padding-top: 136px;
-      padding-bottom: 106px;
+      padding-top: 236px;
+      padding-bottom: 206px;
     }
   }
 }
@@ -81,7 +80,7 @@
   .home-order {
     &-container {
       max-width: 900px;
-      padding-top: 96px;
+      padding-top: 196px;
     }
   }
 }
@@ -96,8 +95,9 @@
 
 @media only screen and (max-width: 767.98px) {
   .home-order {
-    background-image: url("../../../assets/home/mobile/order-bgs.png");
-    background-size: cover;
+    background-image: url("../../../assets/home/mobile/order-bgs.png"),
+      linear-gradient(#dde4ec, #eff2f7);
+    background-size: 100% 100%;
     background-repeat: no-repeat;
   }
 }

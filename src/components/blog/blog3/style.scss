@@ -1,6 +1,5 @@
 .blog-blog3 {
   background-color: #eff2f7;
-  background-image: url("../../../assets/blog/blog3-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   .container {
@@ -16,6 +15,7 @@
   &-image {
     img {
       width: 100%;
+      border-radius: 20px;
     }
   }
   h3 {
@@ -113,8 +113,8 @@
     bottom: -80px;
     display: flex !important;
     justify-content: space-between;
-    width: 18%;
-    margin-left: 39%;
+    width: 8%;
+    margin-left: 46%;
     li button:before {
       font-size: 0px;
     }
@@ -132,5 +132,141 @@
       background-color: #fff;
       opacity: 1;
     }
+  }
+}
+
+@media only screen and (max-width: 1531.98px) {
+  .left-arrow,
+  .right-arrow {
+    bottom: -20% !important;
+  }
+  .blog-carousel_section {
+    .slick-dots {
+      width: 12%;
+      margin-left: 44%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1220.98px) {
+  .left-arrow,
+  .right-arrow {
+    bottom: -18% !important;
+  }
+  .blog-carousel_section {
+    .slick-dots {
+      bottom: -30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  .left-arrow {
+    left: 230px !important;
+  }
+  .right-arrow {
+    right: 230px !important;
+  }
+  .blog-carousel_section {
+    .slick-dots {
+      li button {
+        border-radius: 10px;
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  .left-arrow,
+  .right-arrow {
+    display: none !important;
+  }
+  .blog-carousel_section {
+    .slick-dots {
+      display: none !important;
+      li button {
+        font-size: 0px;
+      }
+    }
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  cursor: pointer;
+}
+
+.pagination a {
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  border: 2px solid #ffffff;
+  padding: 12px 21px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.pagination__link {
+  border: none;
+}
+
+.pagination li {
+  margin-top: 80px;
+}
+
+.previous,
+.next {
+  margin-top: unset !important;
+  a {
+    border: none !important;
+  }
+}
+
+.previous {
+  margin-right: 30px;
+}
+
+.next {
+  margin-left: 30px;
+}
+
+.pagination__link--active a {
+  color: rgba(1, 124, 192, 1);
+  background: #fff;
+}
+
+.pagination__link--disabled a {
+  color: #fff;
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 767.98px) {
+  .previous {
+    margin-right: 10px;
+  }
+
+  .next {
+    margin-left: 10px;
+  }
+
+  .pagination a {
+    width: 30px;
+    height: 30px;
+    padding: 6px 10px;
+    border-radius: 8px;
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 479.98px) {
+  .shift-buttons {
+    display: none;
+  }
+  .pagination li {
+    margin-top: 70px;
   }
 }

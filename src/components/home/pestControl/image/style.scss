@@ -45,15 +45,11 @@
     @include on-circle($item-count: 12, $circle-size: 22em, $item-size: 4em);
   }
   @media only screen and (max-width: 576.98px) {
-    @include on-circle($item-count: 12, $circle-size: 18em, $item-size: 3.5em);
-    margin: 3em auto 0;
-  }
-  @media only screen and (max-width: 479.98px) {
-    @include on-circle($item-count: 12, $circle-size: 13em, $item-size: 3em);
+    @include on-circle($item-count: 12, $circle-size: 22em, $item-size: 3em);
     margin: 3em auto 0;
   }
   @media only screen and (max-width: 349.98px) {
-    @include on-circle($item-count: 12, $circle-size: 10em, $item-size: 2.5em);
+    @include on-circle($item-count: 12, $circle-size: 18em, $item-size: 2.5em);
     margin: 3em auto 0;
   }
   margin: 5em auto 0;
@@ -89,12 +85,6 @@
       margin-top: -200px;
     }
     @media only screen and (max-width: 576.98px) {
-      width: 230px;
-      height: 340px;
-      margin-left: -115px;
-      margin-top: -170px;
-    }
-    @media only screen and (max-width: 480.98px) {
       width: 180px;
       height: 240px;
       margin-left: -90px;

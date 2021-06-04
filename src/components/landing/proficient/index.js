@@ -1,28 +1,21 @@
 import React from "react"
-
+import { RichText } from "prismic-reactjs"
 import "./style.scss"
 
-export default function proficient() {
+export default function proficient({ data }) {
   return (
-    <div className="landing-proficient">
+    <div
+      className="landing-proficient"
+      style={{
+        backgroundImage: `url(${data.primary.bg_image.url}), linear-gradient(#eff2f7, #dde4ec)`,
+      }}
+    >
       <div className="container">
         <div className="landing-proficient-content">
-          <h1>Proficient pest management that you deserve</h1>
-          <p>
-            For Pest Control Sydney services, we communicate effectively with
-            customers, solving your problems without any delay. Our Professional
-            team is fast and reliable, giving clients great confidence by
-            eliminating all pests successfully when we visit their home or
-            business for fumigation. They are trained in hazard identification
-            and carry out an onsite risk assessment before every treatment to
-            ensure the best results for our clients.
-            <br />
-            <br /> We are an eco-friendly company. Committed to a sustainable
-            future, we provide paperless invoicing and report all documents
-            directly to you via email or SMS. We always follow up with our
-            customers to ensure that they are satisfied with the work we do and
-            if they ever need more assistance, we’ll be there for them.
-          </p>
+          <h1>{RichText.asText(data.primary.title.raw)}</h1>
+          {data.items.map((info, index) => {
+            return <p key={index}>{RichText.asText(info.content.raw)}</p>
+          })}
         </div>
       </div>
     </div>

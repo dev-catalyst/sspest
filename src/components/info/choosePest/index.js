@@ -1,8 +1,7 @@
 import React from "react"
-
+import { RichText } from "prismic-reactjs"
 import stone from "../../../assets/layout/stone.svg"
 import tick from "../../../assets/home/icons/tick.svg"
-
 import "./style.scss"
 
 const Reason = props => {
@@ -14,52 +13,34 @@ const Reason = props => {
   )
 }
 
-export default function choosePest() {
+export default function choosePest({ data, data1 }) {
   return (
     <div className="info-choosePest">
       <div className="container">
         <h1>
           <img src={stone} alt="" />
-          Why Choose Sydney Side Pest Control?
+          {RichText.asText(data.primary.title.raw)}
         </h1>
-        <p className="p1">
-          Sydney Side Pest Control has been providing pest management services
-          for more than 10 years. Over this time, we’ve grown into one of the
-          most reliable, efficient and trusted pest control businesses in
-          Sydney. Our clients are often impressed by our professionalism,
-          expertise, and ability to just get the job done.
-        </p>
+        <p className="p1">{RichText.asText(data.primary.description.raw)}</p>
         <br />
-        <p className="p2">Reasons to choose us:</p>
+        <p className="p2">{RichText.asText(data.primary.following.raw)}</p>
         <div className="choosePest-reasons-container">
           <div className="choosePest-reasons-points">
-            <Reason>Experienced exterminators</Reason>
-            <Reason>Trusted brands proven to be safe and effective</Reason>
-            <Reason>
-              Treatment methods that protect the environment, wildlife and
-              safety of our technicians, customers and community
-            </Reason>
-            <Reason>Moderns tools and advanced techniques</Reason>
-            <Reason>100% customer satisfaction guaranteed</Reason>
+            {data.items.map((para, index) => {
+              return (
+                <Reason key={index}>{RichText.asText(para.reasons.raw)}</Reason>
+              )
+            })}
           </div>
           <div className="choosePest-reasons-points">
-            <Reason>Fully licensed and insured service</Reason>
-            <Reason>Dedicated support that’s available 7 days a week</Reason>
-            <Reason>
-              Friendly staff that understand how uncomfortable pest issues can
-              be
-            </Reason>
-            <Reason>
-              Accurate inspection and treatment reports, including site-specific
-              documentation and auditing.
-            </Reason>
+            {data1.items.map((para, index) => {
+              return (
+                <Reason key={index}>{RichText.asText(para.reasons.raw)}</Reason>
+              )
+            })}
           </div>
         </div>
-        <p>
-          Whether it’s residential or commercial pest control, we can use our
-          advanced tools and methods to provide fast, safe and effective pest
-          control.
-        </p>
+        <p>{RichText.asText(data.primary.conclusion.raw)}</p>
       </div>
     </div>
   )

@@ -1,11 +1,10 @@
-// @import "../../../styles/index.scss";
 @import "../../../styles/utilities/variables/variables.scss";
 .termite-hero {
-  background-image: url("../../../assets/termite/slide\ 1.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: start;
   background-color: #fff;
+  margin-bottom: 80px;
 
   &-container {
     max-width: 1620px;

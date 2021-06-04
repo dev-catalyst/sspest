@@ -54,8 +54,10 @@
 
 .school-need-structure {
   display: flex;
+  align-items: flex-start;
   img {
     margin-right: 10px;
+    margin-top: 1.4em;
   }
 }
 @media only screen and (max-width: 1789.98px) {

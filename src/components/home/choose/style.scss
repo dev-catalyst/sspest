@@ -30,6 +30,7 @@
         .why {
           display: flex;
           min-width: 417px;
+          align-items: center;
           img {
             margin-right: 20px;
           }
@@ -40,6 +41,7 @@
         border-radius: 20px;
         margin: auto;
         position: relative;
+        display: flex;
         .card-para {
           color: #fff;
           font-style: italic;
@@ -65,7 +67,7 @@
           position: absolute;
           right: 0;
           font-weight: 400;
-          top: 193px;
+          top: 283px;
           margin: 19px;
         }
       }
@@ -83,8 +85,13 @@
             min-width: 350px;
             img {
               margin-right: 10px;
-              width: 40px;
+              width: 30px;
             }
+          }
+        }
+        .card {
+          .quote-bottom {
+            margin-top: 90px;
           }
         }
       }
@@ -104,6 +111,11 @@
               margin-right: 10px;
               width: 40px;
             }
+          }
+        }
+        .card {
+          .quote-bottom {
+            margin-top: 140px;
           }
         }
       }
@@ -152,10 +164,16 @@
           .quote-bottom {
             top: 193px;
             @media only screen and (max-width: 767.98px) {
-              top: 103px;
+              top: -3px;
             }
             @media only screen and (max-width: 576.98px) {
-              top: 193px;
+              top: -4px;
+            }
+            @media only screen and (max-width: 479.98px) {
+              top: 44px;
+            }
+            @media only screen and (max-width: 379.98px) {
+              top: 64px;
             }
           }
         }

@@ -1,7 +1,6 @@
 .info-commercialPestServices {
-  background: url("../../../assets/termite/service-bg.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   background-color: #eff2f7;
   .container {
     padding-top: 369px;
@@ -55,7 +54,8 @@
   .info-commercialPestServices {
     background: url("../../../assets/info/pest-small-bg.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
+    background-color: #eff2f7;
     &-container {
       padding-top: 50px;
       padding-bottom: 70px;

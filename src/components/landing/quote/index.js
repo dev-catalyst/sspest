@@ -1,21 +1,18 @@
 import React from "react"
-
+import { RichText } from "prismic-reactjs"
 import "./style.scss"
 
-export default function quote() {
+export default function quote({ data }) {
   return (
-    <div className="landing-quote">
+    <div
+      className="landing-quote"
+      style={{
+        backgroundImage: `url(${data.bg_image.url}),linear-gradient(#dde4ec, #eff2f7)`,
+      }}
+    >
       <div className="container">
-        <h1>Free Pest Control Sydney Quotes</h1>
-        <p>
-          As part of our work ethic and appreciation for our customers, Sydney
-          Side Pest Control offers a free quotation for any pest issue you may
-          be having. That is just one of the many reasons why our business is so
-          beloved by our clients. We give free quotes because we are certain
-          that you will be picking our professionals for the task, as our
-          enterprise has an immaculate track record of satisfied patrons with
-          pest-free homes.
-        </p>
+        <h1>{RichText.asText(data.title.raw)}</h1>
+        <p>{RichText.asText(data.paragraph.raw)}</p>
       </div>
     </div>
   )

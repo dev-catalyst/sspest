@@ -1,24 +1,10 @@
 import React from "react"
-
-import Content from "./content"
-import Slider from "react-slick"
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
-
 import left from "../../../assets/termite/icons/leftArrow.svg"
 import right from "../../../assets/termite/icons/rightArrow.svg"
-
-// function customPaging(i) {
-//   return <span>{i + 1}</span>
-// }
-
-// function appendDots(dots) {
-//   return (
-//     <div style={{ backgroundColor: "rgba(196, 196, 196, 1)" }}>
-//       <ul style={{ margin: "3px" }}> {dots} </ul>
-//     </div>
-//   )
-// }
+import Content from "./content"
+import Slider from "react-slick"
+import "slick-carousel/slick/slick-theme.css"
+import "slick-carousel/slick/slick.css"
 
 function NextArrow(props) {
   const { style, onClick } = props
@@ -65,15 +51,8 @@ function PrevArrow(props) {
   )
 }
 
-export default function Carousel() {
+export default function Carousel({ data }) {
   var settings = {
-    // appendDots: dots => <ul>{dots}</ul>,
-    // customPaging: i => (
-    //   <div className="ft-slick__dots--custom">
-    //     <div className="loading" />
-    //   </div>
-    // ),
-
     dots: true,
     infinite: true,
     speed: 500,
@@ -81,40 +60,16 @@ export default function Carousel() {
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
-    // beforeChange: (prev, next) => {
-    //   this.setState({ currentSlide: next })
-    // },
-    // appendDots: dots => {
-    //   return (
-    //     <div>
-    //       <ul>
-    //         {dots.map((item, index) => {
-    //           return <li key={index}>{item.props.children}</li>
-    //         })}
-    //       </ul>
-    //     </div>
-    //   )
-    // },
-    // customPaging: index => {
-    //   return (
-    //     <button
-    //       className={index === this.state.currentSlide ? "testSettings" : null}
-    //     >
-    //       {index + 1}
-    //     </button>
-    //   )
-    // },
   }
-
+  console.log(data)
   return (
     <section className="carousel_section">
       {/* Carousel */}
       <div className="carousel_container">
         <Slider {...settings}>
-          <Content />
-          <Content />
-          <Content />
-          <Content />
+          {data.map((para, index) => {
+            return <Content key={index} data={para} />
+          })}
         </Slider>
       </div>
     </section>

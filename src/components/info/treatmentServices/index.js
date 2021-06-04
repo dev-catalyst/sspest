@@ -1,8 +1,8 @@
 import React from "react"
 import { Button } from "@react-md/button"
+import { RichText } from "prismic-reactjs"
 import stone from "../../../assets/layout/stone.svg"
 import tick from "../../../assets/home/icons/tick.svg"
-
 import "./style.scss"
 
 const Point = props => {
@@ -14,50 +14,40 @@ const Point = props => {
   )
 }
 
-export default function treatmentServices() {
+export default function treatmentServices({ data, data1, data2 }) {
   return (
     <div className="info-treatment">
       <div className="container">
         <h1>
           <img src={stone} alt="" />
-          TREATMENT SERVICES
+          {RichText.asText(data.primary.title.raw)}
         </h1>
-        <p className="p1">
-          We offer a variety of commercial pest control services to suit your
-          needs. No matter the types of pests you’re dealing with, our expert
-          team will help your business become clean and safe.
-        </p>
-        <p className="p2">You can call or email us about:</p>
+        <p className="p1">{RichText.asText(data.primary.offer.raw)}</p>
+        <p className="p2">{RichText.asText(data.primary.following.raw)}</p>
         <div className="treatment-points-container">
           <div className="treatment-points">
-            <Point>Ant prevention and control services</Point>
-            <Point>Bed bug extermination</Point>
-            <Point>Bird control</Point>
-            <Point>Cockroach extermination</Point>{" "}
-            <Point>Crickets treatment</Point>{" "}
+            {data.items.map((para, index) => {
+              return (
+                <Point key={index}>{RichText.asText(para.services.raw)}</Point>
+              )
+            })}
           </div>
           <div className="treatment-points">
-            <Point>Flea treatment</Point>
-            <Point>Fermentation flies and house flies treatment</Point>
-            <Point>Mite control</Point>
-            <Point>Mosquito treatment</Point>
-            <Point>Moth control</Point>
-          </div>{" "}
+            {data1.items.map((para, index) => {
+              return (
+                <Point key={index}>{RichText.asText(para.services.raw)}</Point>
+              )
+            })}
+          </div>
           <div className="treatment-points">
-            <Point>Mice and rat treatment</Point>
-            <Point>Silverfish removal</Point>
-            <Point>Spider removal</Point>
-            <Point>Wasp and wasp nest extermination</Point>
-            <Point>Termite control</Point>
+            {data2.items.map((para, index) => {
+              return (
+                <Point key={index}>{RichText.asText(para.services.raw)}</Point>
+              )
+            })}
           </div>
         </div>
-        <p>
-          We also offer businesses a general pest control service, which
-          controls cockroaches, rats and mice, fermentation flies and house
-          flies, ants, crickets, crawling inspects and spiders. By doing this
-          regularly, we’ll keep your business clean and safe for your employees
-          and customers.
-        </p>
+        <p>{RichText.asText(data.primary.conclusion.raw)}</p>
         <div className="info-treatment-btn-container">
           <Button themeType="contained" className="info-treatment-btn">
             CONTACT US NOW

@@ -14,8 +14,10 @@
     }
     &-content {
       display: flex;
+      align-items: flex-start;
       img {
         margin-right: 12px;
+        margin-top: 1.4em;
       }
     }
     .prevent {

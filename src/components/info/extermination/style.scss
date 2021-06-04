@@ -1,8 +1,7 @@
 .info-extermination {
-  background: url("../../../assets/info/extermination-bg.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #dde4ec;
+  background-size: 100% 100%;
+  background-blend-mode: lighten;
   .container {
     padding-top: 300px;
     padding-bottom: 275px;
@@ -70,9 +69,10 @@
 
 @media only screen and (max-width: 767.98px) {
   .info-extermination {
-    background: url("../../../assets/info/exter-small.png");
+    background: url("../../../assets/info/exter-small.png"),
+      linear-gradient(#dde4ec, #231f20);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     .container {
       padding-top: 80px;
       .info-extermination-btn-container {

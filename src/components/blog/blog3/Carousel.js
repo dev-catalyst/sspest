@@ -1,13 +1,10 @@
 import React from "react"
-
 import Content from "./content"
-import Slider from "react-slick"
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
-
 import left from "../../../assets/blog/prev.svg"
 import right from "../../../assets/blog/next.svg"
-
+import Slider from "react-slick"
+import "slick-carousel/slick/slick-theme.css"
+import "slick-carousel/slick/slick.css"
 import "./style.scss"
 
 function NextArrow(props) {
@@ -65,18 +62,18 @@ function PrevArrow(props) {
   )
 }
 
-export default function Carousel() {
+export default function Carousel({ data }) {
   var settings = {
     // customPaging = {customPaging},
     // appendDots = {appendDots},
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
-    arrows: false,
+    arrows: true,
   }
 
   return (
@@ -84,9 +81,9 @@ export default function Carousel() {
       {/* Carousel */}
       <div className="blog-carousel_container">
         <Slider {...settings}>
-          <Content />
-          <Content />
-          <Content />
+          {data.map((data, index) => {
+            return <Content key={index} data={data} />
+          })}
         </Slider>
       </div>
     </section>

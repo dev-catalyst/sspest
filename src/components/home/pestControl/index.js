@@ -1,11 +1,11 @@
 import React from "react"
 import GeneralPest from "../generalPest"
-import stone from "../../../assets/layout/stone.svg"
 import Image from "./image"
-
+import { RichText } from "prismic-reactjs"
+import stone from "../../../assets/layout/stone.svg"
 import "./style.scss"
 
-export default function pestControl() {
+export default function pestControl({ data }) {
   return (
     <div className="home-pest-control">
       <div className="home-pest-control-container">
@@ -13,18 +13,12 @@ export default function pestControl() {
           <GeneralPest />
         </div>
         <div className="home-pest-control-container-content">
-          <h1>PEST CONTROL SYDNEY</h1>
+          <h1>{RichText.asText(data.title.raw)}</h1>
           <img src={stone} alt="stone" className="pest-control-stone" />
-          <p>
-            If your looking for a professional pest control company you’ve come
-            to the right place, it’s our business to manage pests, any pest, and
-            we know how to manage an ant out of an ant hill, We make no qualms
-            about it, providing the safest pest control possible for you, your
-            pet and the environment is what we do best.
-          </p>
+          <p>{RichText.asText(data.description.raw)}</p>
         </div>
         <div className="image-holder">
-          <Image />
+          <Image data={data} />
         </div>
       </div>
     </div>

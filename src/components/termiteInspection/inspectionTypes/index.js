@@ -1,13 +1,9 @@
 import React from "react"
-
-import inspection1 from "../../../assets/termite/inspection1.png"
-import inspection2 from "../../../assets/termite/inspection2.png"
-import inspection3 from "../../../assets/termite/inspection3.png"
-
+import { RichText } from "prismic-reactjs"
 import stone from "../../../assets/layout/stone.svg"
 import "./style.scss"
 
-export default function inspectionTypes() {
+export default function inspectionTypes({ data, data2, data3 }) {
   return (
     <div className="termite-inspectionTypes">
       <div className="container">
@@ -16,45 +12,29 @@ export default function inspectionTypes() {
           <div className="termite-inspectionTypes-inspection-content">
             <h1>
               <img src={stone} alt="" />
-              PRE-INSPECTION
+              {RichText.asText(data.primary.title.raw)}
             </h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim
-              ut sem viverra aliquet eget sit amet. Condimentum vitae sapien
-              pellentesque habitant morbi tristique. Magna etiam tempor orci eu
-              lobortis elementum. Sed vulputate odio ut enim. Elit duis
-              tristique sollicitudin nibh. Nisi lacus sed viverra tellus in.
-              Turpis egestas integer eget aliquet nibh praesent tristique magna.
-              Arcu risus quis varius quam. Arcu felis bibendum ut tristique et
-              egestas quis. Etiam non quam lacus suspendisse faucibus interdum.
-            </p>
+            {data.items.map((para, index) => {
+              return <p key={index}>{RichText.asText(para.content.raw)}</p>
+            })}
           </div>
           <div className="termite-inspectionTypes-inspection-image">
-            <img src={inspection1} alt="" />
+            <img src={data.primary.image.url} alt="" />
           </div>
         </div>
         {/* row2 */}
         <div className="termite-inspectionTypes-inspection col-rev">
           <div className="termite-inspectionTypes-inspection-image">
-            <img src={inspection2} alt="" />
+            <img src={data2.primary.image.url} alt="" />
           </div>
           <div className="termite-inspectionTypes-inspection-content space">
             <h1>
               <img src={stone} alt="" />
-              THE INSPECTION
+              {RichText.asText(data2.primary.title.raw)}
             </h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim
-              ut sem viverra aliquet eget sit amet. Condimentum vitae sapien
-              pellentesque habitant morbi tristique. Magna etiam tempor orci eu
-              lobortis elementum. Sed vulputate odio ut enim. Elit duis
-              tristique sollicitudin nibh. Nisi lacus sed viverra tellus in.
-              Turpis egestas integer eget aliquet nibh praesent tristique magna.
-              Arcu risus quis varius quam. Arcu felis bibendum ut tristique et
-              egestas quis. Etiam non quam lacus suspendisse faucibus interdum.
-            </p>
+            {data2.items.map((para, index) => {
+              return <p key={index}>{RichText.asText(para.content.raw)}</p>
+            })}
           </div>
         </div>
         {/* row3 */}
@@ -62,22 +42,14 @@ export default function inspectionTypes() {
           <div className="termite-inspectionTypes-inspection-content">
             <h1>
               <img src={stone} alt="" />
-              POST INSPECTION
+              {RichText.asText(data3.primary.title.raw)}
             </h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim
-              ut sem viverra aliquet eget sit amet. Condimentum vitae sapien
-              pellentesque habitant morbi tristique. Magna etiam tempor orci eu
-              lobortis elementum. Sed vulputate odio ut enim. Elit duis
-              tristique sollicitudin nibh. Nisi lacus sed viverra tellus in.
-              Turpis egestas integer eget aliquet nibh praesent tristique magna.
-              Arcu risus quis varius quam. Arcu felis bibendum ut tristique et
-              egestas quis. Etiam non quam lacus suspendisse faucibus interdum.
-            </p>
+            {data3.items.map((para, index) => {
+              return <p key={index}>{RichText.asText(para.content.raw)}</p>
+            })}
           </div>
           <div className="termite-inspectionTypes-inspection-image">
-            <img src={inspection3} alt="" />
+            <img src={data3.primary.image.url} alt="" />
           </div>
         </div>
       </div>

@@ -1,11 +1,11 @@
 import React from "react"
-import Video from "../../home/whoAreWe/video"
 import GeneralPest from "../../home/generalPest"
+import { RichText } from "prismic-reactjs"
 import stone from "../../../assets/layout/stone.svg"
-
+import Video from "../../home/whoAreWe/video"
 import "./style.scss"
 
-export default function commercialPest() {
+export default function commercialPest({ data }) {
   return (
     <div className="info-commercialPest">
       <div className="container">
@@ -13,12 +13,9 @@ export default function commercialPest() {
           <GeneralPest />
         </div>
         <div className="info-commercialPest-content">
-          <h1>COMMERCIAL PEST CONTROL SYDNEY</h1>
+          <h1>{RichText.asText(data.title.raw)}</h1>
           <img src={stone} alt="stone" className="info-commercialPest-stone" />
-          <p>
-            Do you have unwanted pests at your business? We can help your
-            business become pest-free and keep it that way.
-          </p>
+          <p>{RichText.asText(data.paragraph.raw)}</p>
         </div>
         <Video
           videoSrcURL="https://www.youtube.com/embed/qh0lvkSQOLY"

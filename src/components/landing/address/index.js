@@ -1,8 +1,5 @@
 import React from "react"
-
-import map from "../../../assets/landing/map.svg"
-import clock from "../../../assets/landing/clock.svg"
-import search from "../../../assets/landing/search.svg"
+import { RichText } from "prismic-reactjs"
 import "./style.scss"
 
 const Timings = props => {
@@ -14,17 +11,22 @@ const Timings = props => {
   )
 }
 
-export default function address() {
+export default function address({ data }) {
   return (
-    <div className="landing-address">
+    <div
+      className="landing-address"
+      style={{
+        backgroundImage: `url(${data.bg_image.url}),linear-gradient(#eff2f7, #eee4de)`,
+      }}
+    >
       <div className="container">
         <div className="landing-address-content">
           <div className="row">
-            <img src={map} alt="" />
-            <p>Lvl 3/81 Flushcombe Rd, Blacktown NSW 2148, Australia</p>
+            <img src={data.map_icon.url} alt="" />
+            <p>{RichText.asText(data.address.raw)}</p>
           </div>
           <div className="row">
-            <img src={clock} alt="" />
+            <img src={data.time_icon.url} alt="" />
             <div className="day-time">
               <Timings day="Monday" time="8:00 AM - 05:00 PM" />
               <Timings day="Tuesday" time="8:00 AM - 05:00 PM" />
@@ -36,14 +38,15 @@ export default function address() {
             </div>
           </div>
           <div className="row">
-            <img src={search} alt="" />
-            <p>Residential Services, Commercial Services, Termite Control</p>
+            <img src={data.map_icon.url} alt="" />
+            <p>{RichText.asText(data.services.raw)}</p>
           </div>
         </div>
         <div className="landing-address-map">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3316.533963769329!2d150.90565851417333!3d-33.772706821507036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12985536815863%3A0x8cf85d0d6a147fc!2slevel%203%2F81%20Flushcombe%20Rd%2C%20Blacktown%20NSW%202148%2C%20Australia!5e0!3m2!1sen!2sin!4v1622092969639!5m2!1sen!2sin"
-            allowfullscreen=""
+            title="map"
+            src={data.map_link.url}
+            allowFullScreen=""
             loading="lazy"
           ></iframe>
         </div>

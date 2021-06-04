@@ -1,24 +1,26 @@
 import React from "react"
 import { Button } from "@react-md/button"
+import { RichText } from "prismic-reactjs"
 import "./style.scss"
 
-export default function extermination() {
+export default function extermination({ data }) {
   return (
-    <div className="info-extermination">
+    <div
+      className="info-extermination"
+      style={{
+        backgroundImage: `url(${data.primary.bg_image.url}), linear-gradient(#dde4ec, #231f20)`,
+      }}
+    >
       <div className="container">
-        <h1>THE EXTERMINATION PROCESS</h1>
-        <p>
-          Our highly qualified pest experts will follow your treatment plan in
-          detail in order to eliminate all the identified pests. Depending on
-          the level of infestation, we’ll choose the best extermination process
-          for your situation. This may include using pesticides, pest traps,
-          fumigation or other pest control methods.
-          <br />
-          <br />
-          We’re dedicated to restoring your business to a clean and healthy
-          state. We offer commercial customers the choice of organic pesticides
-          or other approved products when conducting our cleaning services.
-        </p>
+        <h1> {RichText.asText(data.primary.title.raw)}</h1>
+        {data.items.map((para, index) => {
+          return (
+            <p key={index}>
+              {RichText.asText(para.description.raw)}
+              <br />
+            </p>
+          )
+        })}
         <div className="info-extermination-btn-container">
           <Button themeType="contained" className="info-extermination-btn">
             ORGANIC PEST CONTROL SERVICES

@@ -3,6 +3,7 @@
 header {
   position: absolute;
   width: 100%;
+  z-index: 99;
   .header-container {
     max-width: 1720px;
     margin: auto;
@@ -689,7 +690,7 @@ a.nav-link.accordion-header {
     width: 100% !important;
     height: auto !important;
   }
-  .fixed-widget-layout {
-    display: none !important;
-  }
+  // .fixed-widget-layout {
+  //   display: none !important;
+  // }
 }

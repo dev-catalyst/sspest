@@ -74,24 +74,24 @@ export default function primaryFooter() {
           </div>
         </div>
         <div className="primary-footer-social-media-desktop">
-          <a href="">
+          <a href="#">
             <img src={facebook} alt="facebook" />
           </a>
-          <a href="">
+          <a href="#">
             <img src={twitter} alt="twitter" />
           </a>
-          <a href="">
+          <a href="#">
             <img src={insta} alt="insta" />
           </a>
         </div>
         <div className="primary-footer-social-media-mobile">
-          <a href="">
+          <a href="#">
             <img src={facebookS} alt="facebook" />
           </a>
-          <a href="">
+          <a href="#">
             <img src={twitterS} alt="twitter" />
           </a>
-          <a href="">
+          <a href="#">
             <img src={instaS} alt="insta" />
           </a>
         </div>

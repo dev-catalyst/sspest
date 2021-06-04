@@ -1,11 +1,11 @@
 import React from "react"
-import Video from "../../home/whoAreWe/video"
 import GeneralPest from "../../home/generalPest"
+import { RichText } from "prismic-reactjs"
 import stone from "../../../assets/layout/stone.svg"
-
+import Video from "../../home/whoAreWe/video"
 import "./style.scss"
 
-export default function transportControl() {
+export default function transportControl({ data }) {
   return (
     <div className="transport-pest">
       <div className="container">
@@ -13,13 +13,9 @@ export default function transportControl() {
           <GeneralPest />
         </div>
         <div className="transport-pest-content">
-          <h1>TRANSPORT PEST CONTROL</h1>
+          <h1>{RichText.asText(data.title.raw)}</h1>
           <img src={stone} alt="stone" className="transport-pest-stone" />
-          <p>
-            Unhygienic transport vehicles and facilities can lead to unwanted
-            pests. We’re experts in providing transport pest control services in
-            Sydney.
-          </p>
+          <p>{RichText.asText(data.description.raw)}</p>
         </div>
         <Video
           videoSrcURL="https://www.youtube.com/embed/qh0lvkSQOLY"

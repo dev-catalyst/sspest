@@ -1,9 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-
-import "./style.scss"
-
-import main from "../../../../assets/home/image/main.png"
+import man from "../../../../assets/home/image/main.png"
 import icon1 from "../../../../assets/home/image/icon1.svg"
 import icon2 from "../../../../assets/home/image/icon2.svg"
 import icon3 from "../../../../assets/home/image/icon3.svg"
@@ -16,12 +13,13 @@ import icon9 from "../../../../assets/home/image/icon9.svg"
 import icon10 from "../../../../assets/home/image/icon10.svg"
 import icon11 from "../../../../assets/home/image/icon11.svg"
 import icon12 from "../../../../assets/home/image/icon12.svg"
+import "./style.scss"
 
-export default function image() {
+export default function image({ data }) {
   return (
     <div className="image-container">
-      <img src={main} alt="" className="main-image" />
-      <ul class="circle-container">
+      <img src={data.image.url} alt="" className="main-image" />
+      <ul className="circle-container">
         <Link to="#">
           <li>
             <img src={icon1} alt="" />

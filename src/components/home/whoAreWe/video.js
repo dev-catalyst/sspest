@@ -1,5 +1,6 @@
 import React from "react"
 import "./style.scss"
+
 const Video = ({ videoSrcURL, videoTitle, ...props }) => (
   <div className="video">
     <iframe

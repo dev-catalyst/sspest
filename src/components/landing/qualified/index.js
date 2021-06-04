@@ -1,18 +1,17 @@
 import React from "react"
-
 import Carousel from "./Carousel"
-import carousel2 from "../../../assets/landing/carousel2.png"
+import { RichText } from "prismic-reactjs"
 import "./style.scss"
 
-export default function qualified() {
+export default function qualified({ data }) {
   return (
     <div className="landing-qualified">
       <div className="container">
-        <h1>Why choose Sydney Side for pest control services?</h1>
+        <h1>{RichText.asText(data.primary.title.raw)}</h1>
         <div className="landing-qualified-content">
-          <Carousel />
+          <Carousel data={data} />
           <div className="landing-qualified-image">
-            <img src={carousel2} alt="" />
+            <img src={data.primary.image.url} alt="" />
           </div>
         </div>
       </div>

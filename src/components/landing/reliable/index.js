@@ -1,24 +1,19 @@
 import React from "react"
-
+import { RichText } from "prismic-reactjs"
 import "./style.scss"
 
-export default function reliable() {
+export default function reliable({ data }) {
   return (
-    <div className="landing-reliable">
+    <div
+      className="landing-reliable"
+      style={{ backgroundImage: `url(${data.primary.bg_image.url})` }}
+    >
       <div className="container">
         <div className="landing-reliable-content">
-          <h1>Want reliable pest control Blacktown services?</h1>
-          <p>
-            Customer satisfaction is our core priority and always will be. From
-            discussing details of our inspections to the chemical application of
-            our many pest treatment competitive prices as the most professional
-            pest company, to guarantee your return as a satisfied customer.
-            <br />
-            <br /> With over 15 years in the pest business, Sydney Side Pest
-            Control understands the importance of expertise and proven results
-            when tackling local pests with the right focus and the quality that
-            our clients deserve.
-          </p>
+          <h1>{RichText.asText(data.primary.title.raw)}</h1>
+          {data.items.map((para, index) => {
+            return <p key={index}>{RichText.asText(para.content.raw)}</p>
+          })}
         </div>
       </div>
     </div>

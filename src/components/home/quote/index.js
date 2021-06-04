@@ -1,19 +1,18 @@
 import React from "react"
-
+import { RichText } from "prismic-reactjs"
 import "./style.scss"
 
-export default function quote() {
+export default function quote({ data }) {
   return (
-    <div className="home-quote">
+    <div
+      className="home-quote"
+      style={{
+        backgroundImage: `url(${data.bg_image.url}),linear-gradient(#eff2f7, #dde4ec)`,
+      }}
+    >
       <div className="home-quote-container">
-        <h2>Free Quote for Pest Control Sydney Wide Area</h2>
-        <p>
-          As part of our offer to households and businesses Sydney wide and in
-          the surrounding area, we’re more than happy to offer a free quotation
-          for any pest control issues you may have. Just get in touch now and
-          one of our friendly team members will arrange an appointment at your
-          convenience.
-        </p>
+        <h2>{RichText.asText(data.title.raw)}</h2>
+        <p>{RichText.asText(data.description.raw)}</p>
       </div>
     </div>
   )

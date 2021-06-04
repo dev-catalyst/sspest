@@ -1,32 +1,31 @@
 import React from "react"
-
 import divider2 from "../../../assets/home/divider2.png"
-import man from "../../../assets/home/man.png"
+import { RichText } from "prismic-reactjs"
 import "./style.scss"
 
-export default function serviceTeam() {
+export default function serviceTeam({ data }) {
   return (
-    <div className="home-service-team">
-      <img src={divider2} style={{ width: "100%", marginTop: "-5px" }} alt="" />
+    <div
+      className="home-service-team"
+      style={{ backgroundImage: `url(${data.primary.bg_image.url})` }}
+    >
+      <img
+        src={divider2}
+        style={{
+          width: "100%",
+          marginTop: "-6px",
+        }}
+        alt=""
+      />
       <div className="home-service-team-container">
-        <h1>OUR SERVICE TEAM</h1>
+        <h1>{RichText.asText(data.primary.title.raw)}</h1>
         <div className="home-service-team-images">
-          <img src={man} alt="service" />
-          <img src={man} alt="service" />
-          <img src={man} alt="service" />
-          <img src={man} alt="service" />
-          <img src={man} alt="service" />
+          {data.items.slice(0, 5).map((info, index) => {
+            return <img key={index} src={info.team_image.url} alt="services" />
+          })}
         </div>
         <p className="home-service-team-description">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+          {RichText.asText(data.primary.description.raw)}
         </p>
       </div>
     </div>
