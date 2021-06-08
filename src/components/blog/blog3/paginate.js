@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import { Button } from "@react-md/button"
 import { RichText } from "prismic-reactjs"
 import ReactPaginate from "react-paginate"

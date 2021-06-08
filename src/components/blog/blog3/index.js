@@ -1,5 +1,4 @@
 import React from "react"
-import Carousel from "./Carousel"
 import Paginate from "./paginate"
 import cutter from "../../../assets/blog/cutter.png"
 import "./style.scss"

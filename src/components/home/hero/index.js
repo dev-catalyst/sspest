@@ -1,7 +1,6 @@
 import React from "react"
 import GeneralPest from "../generalPest"
 import ratings from "../../../assets/home/rating.png"
-import imhdy from "../../../assets/home/divider1.png"
 import "./style.scss"
 
 export default function Hero({ data }) {

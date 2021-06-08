@@ -2,10 +2,9 @@
   position: fixed;
   right: 0px;
   top: 100px;
-  z-index: 9;
+  z-index: 999;
   display: flex;
   flex-direction: column;
-  cursor: pointer;
 }
 
 .pest-widget-holder {
@@ -14,29 +13,34 @@
   margin: 5px 0;
   border-radius: 10px 0 0 10px;
   position: relative;
+
   img {
     height: 65px;
     width: 65px;
   }
 
   .pest-widget-price {
+    overflow: hidden;
     position: absolute;
     top: 0;
-    display: none;
     right: 0px;
+    visibility: hidden;
     background: #ffde4d;
     height: 100%;
-    width: 200px;
+    width: 190px;
     border-radius: 10px 0 0 10px;
     text-align: center;
     padding: 10px;
     font-weight: 800;
     color: #017cc0;
-
+    cursor: pointer;
+    transition: width 0.1s ease-out;
     span {
       text-transform: uppercase;
       font-size: 18px;
       padding: 0;
+      overflow-x: hidden;
+      white-space: nowrap;
     }
     p {
       font-size: 30px;
@@ -44,13 +48,14 @@
       margin-top: 15px;
     }
     &:hover {
-      display: block;
+      width: 230px;
     }
   }
 
   &:hover {
     .pest-widget-price {
-      display: block;
+      visibility: visible;
+      //width: 230px;
     }
   }
 }
@@ -88,16 +93,18 @@
     color: #656565;
     border: none;
     font-size: 25px;
+    cursor: pointer;
   }
 }
 
 .btn-container-widget {
   background-color: #017cc0;
   border-radius: 100px;
-  width: 200px;
+  //
   margin: auto;
-  transition: all 0.3s ease-in;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  transition: all 0.3s ease-in;
   &:hover {
     transform: scaleY(1.045);
     box-shadow: none;
@@ -108,11 +115,10 @@
     justify-content: center;
     color: #fff;
     text-decoration: none;
-    img {
-      margin-right: 10px;
-    }
+    padding: 12px;
+    font-weight: 500;
     p {
-      color: #fff;
+      color: #fff !important;
     }
   }
   a:visited {
@@ -131,6 +137,11 @@
     img {
       height: 50px;
       width: 50px;
+    }
+    .pest-widget-price {
+      &:hover {
+        width: 200px;
+      }
     }
   }
 }
@@ -152,6 +163,9 @@
         font-size: 26px;
         margin-top: 5px;
       }
+      &:hover {
+        width: 150px;
+      }
     }
   }
 }
@@ -164,6 +178,7 @@
     padding: 6px 5px;
     margin: 5px 0;
     border-radius: 10px 0 0 10px;
+
     img {
       width: 40px;
       height: 40px;
@@ -172,7 +187,7 @@
   .pest-widget-price {
     position: absolute;
     top: 0;
-    display: none;
+    //
     right: 0px;
     background: #ffde4d;
     height: 100%;
@@ -182,7 +197,6 @@
     padding: 10px;
     font-weight: 800;
     color: #017cc0;
-
     span {
       text-transform: uppercase;
       font-size: 12px;
@@ -195,7 +209,7 @@
       margin-top: 2.5px !important;
     }
     &:hover {
-      display: block;
+      width: 200px;
     }
   }
   .pest-widget-general {
@@ -204,4 +218,100 @@
       width: 200px;
     }
   }
+}
+
+/* The element to apply the animation to */
+
+@keyframes example {
+  0% {
+    visibility: hidden;
+    width: 120px;
+  }
+  50% {
+    visibility: visible;
+    width: 230px;
+  }
+  100% {
+    visibility: hidden;
+    width: 0;
+    margin-right: -20px;
+  }
+}
+@media only screen and (max-width: 1919.98px) {
+  @keyframes example {
+    0% {
+      visibility: hidden;
+      width: 110px;
+    }
+    50% {
+      visibility: visible;
+      width: 200px;
+    }
+    100% {
+      visibility: hidden;
+      width: 0;
+      margin-right: -20px;
+    }
+  }
+}
+@media only screen and (max-width: 1519.98px) {
+  @keyframes example {
+    0% {
+      visibility: hidden;
+      width: 110px;
+    }
+    50% {
+      visibility: visible;
+      width: 160px;
+    }
+    100% {
+      visibility: hidden;
+      width: 0;
+      margin-right: -20px;
+    }
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  @keyframes example {
+    0% {
+      visibility: hidden;
+      width: 110px;
+    }
+    50% {
+      visibility: visible;
+      width: 200px;
+    }
+    100% {
+      visibility: hidden;
+      width: 0;
+      margin-right: -20px;
+    }
+  }
+}
+@mixin animate($duration, $delay) {
+  animation-name: example;
+  animation-duration: $duration;
+  animation-delay: $delay;
+  animation-timing-function: ease;
+}
+.pest-widget-animation1 {
+  @include animate(2s, 0.5s);
+}
+.pest-widget-animation2 {
+  @include animate(2s, 2s);
+}
+.pest-widget-animation3 {
+  @include animate(2s, 3.5s);
+}
+.pest-widget-animation4 {
+  @include animate(2s, 5s);
+}
+.pest-widget-animation5 {
+  @include animate(2s, 6.5s);
+}
+.pest-widget-animation6 {
+  @include animate(2s, 8s);
+}
+.pest-widget-animation7 {
+  @include animate(2s, 9.5s);
 }

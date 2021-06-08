@@ -1,9 +1,6 @@
 import React from "react"
 import { RichText } from "prismic-reactjs"
 import stone from "../../../assets/layout/stone.svg"
-import residentialS from "../../../assets/home/mobile/resi-small.png"
-import commercialS from "../../../assets/home/mobile/com-small.png"
-import termiteS from "../../../assets/home/mobile/term-small.png"
 import "./style.scss"
 
 export default function serviceType({ data, data2, data3 }) {
@@ -23,9 +20,9 @@ export default function serviceType({ data, data2, data3 }) {
           </div>
           <div className="home-business-type-image">
             <div className="image-container">
+              <div className="overlay"></div>
               <img src={data.image.url} alt="" className="btn2" />
-              <img src={residentialS} alt="" className="btn2" />
-              <h1>{RichText.asText(data.title.raw)}</h1>
+              {/* <h1>{RichText.asText(data.title.raw)}</h1> */}
             </div>
             <h4>FIND OUT MORE</h4>
           </div>
@@ -35,8 +32,7 @@ export default function serviceType({ data, data2, data3 }) {
           <div className="home-business-type-image">
             <div className="image-container">
               <img src={data2.image.url} alt="" className="btn2" />
-              <img src={commercialS} alt="" className="btn2" />
-              <h1>{RichText.asText(data2.title.raw)}</h1>
+              {/* <h1>{RichText.asText(data2.title.raw)}</h1> */}
             </div>
             <h4>FIND OUT MORE</h4>
           </div>
@@ -65,8 +61,7 @@ export default function serviceType({ data, data2, data3 }) {
           <div className="home-business-type-image">
             <div className="image-container">
               <img src={data3.image.url} alt="" className="btn2" />
-              <img src={termiteS} alt="" className="btn2" />
-              <h1 className="termite-h1">{RichText.asText(data3.title.raw)}</h1>
+              {/* <h1 className="termite-h1">{RichText.asText(data3.title.raw)}</h1> */}
             </div>
             <h4>FIND OUT MORE</h4>
           </div>

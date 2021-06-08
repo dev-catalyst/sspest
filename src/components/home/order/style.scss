@@ -2,6 +2,7 @@
   background-size: 100% 100%;
   background-repeat: no-repeat;
   margin-top: -2px;
+  // background-attachment: fixed;
   &-container {
     max-width: 1600px;
     margin: auto;
@@ -99,5 +100,6 @@
       linear-gradient(#dde4ec, #eff2f7);
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    //background-attachment: fixed;
   }
 }

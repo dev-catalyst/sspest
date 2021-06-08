@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { Button } from "antd"
 import "./style.scss"
-
+import { Link } from "gatsby"
 import Flea from "../../../assets/layout/widget/pests/flea.svg"
 import CockRoach from "../../../assets/layout/widget/pests/cockroach.svg"
 import BedBug from "../../../assets/layout/widget/pests/bed-bug.svg"
@@ -17,7 +17,6 @@ import Sydney from "../../../assets/layout/widget/cardFooter/sydney.svg"
 import Crew from "../../../assets/layout/widget/cardFooter/crew.svg"
 import Ten from "../../../assets/layout/widget/cardFooter/ten.svg"
 import Shield from "../../../assets/layout/widget/cardFooter/shield.svg"
-import callIcon from "../../../assets/home/icons/call-icon.svg"
 
 import { CloseCircleOutlined } from "@ant-design/icons"
 
@@ -27,13 +26,50 @@ const PestWidget = () => {
 
 const PestWidgetInner = () => {
   const [show, setShow] = useState("none")
-
+  const [name, setName] = useState("")
+  const [link, setLink] = useState("")
   const handleClick = () => {
     if (show === "block") {
       setShow("none")
     } else {
       setShow("block")
     }
+  }
+
+  const handleFlea = () => {
+    setShow("block")
+    setName("The Flea")
+    setLink("#")
+  }
+  const handleCockroach = () => {
+    setShow("block")
+    setName("The Cockroach")
+    setLink("#")
+  }
+  const handleBedBug = () => {
+    setShow("block")
+    setName("The BedBug")
+    setLink("#")
+  }
+  const handleSpider = () => {
+    setShow("block")
+    setName("The Spider")
+    setLink("#")
+  }
+  const handleTermite = () => {
+    setShow("block")
+    setName("The Termite")
+    setLink("#")
+  }
+  const handleRodent = () => {
+    setShow("block")
+    setName("The Rodent")
+    setLink("#")
+  }
+  const handleAntPest = () => {
+    setShow("block")
+    setName("The AntPest")
+    setLink("#")
   }
   return (
     <div className="fixed-widget-layout">
@@ -42,43 +78,38 @@ const PestWidgetInner = () => {
           <CloseCircleOutlined />
         </Button>
         <div className="pest-widget-general-inner">
-          <h3>THE GERMAN</h3>
+          <h3>{name}</h3>
           <p className="widget-info">
             <img src={Home} alt="" /> Flat rate $170 any house
           </p>
-
           <p className="widget-info">
             <img src={Pest} alt="" /> Includes rodent treatment
           </p>
-
           <p className="widget-info">
             <img src={Sydney} alt="" /> Servicing all of Sydney
           </p>
-
           <p className="widget-info">
             <img src={Crew} alt="" /> Servicing all of Sydney
           </p>
-
           <p className="widget-info">
             <img src={Ten} alt="" /> 10 Years experience
           </p>
-
           <p className="widget-info">
             <img src={Shield} alt="" /> All pests & bugs treated
           </p>
         </div>
 
         <div className="btn-container-widget">
-          <a href="tel:1300 007 772">
-            <img src={callIcon} alt="" />
-            <p> CALL NOW</p>
-          </a>
+          <Link to={link}>VIEW INFO</Link>
         </div>
       </div>
       <div>
-        <div className="pest-widget-holder">
+        <div className="pest-widget-holder ">
           <img src={Flea} alt="" />
-          <Button className="pest-widget-price" onClick={handleClick}>
+          <Button
+            className="pest-widget-price pest-widget-animation1"
+            onClick={handleFlea}
+          >
             <span>the flea</span>
             <p>$160</p>
           </Button>
@@ -86,7 +117,10 @@ const PestWidgetInner = () => {
 
         <div className="pest-widget-holder">
           <img src={CockRoach} alt="" />
-          <Button className="pest-widget-price" onClick={handleClick}>
+          <Button
+            className="pest-widget-price pest-widget-animation2"
+            onClick={handleCockroach}
+          >
             <span>the cockroach</span>
             <p>$260</p>
           </Button>
@@ -94,7 +128,10 @@ const PestWidgetInner = () => {
 
         <div className="pest-widget-holder">
           <img src={BedBug} alt="" />
-          <Button className="pest-widget-price" onClick={handleClick}>
+          <Button
+            className="pest-widget-price pest-widget-animation3"
+            onClick={handleBedBug}
+          >
             <span>the BedBug</span>
             <p>$340</p>
           </Button>
@@ -102,7 +139,10 @@ const PestWidgetInner = () => {
 
         <div className="pest-widget-holder">
           <img src={Spider} alt="" />
-          <Button className="pest-widget-price" onClick={handleClick}>
+          <Button
+            className="pest-widget-price pest-widget-animation4"
+            onClick={handleSpider}
+          >
             <span>the spider</span>
             <p>$120</p>
           </Button>
@@ -110,7 +150,10 @@ const PestWidgetInner = () => {
 
         <div className="pest-widget-holder">
           <img src={Termite} alt="" />
-          <Button className="pest-widget-price" onClick={handleClick}>
+          <Button
+            className="pest-widget-price pest-widget-animation5"
+            onClick={handleTermite}
+          >
             <span>the termite</span>
             <p>$189</p>
           </Button>
@@ -118,7 +161,10 @@ const PestWidgetInner = () => {
 
         <div className="pest-widget-holder">
           <img src={Rodent} alt="" />
-          <Button className="pest-widget-price" onClick={handleClick}>
+          <Button
+            className="pest-widget-price pest-widget-animation6"
+            onClick={handleRodent}
+          >
             <span>the rodent</span>
             <p>$260</p>
           </Button>
@@ -126,7 +172,10 @@ const PestWidgetInner = () => {
 
         <div className="pest-widget-holder">
           <img src={AntPest} alt="" />
-          <Button className="pest-widget-price" onClick={handleClick}>
+          <Button
+            className="pest-widget-price pest-widget-animation7"
+            onClick={handleAntPest}
+          >
             <span>the ant</span>
             <p>$160</p>
           </Button>

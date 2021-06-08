@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import man from "../../../../assets/home/image/main.png"
 import icon1 from "../../../../assets/home/image/icon1.svg"
 import icon2 from "../../../../assets/home/image/icon2.svg"
 import icon3 from "../../../../assets/home/image/icon3.svg"
@@ -22,62 +21,62 @@ export default function image({ data }) {
       <ul className="circle-container">
         <Link to="#">
           <li>
-            <img src={icon1} alt="" />
+            <img src={icon1} alt="" className="pest" />
           </li>
         </Link>
         <Link to="#">
           <li>
-            <img src={icon2} alt="" />
+            <img src={icon2} alt="" className="pest" />
           </li>
         </Link>
         <Link to="#">
           <li>
-            <img src={icon3} alt="" />
+            <img src={icon3} alt="" className="pest" />
           </li>
         </Link>
         <Link to="#">
           <li>
-            <img src={icon4} alt="" />
+            <img src={icon4} alt="" className="pest" />
           </li>
         </Link>
         <Link to="#">
           <li>
-            <img src={icon5} alt="" />
+            <img src={icon5} alt="" className="pest" />
           </li>
         </Link>
         <Link to="#">
           <li>
-            <img src={icon6} alt="" />
+            <img src={icon6} alt="" className="pest" />
           </li>
         </Link>
         <Link to="#">
           <li>
-            <img src={icon7} alt="" />
+            <img src={icon7} alt="" className="pest" />
           </li>
         </Link>
         <Link to="#">
           <li>
-            <img src={icon8} alt="" />
+            <img src={icon8} alt="" className="pest" />
           </li>
         </Link>
         <Link to="#">
           <li>
-            <img src={icon9} alt="" />
+            <img src={icon9} alt="" className="pest" />
           </li>
         </Link>
         <Link to="#">
           <li>
-            <img src={icon10} alt="" />
+            <img src={icon10} alt="" className="pest" />
           </li>
         </Link>
         <Link to="#">
           <li>
-            <img src={icon11} alt="" />
+            <img src={icon11} alt="" className="pest" />
           </li>
         </Link>
         <Link to="#">
           <li>
-            <img src={icon12} alt="" />
+            <img src={icon12} alt="" className="pest" />
           </li>
         </Link>
       </ul>

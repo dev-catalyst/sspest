@@ -30,11 +30,33 @@
   }
 }
 
+@media only screen and (max-width: 1899.98px) {
+  .home-hero {
+    &-container {
+      .general {
+        margin-right: 182px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1691.98px) {
+  .home-hero {
+    &-container {
+      .general {
+        margin-right: 222px;
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 1619.98px) {
   .home-hero {
     &-container {
       max-width: 1420px;
       padding-top: 300px;
+      .general {
+        margin-right: 142px;
+      }
       .google-ratings {
         margin-right: 50px;
       }
