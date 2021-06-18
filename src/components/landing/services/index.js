@@ -6,15 +6,15 @@ export default function Services({ data }) {
   return (
     <div className="landing-services">
       <div className="container">
-        <h1>{RichText.asText(data.primary.title.raw)}</h1>
+        <RichText render={data.primary.title} />
         <div className="landing-services-image">
           <img src={data.primary.image.url} alt="" />
         </div>
         {data.items.map((para, index) => {
           return (
             <div key={index} className="landing-services-content">
-              <h3>{RichText.asText(para.subtitle.raw)}</h3>
-              <p>{RichText.asText(para.description.raw)}</p>
+              <RichText render={para.subtitle} />
+              <RichText render={para.description} />
             </div>
           )
         })}

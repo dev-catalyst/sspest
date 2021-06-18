@@ -15,8 +15,11 @@ export default function whoAreWe({ data }) {
         />
         <div className="home-whoAreWe-container-content">
           <h4>{RichText.asText(data.subtitle.raw)}</h4>
-          <h1>{RichText.asText(data.title.raw)}</h1>
-          <img src={stone} alt="stone" className="whoAreWe-control-stone" />
+          <h1>
+            <img src={stone} alt="stone" className="whoAreWe-control-stone" />
+            {RichText.asText(data.title.raw)}
+          </h1>
+
           <p>{RichText.asText(data.description.raw)}</p>
           <div className="btn-container">
             <Button themeType="contained" className="btn">

@@ -1,8 +1,8 @@
 .blog-blog2 {
   background-color: #eff2f7;
   .container {
-    padding-top: 170px;
-    padding-bottom: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     .blog-blog2-content {
       max-width: 60%;
       margin: auto;
@@ -59,8 +59,8 @@
 @media only screen and (max-width: 1289.98px) {
   .blog-blog2 {
     .container {
-      padding-top: 40px;
-      padding-bottom: 40px;
+      // padding-top: 40px;
+      // padding-bottom: 40px;
       .blog-blog2-content {
         max-width: 80%;
       }

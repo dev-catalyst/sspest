@@ -8,7 +8,7 @@ import logo from "../../../assets/layout/header/logo.svg"
 import phoneIcon from "../../../assets/layout/header/phone-icon.svg"
 import dropDownIcon from "../../../assets/layout/header/dropdown-icon.svg"
 
-export default function index() {
+export default function Index() {
   return (
     <>
       <header>
@@ -29,14 +29,62 @@ export default function index() {
                   <img src={dropDownIcon} alt="dropDownIcon" />
                 </Link>
                 <ul className="submenu">
-                  <li>
-                    <Link to="#">Option 1</Link>
+                  <li className="third-menu-container">
+                    <Link to="/commercial-pest-control">
+                      Commercial Pest Control{" "}
+                      <img
+                        src={dropDownIcon}
+                        alt="dropDownIcon"
+                        className="modified-icon"
+                      />
+                    </Link>
+                    <div className="third-submenu-first">
+                      <ul>
+                        <li>
+                          <Link to="/strata-pest-control">
+                            Strata Pest Control
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to="/school-pest-control">
+                            School Pest Control
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to="/transport-pest-control">
+                            Transport Pest Control
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to="/government-pest-control">
+                            Government Pest Control
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to="/building-pest-inspection">
+                            Building Pest Inspection
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to="/age-care-facilities">
+                            Aged Care Pest Control
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
                   </li>
                   <li>
-                    <Link to="#">Option 2</Link>
+                    <Link to="/residential-pest-control">
+                      Residential Pest Control
+                    </Link>
                   </li>
                   <li>
-                    <Link to="#">Option 3</Link>
+                    <Link to="/kid-pet-friendly-pest-control">
+                      Pet and Kid Friendly Pest Control
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/organic-pest-control">Organic Pest Control</Link>
                   </li>
                 </ul>
               </li>
@@ -46,13 +94,13 @@ export default function index() {
                 </Link>
                 <ul className="submenu">
                   <li>
-                    <Link to="#">Option 1</Link>
+                    <Link to="#">Termite Treatment</Link>
                   </li>
                   <li>
-                    <Link to="#">Option 2</Link>
+                    <Link to="#">Termite Inspection</Link>
                   </li>
                   <li>
-                    <Link to="#">Option 3</Link>
+                    <Link to="#">Termite Prevention</Link>
                   </li>
                 </ul>
               </li>
@@ -62,13 +110,152 @@ export default function index() {
                 </Link>
                 <ul className="submenu">
                   <li>
-                    <Link to="#">Option 1</Link>
+                    <Link to="/cockroach-pest-control-sydney">
+                      Cockroach Pest Control
+                    </Link>
+                  </li>
+                  <li className="third-menu-container">
+                    <Link to="/spider-pest-control">
+                      Spider Pest Control{" "}
+                      <img
+                        src={dropDownIcon}
+                        alt="dropDownIcon"
+                        className="modified-icon"
+                      />
+                    </Link>
+                    <div className="third-submenu">
+                      <ul>
+                        <li>
+                          <Link to="/red-back-spider">
+                            Red Back Spider Pest Control
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to="/sydney-funnel-web-spider">
+                            Funnel-Web Spider Pest Control
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li className="third-menu-container">
+                    <Link to="/ant-control">
+                      Ant Pest Control
+                      <img
+                        src={dropDownIcon}
+                        alt="dropDownIcon"
+                        className="modified-icon"
+                      />
+                    </Link>
+                    <div className="third-submenu">
+                      <ul>
+                        <li>
+                          <Link to="/white-ant-pest-control">
+                            White Ant Pest Control
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li className="third-menu-container">
+                    <Link to="/bird-pest-control">
+                      Bird Pest Control
+                      <img
+                        src={dropDownIcon}
+                        alt="dropDownIcon"
+                        className="modified-icon"
+                      />
+                    </Link>
+                    <div className="third-submenu">
+                      <ul>
+                        <li>
+                          <Link to="/pigeon-pest-control">
+                            Pigeon Pest Control
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li className="third-menu-container">
+                    <Link to="/feral-animal-removal">
+                      Feral Animal Removal
+                      <img
+                        src={dropDownIcon}
+                        alt="dropDownIcon"
+                        className="modified-icon"
+                      />
+                    </Link>
+                    <div className="third-submenu">
+                      <ul>
+                        <li>
+                          <Link to="/possum-control">Possum Pest Control</Link>
+                        </li>
+                        <li>
+                          <Link to="/rabbit-pest-control">
+                            Rabbit Pest Control
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to="/feral-cat-control">
+                            Feral Cat Pest Control
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li className="third-menu-container">
+                    <Link to="/flying-insect-control">
+                      Flying Pest Control{" "}
+                      <img
+                        src={dropDownIcon}
+                        alt="dropDownIcon"
+                        className="modified-icon"
+                      />
+                    </Link>
+                    <div className="third-submenu">
+                      <ul>
+                        <li>
+                          <Link to="/mosquito-control">
+                            Mosquito Pest Control
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
                   </li>
                   <li>
-                    <Link to="#">Option 2</Link>
+                    <Link to="/rodent-control">Rodent Pest Control</Link>
                   </li>
                   <li>
-                    <Link to="#">Option 3</Link>
+                    <Link to="/silverfish-control">
+                      Silverfish Pest Control
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/bed-bug-control">Bed Bug Pest Control</Link>
+                  </li>
+                  <li>
+                    <Link to="/carpet-beetle-control">
+                      Carpet Beetle Pest Control
+                    </Link>
+                  </li>
+                  <li className="third-menu-container">
+                    <Link to="/moth-control">
+                      Moth Pest Control
+                      <img
+                        src={dropDownIcon}
+                        alt="dropDownIcon"
+                        className="modified-icon"
+                      />
+                    </Link>
+                    <div className="third-submenu">
+                      <ul>
+                        <li>
+                          <Link to="/pantry-moth-control">
+                            Pantry Moth Pest Control
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
                   </li>
                 </ul>
               </li>
@@ -78,13 +265,10 @@ export default function index() {
                 </Link>
                 <ul className="submenu">
                   <li>
-                    <Link to="#">Option 1</Link>
+                    <Link to="/the-end-of-lease">Dog Fleas</Link>
                   </li>
                   <li>
-                    <Link to="#">Option 2</Link>
-                  </li>
-                  <li>
-                    <Link to="#">Option 3</Link>
+                    <Link to="/the-ant">Ants</Link>
                   </li>
                 </ul>
               </li>
@@ -167,14 +351,64 @@ export default function index() {
                 </Link>
                 <div className="accordion-body">
                   <ul>
-                    <li>
-                      <Link to="#">Option 1</Link>
+                    <li className="third-menu-mobile-container">
+                      <Link to="/commercial-pest-control">
+                        Commercial Pest Control{" "}
+                        <img
+                          src={dropDownIcon}
+                          alt="dropDownIcon"
+                          className="modified-icon"
+                        />
+                      </Link>
+                      <div className="third-submenu-mobile">
+                        <ul>
+                          <li>
+                            <Link to="/strata-pest-control">
+                              Strata Pest Control
+                            </Link>
+                          </li>
+                          <li>
+                            <Link to="/school-pest-control">
+                              School Pest Control
+                            </Link>
+                          </li>
+                          <li>
+                            <Link to="/transport-pest-control">
+                              Transport Pest Control
+                            </Link>
+                          </li>
+                          <li>
+                            <Link to="/government-pest-control">
+                              Government Pest Control
+                            </Link>
+                          </li>
+                          <li>
+                            <Link to="/building-pest-inspection">
+                              Building Pest Inspection
+                            </Link>
+                          </li>
+                          <li>
+                            <Link to="/age-care-facilities">
+                              Aged Care Pest Control
+                            </Link>
+                          </li>
+                        </ul>
+                      </div>
                     </li>
                     <li>
-                      <Link to="#">Option 2</Link>
+                      <Link to="/residential-pest-control">
+                        Residential Pest Control
+                      </Link>
                     </li>
                     <li>
-                      <Link to="#">Option 3</Link>
+                      <Link to="/kid-pet-friendly-pest-control">
+                        Pet and Kid Friendly Pest Control
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/organic-pest-control">
+                        Organic Pest Control
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -186,13 +420,13 @@ export default function index() {
                 <div className="accordion-body">
                   <ul>
                     <li>
-                      <Link to="#">Option 1</Link>
+                      <Link to="#">Termite Treatment</Link>
                     </li>
                     <li>
-                      <Link to="#">Option 2</Link>
+                      <Link to="#">Termite Inspection</Link>
                     </li>
                     <li>
-                      <Link to="#">Option 3</Link>
+                      <Link to="#">Termite Prevention</Link>
                     </li>
                   </ul>
                 </div>
@@ -204,13 +438,154 @@ export default function index() {
                 <div className="accordion-body">
                   <ul>
                     <li>
-                      <Link to="#">Option 1</Link>
+                      <Link to="/cockroach-pest-control-sydney">
+                        Cockroach Pest Control
+                      </Link>
+                    </li>
+                    <li className="third-menu-mobile-container">
+                      <Link to="/spider-pest-control">
+                        Spider Pest Control{" "}
+                        <img
+                          src={dropDownIcon}
+                          alt="dropDownIcon"
+                          className="modified-icon"
+                        />
+                      </Link>
+                      <div className="third-submenu-mobile">
+                        <ul>
+                          <li>
+                            <Link to="/red-back-spider">
+                              Red Back Spider Pest Control
+                            </Link>
+                          </li>
+                          <li>
+                            <Link to="/sydney-funnel-web-spider">
+                              Funnel-Web Spider Pest Control
+                            </Link>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li className="third-menu-mobile-container">
+                      <Link to="/ant-control">
+                        Ant Pest Control
+                        <img
+                          src={dropDownIcon}
+                          alt="dropDownIcon"
+                          className="modified-icon"
+                        />
+                      </Link>
+                      <div className="third-submenu-mobile">
+                        <ul>
+                          <li>
+                            <Link to="/white-ant-pest-control">
+                              White Ant Pest Control
+                            </Link>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li className="third-menu-mobile-container">
+                      <Link to="/bird-pest-control">
+                        Bird Pest Control
+                        <img
+                          src={dropDownIcon}
+                          alt="dropDownIcon"
+                          className="modified-icon"
+                        />
+                      </Link>
+                      <div className="third-submenu-mobile">
+                        <ul>
+                          <li>
+                            <Link to="/pigeon-pest-control">
+                              Pigeon Pest Control
+                            </Link>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li className="third-menu-mobile-container">
+                      <Link to="/feral-animal-removal">
+                        Feral Animal Removal
+                        <img
+                          src={dropDownIcon}
+                          alt="dropDownIcon"
+                          className="modified-icon"
+                        />
+                      </Link>
+                      <div className="third-submenu-mobile">
+                        <ul>
+                          <li>
+                            <Link to="/possum-control">
+                              Possum Pest Control
+                            </Link>
+                          </li>
+                          <li>
+                            <Link to="/rabbit-pest-control">
+                              Rabbit Pest Control
+                            </Link>
+                          </li>
+                          <li>
+                            <Link to="/feral-cat-control">
+                              Feral Cat Pest Control
+                            </Link>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li className="third-menu-mobile-container">
+                      <Link to="/flying-insect-control">
+                        Flying Pest Control{" "}
+                        <img
+                          src={dropDownIcon}
+                          alt="dropDownIcon"
+                          className="modified-icon"
+                        />
+                      </Link>
+                      <div className="third-submenu-mobile">
+                        <ul>
+                          <li>
+                            <Link to="/mosquito-control">
+                              Mosquito Pest Control
+                            </Link>
+                          </li>
+                        </ul>
+                      </div>
                     </li>
                     <li>
-                      <Link to="#">Option 2</Link>
+                      <Link to="/rodent-control">Rodent Pest Control</Link>
                     </li>
                     <li>
-                      <Link to="#">Option 3</Link>
+                      <Link to="/silverfish-control">
+                        Silverfish Pest Control
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/bed-bug-control">Bed Bug Pest Control</Link>
+                    </li>
+                    <li>
+                      <Link to="/carpet-beetle-control">
+                        Carpet Beetle Pest Control
+                      </Link>
+                    </li>
+                    <li className="third-menu-mobile-container">
+                      <Link to="/moth-control">
+                        Moth Pest Control
+                        <img
+                          src={dropDownIcon}
+                          alt="dropDownIcon"
+                          className="modified-icon"
+                        />
+                      </Link>
+                      <div className="third-submenu-mobile">
+                        <ul>
+                          <li>
+                            <Link to="/pantry-moth-control">
+                              Pantry Moth Pest Control
+                            </Link>
+                          </li>
+                        </ul>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -222,13 +597,10 @@ export default function index() {
                 <div className="accordion-body">
                   <ul>
                     <li>
-                      <Link to="#">Option 1</Link>
+                      <Link to="/the-end-of-lease">Dog Fleas</Link>
                     </li>
                     <li>
-                      <Link to="#">Option 2</Link>
-                    </li>
-                    <li>
-                      <Link to="#">Option 3</Link>
+                      <Link to="/the-ant">Ants</Link>
                     </li>
                   </ul>
                 </div>

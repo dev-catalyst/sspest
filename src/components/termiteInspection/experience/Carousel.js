@@ -55,19 +55,28 @@ export default function Carousel({ data }) {
   var settings = {
     dots: true,
     infinite: true,
-    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    speed: 500,
+    autoplaySpeed: 3000,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1219,
+        settings: {
+          arrows: false,
+        },
+      },
+    ],
   }
-  console.log(data)
   return (
     <section className="carousel_section">
       {/* Carousel */}
       <div className="carousel_container">
         <Slider {...settings}>
-          {data.map((para, index) => {
+          {data.items.map((para, index) => {
             return <Content key={index} data={para} />
           })}
         </Slider>

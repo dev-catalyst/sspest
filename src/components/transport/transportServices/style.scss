@@ -2,16 +2,17 @@
   // background: url("../../../assets/termite/service-bg.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  // background-attachment: fixed;
+  background-attachment: fixed;
   background-color: #eff2f7;
   .container {
-    padding-top: 369px;
-    padding-bottom: 337px;
-    h1 {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    h2 {
       color: #fff;
       text-align: center;
       margin: auto;
       margin-bottom: 30px;
+      text-transform: uppercase;
     }
     p {
       color: #fff;
@@ -42,48 +43,20 @@
   }
 }
 
-@media only screen and (max-width: 1789.98px) {
-  .transport-PestServices {
-    .container {
-      padding-top: 240px;
-    }
-  }
-}
-
-@media only screen and (max-width: 1519.98px) {
-  .transport-PestServices {
-    .container {
-      padding-bottom: 149px;
-    }
-  }
-}
-
-@media only screen and (max-width: 1289.98px) {
-  .transport-PestServices {
-    .container {
-      padding-top: 220px;
-    }
-  }
-}
-
 @media only screen and (max-width: 991.98px) {
   .transport-PestServices {
     .container {
       max-width: 90%;
-      padding-bottom: 200px;
+      // padding-bottom: 200px;
     }
   }
 }
 
 @media only screen and (max-width: 767.98px) {
   .transport-PestServices {
-    background: url("../../../assets/info/pest-small-bg.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-color: #eff2f7;
     .container {
-      padding-top: 200px;
-      padding-bottom: 150px;
+      // padding-top: 200px;
+      // padding-bottom: 150px;
       .transport-PestServices-btn-container {
         .transport-PestServices-btn {
           padding: 18px 30px;

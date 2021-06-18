@@ -8,11 +8,10 @@ export default function Carousel({ data }) {
   var settings = {
     dots: true,
     infinite: true,
-    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 10000,
+    autoplaySpeed: 3000,
     cssEase: "ease-in-out",
     arrows: false,
   }
@@ -26,8 +25,8 @@ export default function Carousel({ data }) {
             return (
               <div key={index} className="landing-carousel-content">
                 <div className="landing-carousel-content-para">
-                  <h2>{RichText.asText(para.subtitle.raw)}</h2>
-                  <p>{RichText.asText(para.description.raw)}</p>
+                  <RichText render={para.slice_title} />
+                  <RichText render={para.slice_description} />
                 </div>
               </div>
             )

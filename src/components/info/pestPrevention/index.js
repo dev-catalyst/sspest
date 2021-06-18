@@ -1,6 +1,7 @@
 import React from "react"
 import { Button } from "@react-md/button"
 import { RichText } from "prismic-reactjs"
+import curve2 from "../../../assets/curves/curve-bottom-dark-02.png"
 import "./style.scss"
 
 export default function pestPrevention({ data }) {
@@ -8,29 +9,28 @@ export default function pestPrevention({ data }) {
     <div
       className="info-pestPrevention"
       style={{
-        backgroundImage: `url(${data.primary.bg_image.url})`,
+        backgroundImage: `linear-gradient(#333333, #1E1D18),url(${data.primary.bg_image.url})`,
+        backgroundBlendMode: "multiply",
       }}
     >
       <div className="container">
-        <h1>{RichText.asText(data.primary.title.raw)}</h1>
-        <p>{RichText.asText(data.primary.description.raw)}</p>
-        <p>{RichText.asText(data.primary.following.raw)}</p>
-        <ul>
-          {data.items.map((para, index) => {
-            return (
-              <li key={index}>
-                {RichText.asText(para.list.raw)}
-                <br />
-              </li>
-            )
-          })}
-        </ul>
+        <RichText render={data.primary.title} />
+        <RichText render={data.primary.description} />
+
         <div className="info-pestPrevention-btn-container">
           <Button themeType="contained" className="info-pestPrevention-btn">
             CONTACT US NOW
           </Button>
         </div>
       </div>
+      <img
+        src={curve2}
+        style={{
+          width: "100%",
+          marginBottom: "-8px",
+        }}
+        alt=""
+      />
     </div>
   )
 }

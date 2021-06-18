@@ -1,13 +1,13 @@
 .home-pestControl2 {
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  // background-attachment: fixed;
+  background-attachment: fixed;
   // background-position: center;
   &-container {
     max-width: 1600px;
     margin: auto;
-    padding-top: 280px;
-    padding-bottom: 299px;
+    padding-top: 2px;
+    padding-bottom: 2px;
     h1 {
       text-align: center;
       margin: auto;
@@ -23,7 +23,7 @@
   .home-pestControl2 {
     &-container {
       max-width: 1320px;
-      padding-top: 180px;
+      // padding-top: 180px;
     }
   }
 }
@@ -32,8 +32,8 @@
   .home-pestControl2 {
     &-container {
       max-width: 1120px;
-      padding-top: 180px;
-      padding-bottom: 149px;
+      //padding-top: 180px;
+      // padding-bottom: 149px;
     }
   }
 }
@@ -42,8 +42,8 @@
   .home-pestControl2 {
     &-container {
       max-width: 900px;
-      padding-top: 130px;
-      padding-bottom: 149px;
+      // padding-top: 130px;
+      // padding-bottom: 149px;
     }
   }
 }
@@ -52,20 +52,6 @@
   .home-pestControl2 {
     &-container {
       max-width: 90%;
-    }
-  }
-}
-
-@media only screen and (max-width: 767.98px) {
-  .home-pestControl2 {
-    background: url("../../../assets/home/mobile/pest2-bgs.png"),
-      linear-gradient(#eff2f7, #dde4ec);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    // background-attachment: fixed;
-    &-container {
-      padding-top: 50px;
-      padding-bottom: 50px;
     }
   }
 }

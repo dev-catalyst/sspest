@@ -24,7 +24,7 @@ export default function Blog({ data }) {
                 />
                 <div className="post-card">
                   <h4>{RichText.asText(blog.node.data.title.raw)}</h4>
-                  <p>{blog.node.data.content.text.slice(0, 250) + "..."}</p>
+                  <p>{blog.node.data.content.text.slice(0, 130) + "..."}</p>
                   <Link to="#">
                     <Button themeType="contained" className="learn">
                       LEARN MORE

@@ -29,38 +29,22 @@ p {
 }
 
 h1 {
-  font-size: 70px;
+  font-size: 40px;
   line-height: 1.2em;
   font-weight: 700;
   color: $secondary-color;
-  @media only screen and (max-width: 1789.98px) {
-    font-size: 58px;
-  }
-  @media only screen and (max-width: 1519.98px) {
-    font-size: 55px;
-  }
   @media only screen and (max-width: 1289.98px) {
-    font-size: 45px;
-    line-height: 50px;
-  }
-  @media only screen and (max-width: 991.98px) {
-    font-size: 40px;
+    font-size: 30px;
   }
   @media only screen and (max-width: 575.98px) {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 40px;
   line-height: 1.2em;
   color: $secondary-color;
-  @media only screen and (max-width: 1789.98px) {
-    font-size: 45px;
-  }
-  @media only screen and (max-width: 1519.98px) {
-    font-size: 40px;
-  }
   @media only screen and (max-width: 1289.98px) {
     font-size: 30px;
   }
@@ -73,81 +57,48 @@ h2 {
 }
 
 h3 {
-  font-size: 40px;
+  font-size: 30px;
   line-height: 1.15em;
   color: $secondary-color;
-  @media only screen and (max-width: 1789.98px) {
-    font-size: 35px;
-  }
-  @media only screen and (max-width: 1519.98px) {
-    font-size: 30px;
-  }
-  @media only screen and (max-width: 1289.98px) {
-    font-size: 28px;
-  }
-  @media only screen and (max-width: 991.98px) {
-    font-size: 24px;
-  }
   @media only screen and (max-width: 575.98px) {
     font-size: 20px;
   }
 }
 
 h4 {
-  font-size: 30px;
+  font-size: 20px;
   line-height: 1.15em;
-  font-weight: 600px;
+  font-weight: 600;
   color: $secondary-color;
-  @media only screen and (max-width: 1789.98px) {
-    font-size: 25px;
-  }
-  @media only screen and (max-width: 1519.98px) {
-    font-size: 22px;
-  }
-  @media only screen and (max-width: 1289.98px) {
-    font-size: 20px;
-  }
   @media only screen and (max-width: 575.98px) {
     font-size: 15px;
   }
 }
 
 p {
-  font-size: 22px;
+  font-size: 16px;
   line-height: 2em;
   color: $tertiary-color;
-  @media only screen and (max-width: 1789.98px) {
-    font-size: 20px;
-  }
-  @media only screen and (max-width: 1289.98px) {
-    font-size: 18px;
-  }
-  @media only screen and (max-width: 991.98px) {
-    font-size: 16px;
-  }
   @media only screen and (max-width: 575.98px) {
     font-size: 12px;
   }
 }
 
 ul {
+  margin-top: 5px;
+  margin-bottom: 5px;
   li {
-    font-size: 22px;
+    font-size: 16px;
     line-height: 2em;
     color: $tertiary-color;
-    @media only screen and (max-width: 1789.98px) {
-      font-size: 20px;
-    }
-    @media only screen and (max-width: 1289.98px) {
-      font-size: 18px;
-    }
-    @media only screen and (max-width: 991.98px) {
-      font-size: 16px;
-    }
     @media only screen and (max-width: 575.98px) {
       font-size: 12px;
     }
   }
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {

@@ -1,10 +1,10 @@
 .termite-ourServices {
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  // background-attachment: fixed;
+  background-attachment: fixed;
   .container {
-    padding-top: 369px;
-    padding-bottom: 337px;
+    padding-top: 9px;
+    padding-bottom: 7px;
     h1 {
       color: #fff;
       text-align: center;
@@ -13,50 +13,6 @@
     }
     p {
       color: #fff;
-    }
-  }
-}
-
-@media only screen and (max-width: 1789.98px) {
-  .termite-ourServices {
-    .container {
-      padding-top: 180px;
-    }
-  }
-}
-
-@media only screen and (max-width: 1519.98px) {
-  .termite-ourServices {
-    .container {
-      padding-bottom: 149px;
-    }
-  }
-}
-
-@media only screen and (max-width: 1289.98px) {
-  .termite-ourServices {
-    .container {
-      padding-top: 100px;
-    }
-  }
-}
-
-@media only screen and (max-width: 991.98px) {
-  .termite-ourServices {
-    .container {
-      padding-top: 150px;
-      padding-bottom: 200px;
-    }
-  }
-}
-
-@media only screen and (max-width: 767.98px) {
-  .termite-ourServices {
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    .container {
-      padding-top: 200px;
-      padding-bottom: 250px;
     }
   }
 }

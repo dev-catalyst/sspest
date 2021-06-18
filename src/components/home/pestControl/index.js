@@ -13,8 +13,11 @@ export default function pestControl({ data }) {
           <GeneralPest />
         </div>
         <div className="home-pest-control-container-content">
-          <h1>{RichText.asText(data.title.raw)}</h1>
-          <img src={stone} alt="stone" className="pest-control-stone" />
+          <h1>
+            {RichText.asText(data.title.raw)}
+            <img src={stone} alt="stone" className="pest-control-stone" />
+          </h1>
+
           <p>{RichText.asText(data.description.raw)}</p>
         </div>
         <div className="image-holder">

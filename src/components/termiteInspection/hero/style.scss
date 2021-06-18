@@ -1,8 +1,12 @@
 @import "../../../styles/utilities/variables/variables.scss";
 .termite-hero {
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: start;
+  background-size: contain;
+  background-position: center;
+  @media only screen and (min-width: 2100.98px) {
+    background-size: 100% 100%;
+  }
+  // background-position: start;
   background-color: #fff;
   margin-bottom: 80px;
 
@@ -14,9 +18,28 @@
     flex-direction: row-reverse;
     align-items: flex-end;
     justify-content: space-between;
+    .termite-general {
+      margin-right: 62px;
+      @media only screen and (min-width: 2100.98px) {
+        margin-right: 12px;
+      }
+    }
     .termite-google-ratings {
       margin-right: 100px;
       margin-bottom: 200px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1899.98px) {
+  .termite-hero {
+    &-container {
+      .termite-general {
+        margin-right: 102px;
+        @media only screen and (max-width: 1719.98px) {
+          margin-right: 132px;
+        }
+      }
     }
   }
 }
@@ -30,26 +53,36 @@
         margin-right: 50px;
       }
       .termite-general {
-        margin-right: 142px;
+        margin-right: 125px;
       }
     }
   }
 }
 @media only screen and (max-width: 1419.98px) {
   .termite-hero {
+    background-size: 80%;
+    background-position: left center;
     &-container {
-      padding-top: 200px;
+      padding-top: 250px;
+      .termite-general {
+        margin-right: 145px;
+      }
     }
   }
 }
 
 @media only screen and (max-width: 1199.98px) {
   .termite-hero {
+    background-size: contain;
+    background-position: center;
     &-container {
       max-width: 900px;
       padding-top: 150px;
       .termite-google-ratings {
         margin-right: 20px;
+      }
+      .termite-general {
+        margin-right: 30px;
       }
     }
   }
@@ -57,18 +90,26 @@
 
 @media only screen and (max-width: 991.98px) {
   .termite-hero {
+    background-size: 100% 100%;
+    background-position: center;
     &-container {
       max-width: 90%;
-      padding-top: 300px;
+      padding-top: 600px;
       flex-direction: column-reverse;
-      justify-content: center;
+      justify-content: flex-end;
       text-align: center;
+      align-items: center;
       .termite-google-ratings {
         margin-right: 20px;
         margin-bottom: 50px;
+        img {
+          width: 119px;
+          height: auto;
+        }
       }
       .termite-general {
         display: none;
+        margin-right: 0;
       }
     }
   }
@@ -76,6 +117,8 @@
 
 @media only screen and (max-width: 767.98px) {
   .termite-hero {
+    background-size: 100% 100%;
+    margin-bottom: 20px;
     &-container {
       padding-top: 273px;
       .termite-google-ratings {

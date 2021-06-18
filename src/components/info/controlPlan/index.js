@@ -17,24 +17,24 @@ export default function controlPlan({ data, data1 }) {
           <div className="info-controlPlan-inspection-content">
             <h1>
               <img src={stone} alt="" />
-              {RichText.asText(data.title.raw)}
+              <RichText render={data.primary.title} />
             </h1>
-            <p>{RichText.asText(data.description.raw)}</p>
+            <RichText render={data.primary.description} />
           </div>
           <div className="info-controlPlan-inspection-image">
-            <img src={data.image.url} alt="" className="termite1" />
+            <img src={data.primary.image.url} alt="" className="termite1" />
           </div>
         </div>
         <div className="info-controlPlan-inspection container2">
           <div className="info-controlPlan-inspection-image">
-            <img src={data1.image.url} alt="" className="termite2" />
+            <img src={data1.primary.image.url} alt="" className="termite2" />
           </div>
           <div className="info-controlPlan-inspection-content content2">
             <h1>
               <img src={stone} alt="" />
-              {RichText.asText(data1.title.raw)}
+              <RichText render={data1.primary.title} />
             </h1>
-            <p>{RichText.asText(data1.description.raw)}</p>
+            <RichText render={data1.primary.description} />
           </div>
         </div>
       </div>

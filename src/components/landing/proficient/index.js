@@ -1,5 +1,7 @@
 import React from "react"
 import { RichText } from "prismic-reactjs"
+import curve1 from "../../../assets/curves/curve-top-light-02.png"
+import curve2 from "../../../assets/curves/curve-bottom-dark-01.png"
 import "./style.scss"
 
 export default function proficient({ data }) {
@@ -7,17 +9,32 @@ export default function proficient({ data }) {
     <div
       className="landing-proficient"
       style={{
-        backgroundImage: `url(${data.primary.bg_image.url}), linear-gradient(#eff2f7, #dde4ec)`,
+        backgroundImage: `linear-gradient(#333333, #1E1D18),url(${data.primary.bg_image.url})`,
+        backgroundBlendMode: "multiply",
       }}
     >
+      <img
+        src={curve1}
+        style={{
+          width: "100%",
+          marginTop: "-6px",
+        }}
+        alt=""
+      />
       <div className="container">
         <div className="landing-proficient-content">
-          <h1>{RichText.asText(data.primary.title.raw)}</h1>
-          {data.items.map((info, index) => {
-            return <p key={index}>{RichText.asText(info.content.raw)}</p>
-          })}
+          <RichText render={data.primary.title} />
+          <RichText render={data.primary.description} />
         </div>
       </div>
+      <img
+        src={curve2}
+        style={{
+          width: "100%",
+          marginBottom: "-6px",
+        }}
+        alt=""
+      />
     </div>
   )
 }

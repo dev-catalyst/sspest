@@ -8,39 +8,32 @@ const Reason = props => {
   return (
     <div className="choosePest-reason-structure">
       <img src={tick} alt="" />
-      <p>{props.children}</p>
+      {props.children}
     </div>
   )
 }
 
-export default function choosePest({ data, data1 }) {
+export default function choosePest({ data }) {
   return (
     <div className="info-choosePest">
       <div className="container">
         <h1>
           <img src={stone} alt="" />
-          {RichText.asText(data.primary.title.raw)}
+          <RichText render={data.primary.title} />
         </h1>
-        <p className="p1">{RichText.asText(data.primary.description.raw)}</p>
+        <RichText render={data.primary.description} />
         <br />
-        <p className="p2">{RichText.asText(data.primary.following.raw)}</p>
+        <RichText render={data.primary.following} />
         <div className="choosePest-reasons-container">
-          <div className="choosePest-reasons-points">
-            {data.items.map((para, index) => {
-              return (
-                <Reason key={index}>{RichText.asText(para.reasons.raw)}</Reason>
-              )
-            })}
-          </div>
-          <div className="choosePest-reasons-points">
-            {data1.items.map((para, index) => {
-              return (
-                <Reason key={index}>{RichText.asText(para.reasons.raw)}</Reason>
-              )
-            })}
-          </div>
+          {data.items.map((para, index) => {
+            return (
+              <Reason key={index}>
+                <RichText render={para.reasons} />
+              </Reason>
+            )
+          })}
         </div>
-        <p>{RichText.asText(data.primary.conclusion.raw)}</p>
+        <RichText render={data.primary.conclusion} />
       </div>
     </div>
   )

@@ -2,15 +2,16 @@
   background-color: #eff2f7;
   margin-top: -7px;
   .container {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 20px;
+    padding-bottom: 10px;
     .termite-general-pest {
       display: none;
     }
     .termite-whyTermite-inspection {
       display: flex;
       justify-content: space-between;
-      padding-bottom: 180px;
+      padding-bottom: 60px;
+      align-items: center;
       &-image {
         max-width: 48.5%;
         img {
@@ -37,24 +38,15 @@
   }
 }
 
-@media only screen and (max-width: 1789.98px) {
-  .termite-whyTermite {
-    .container {
-      padding-bottom: 50px;
-    }
-  }
-}
-
 @media only screen and (max-width: 1519.98px) {
   .termite-whyTermite {
     .container {
       .termite-whyTermite-inspection {
-        padding-bottom: 100px;
+        padding-bottom: 30px;
         &-image {
           margin-right: 0;
           img {
             max-width: 100%;
-            padding-top: 40px;
           }
         }
       }
@@ -89,6 +81,7 @@
 @media only screen and (max-width: 991.98px) {
   .termite-whyTermite {
     .container {
+      padding-top: 10px;
       .termite-general-pest {
         display: block;
         text-align: center;

@@ -2,6 +2,8 @@ import React from "react"
 import { Button } from "@react-md/button"
 import { Link } from "gatsby"
 import { RichText } from "prismic-reactjs"
+import curve1 from "../../../assets/curves/curve-top-dark-01.png"
+import curve2 from "../../../assets/curves/curve-bottom-light-02.png"
 import "./style.scss"
 
 export default function order({ data }) {
@@ -9,9 +11,18 @@ export default function order({ data }) {
     <div
       className="home-order"
       style={{
-        backgroundImage: `url(${data.bg_image.url}), linear-gradient(#dde4ec, #eff2f7)`,
+        backgroundImage: `linear-gradient(#0A6A9C, #01639A), url(${data.bg_image.url})`,
+        backgroundBlendMode: "multiply",
       }}
     >
+      <img
+        src={curve1}
+        style={{
+          width: "100%",
+          marginTop: "-6px",
+        }}
+        alt=""
+      />
       <div className="home-order-container">
         <h2>{RichText.asText(data.title.raw)}</h2>
         <p>{RichText.asText(data.content.raw)}</p>
@@ -31,6 +42,14 @@ export default function order({ data }) {
           </Button>
         </Link>
       </div>
+      <img
+        src={curve2}
+        style={{
+          width: "100%",
+          marginBottom: "-6px",
+        }}
+        alt=""
+      />
     </div>
   )
 }

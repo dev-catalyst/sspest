@@ -1,18 +1,12 @@
 @import "../../../styles/utilities/variables/variables.scss";
 .home-hero {
   background-repeat: no-repeat;
-  // background-size: 100% 100%;
   background-size: cover;
   margin-bottom: 80px;
   position: relative;
   @media only screen and (min-width: 2100.98px) {
     background-size: 100% 100%;
   }
-  // .po {
-  //   position: absolute;
-  //   bottom: 0;
-  //   left: 0;
-  // }
   &-container {
     max-width: 1620px;
     margin: auto;

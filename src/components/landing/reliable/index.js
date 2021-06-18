@@ -1,21 +1,31 @@
 import React from "react"
 import { RichText } from "prismic-reactjs"
+import curve from "../../../assets/curves/curve-bottom-light-01.png"
 import "./style.scss"
 
 export default function reliable({ data }) {
   return (
     <div
       className="landing-reliable"
-      style={{ backgroundImage: `url(${data.primary.bg_image.url})` }}
+      style={{
+        backgroundImage: `linear-gradient(#EEE3DB, #F3E8E2), url(${data.primary.bg_image.url})`,
+        backgroundBlendMode: "hard-light",
+      }}
     >
       <div className="container">
         <div className="landing-reliable-content">
-          <h1>{RichText.asText(data.primary.title.raw)}</h1>
-          {data.items.map((para, index) => {
-            return <p key={index}>{RichText.asText(para.content.raw)}</p>
-          })}
+          <RichText render={data.primary.title} />
+          <RichText render={data.primary.description} />
         </div>
       </div>
+      <img
+        src={curve}
+        style={{
+          width: "100%",
+          marginBottom: "-6px",
+        }}
+        alt=""
+      />
     </div>
   )
 }

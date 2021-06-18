@@ -38,38 +38,38 @@ const PestWidgetInner = () => {
 
   const handleFlea = () => {
     setShow("block")
-    setName("The Flea")
-    setLink("#")
+    setName("The End of Lease")
+    setLink("/the-end-of-lease")
   }
   const handleCockroach = () => {
     setShow("block")
-    setName("The Cockroach")
-    setLink("#")
+    setName("The German")
+    setLink("/the-german")
   }
   const handleBedBug = () => {
     setShow("block")
     setName("The BedBug")
-    setLink("#")
+    setLink("/the-bed-bug")
   }
   const handleSpider = () => {
     setShow("block")
     setName("The Spider")
-    setLink("#")
+    setLink("/the-spider")
   }
   const handleTermite = () => {
     setShow("block")
     setName("The Termite")
-    setLink("#")
+    setLink("/the-termite")
   }
   const handleRodent = () => {
     setShow("block")
     setName("The Rodent")
-    setLink("#")
+    setLink("/the-rodent")
   }
   const handleAntPest = () => {
     setShow("block")
     setName("The AntPest")
-    setLink("#")
+    setLink("/the-ant")
   }
   return (
     <div className="fixed-widget-layout">
@@ -99,7 +99,7 @@ const PestWidgetInner = () => {
           </p>
         </div>
 
-        <div className="btn-container-widget">
+        <div className="btn-container-widget" onClick={handleClick}>
           <Link to={link}>VIEW INFO</Link>
         </div>
       </div>
@@ -110,7 +110,7 @@ const PestWidgetInner = () => {
             className="pest-widget-price pest-widget-animation1"
             onClick={handleFlea}
           >
-            <span>the flea</span>
+            <span>the end of lease</span>
             <p>$160</p>
           </Button>
         </div>
@@ -121,7 +121,7 @@ const PestWidgetInner = () => {
             className="pest-widget-price pest-widget-animation2"
             onClick={handleCockroach}
           >
-            <span>the cockroach</span>
+            <span>the german</span>
             <p>$260</p>
           </Button>
         </div>

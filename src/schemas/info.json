@@ -3,7 +3,21 @@
     "uid": {
       "type": "UID",
       "config": {
-        "label": "info page"
+        "label": "slug"
+      }
+    },
+    "title": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+        "label": "title"
+      }
+    },
+    "metadescription": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+        "label": "metaDescription"
       }
     },
     "body": {
@@ -11,20 +25,22 @@
       "fieldset": "Slice zone",
       "config": {
         "labels": {
-          "commercial_pest_control": [],
-          "commercial_services": [],
-          "treatment_services": [],
-          "plan": [],
+          "pest_control": [],
+          "services": [],
+          "treatment": [],
+          "pest_inspection": [],
+          "control_plan": [],
           "extermination": [],
-          "pest_prevention": [],
-          "choose": []
+          "prevention": [],
+          "choose": [],
+          "order": []
         },
         "choices": {
-          "commercial_pest_control": {
+          "pest_control": {
             "type": "Slice",
-            "fieldset": "commercial pest control",
-            "description": "section 1",
-            "icon": "add_box",
+            "fieldset": "pest control",
+            "description": "pest control",
+            "icon": "ac_unit",
             "display": "list",
             "non-repeat": {
               "title": {
@@ -34,21 +50,21 @@
                   "label": "title"
                 }
               },
-              "paragraph": {
+              "description": {
                 "type": "StructuredText",
                 "config": {
                   "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
-                  "label": "paragraph"
+                  "label": "description"
                 }
               }
             },
             "repeat": {}
           },
-          "commercial_services": {
+          "services": {
             "type": "Slice",
-            "fieldset": "commercial services",
-            "description": "section 2",
-            "icon": "adb",
+            "fieldset": "services",
+            "description": "services",
+            "icon": "crop",
             "display": "list",
             "non-repeat": {
               "title": {
@@ -56,6 +72,13 @@
                 "config": {
                   "single": "heading1, heading2, heading3, heading4, heading5, heading6",
                   "label": "title"
+                }
+              },
+              "description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                  "label": "description"
                 }
               },
               "bg_image": {
@@ -65,31 +88,15 @@
                   "thumbnails": [],
                   "label": "bg image"
                 }
-              },
-              "bg_small_image": {
-                "type": "Image",
-                "config": {
-                  "constraint": {},
-                  "thumbnails": [],
-                  "label": "bg small image"
-                }
               }
             },
-            "repeat": {
-              "description": {
-                "type": "StructuredText",
-                "config": {
-                  "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
-                  "label": "description"
-                }
-              }
-            }
+            "repeat": {}
           },
-          "treatment_services": {
+          "treatment": {
             "type": "Slice",
-            "fieldset": "treatment services",
-            "description": "section 3",
-            "icon": "add_a_photo",
+            "fieldset": "treatment",
+            "description": "treatment services",
+            "icon": "directions_subway",
             "display": "list",
             "non-repeat": {
               "title": {
@@ -122,20 +129,52 @@
               }
             },
             "repeat": {
-              "services": {
+              "points": {
                 "type": "StructuredText",
                 "config": {
                   "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
-                  "label": "services"
+                  "label": "points"
                 }
               }
             }
           },
-          "plan": {
+          "pest_inspection": {
             "type": "Slice",
-            "fieldset": "plan",
-            "description": "section 4",
-            "icon": "donut_large",
+            "fieldset": "pest inspection",
+            "description": "pest inspection",
+            "icon": "exit_to_app",
+            "display": "list",
+            "non-repeat": {
+              "title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+                  "label": "title"
+                }
+              },
+              "description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                  "label": "description"
+                }
+              },
+              "image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "image"
+                }
+              }
+            },
+            "repeat": {}
+          },
+          "control_plan": {
+            "type": "Slice",
+            "fieldset": "control plan",
+            "description": "control plan",
+            "icon": "find_replace",
             "display": "list",
             "non-repeat": {
               "title": {
@@ -166,18 +205,10 @@
           "extermination": {
             "type": "Slice",
             "fieldset": "extermination",
-            "description": "section 5",
-            "icon": "local_gas_station",
+            "description": "extermination",
+            "icon": "local_drink",
             "display": "list",
             "non-repeat": {
-              "bg_image": {
-                "type": "Image",
-                "config": {
-                  "constraint": {},
-                  "thumbnails": [],
-                  "label": "bg image"
-                }
-              },
               "title": {
                 "type": "StructuredText",
                 "config": {
@@ -185,30 +216,29 @@
                   "label": "title"
                 }
               },
-              "bg_small_image": {
-                "type": "Image",
-                "config": {
-                  "constraint": {},
-                  "thumbnails": [],
-                  "label": "bg small image"
-                }
-              }
-            },
-            "repeat": {
               "description": {
                 "type": "StructuredText",
                 "config": {
                   "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
                   "label": "description"
                 }
+              },
+              "bg_image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "bg image"
+                }
               }
-            }
+            },
+            "repeat": {}
           },
-          "pest_prevention": {
+          "prevention": {
             "type": "Slice",
-            "fieldset": "pest prevention",
-            "description": "section 6",
-            "icon": "face",
+            "fieldset": "prevention",
+            "description": "prevention",
+            "icon": "notifications_none",
             "display": "list",
             "non-repeat": {
               "title": {
@@ -225,21 +255,6 @@
                   "label": "description"
                 }
               },
-              "following": {
-                "type": "StructuredText",
-                "config": {
-                  "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
-                  "label": "following"
-                }
-              },
-              "bg_small_image": {
-                "type": "Image",
-                "config": {
-                  "constraint": {},
-                  "thumbnails": [],
-                  "label": "bg small image"
-                }
-              },
               "bg_image": {
                 "type": "Image",
                 "config": {
@@ -249,21 +264,13 @@
                 }
               }
             },
-            "repeat": {
-              "list": {
-                "type": "StructuredText",
-                "config": {
-                  "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
-                  "label": "list"
-                }
-              }
-            }
+            "repeat": {}
           },
           "choose": {
             "type": "Slice",
             "fieldset": "choose",
-            "description": "section 7",
-            "icon": "face",
+            "description": "choose",
+            "icon": "queue_play_next",
             "display": "list",
             "non-repeat": {
               "title": {

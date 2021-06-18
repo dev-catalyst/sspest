@@ -15,11 +15,12 @@ export default function WhyTermite({ data, data2 }) {
           <div className="termite-whyTermite-inspection-content">
             <h1>
               <img src={stone} alt="" />
-              {RichText.asText(data.primary.title.raw)}
+              <RichText render={data.primary.title} />
             </h1>
-            {data.items.map((para, index) => {
-              return <p key={index}>{RichText.asText(para.content.raw)}</p>
-            })}
+            <RichText render={data.primary.description} />
+            {/* {data.items.map((para, index) => {
+              return <RichText key={index} render={para.description} />
+            })} */}
           </div>
           <div className="termite-whyTermite-inspection-image">
             <img src={data.primary.image.url} alt="" className="termite1" />
@@ -32,17 +33,13 @@ export default function WhyTermite({ data, data2 }) {
           <div className="termite-whyTermite-inspection-content content2">
             <h1>
               <img src={stone} alt="" />
-              {RichText.asText(data2.primary.title.raw)}
+              <RichText render={data2.primary.title} />
             </h1>
             <div>
-              <p>{RichText.asText(data2.primary.subtitle.raw)}</p>
-              <ul>
-                {data2.items.map((para, index) => {
-                  return (
-                    <li key={index}>{RichText.asText(para.content.raw)}</li>
-                  )
-                })}
-              </ul>
+              <RichText render={data2.primary.description} />
+              {/* {data2.items.map((para, index) => {
+                return <RichText key={index} render={para.description} />
+              })} */}
             </div>
           </div>
         </div>

@@ -4,8 +4,8 @@
   &-container {
     max-width: 1600px;
     margin: auto;
-    padding-top: 165px;
-    padding-bottom: 100px;
+    padding-top: 15px;
+    padding-bottom: 10px;
     h1 {
       text-align: center;
       margin: auto;
@@ -14,8 +14,9 @@
 
       .h1-stone {
         position: absolute;
+        height: 200px;
         top: -80px;
-        left: 450px;
+        left: 550px;
       }
     }
     .posts {
@@ -45,9 +46,6 @@
         text-align: start;
         z-index: 99;
         margin-top: -70px;
-        p {
-          font-size: 18px;
-        }
         h4 {
           margin: 0;
           color: #7b7b7b;
@@ -68,6 +66,9 @@
             box-shadow: none;
             opacity: 0.95;
           }
+        }
+        a {
+          text-decoration: none;
         }
       }
     }
@@ -103,7 +104,6 @@
   .home-blog {
     &-container {
       max-width: 900px;
-      padding-top: 100px;
       .posts {
         .post-card {
           max-width: 62%;

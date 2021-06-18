@@ -1,11 +1,11 @@
 .school-PestServices {
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  // background-attachment: fixed;
+  background-attachment: fixed;
   background-color: #eff2f7;
   .container {
-    padding-top: 369px;
-    padding-bottom: 337px;
+    padding-top: 69px;
+    padding-bottom: 37px;
     h1 {
       color: #fff;
       text-align: center;
@@ -41,46 +41,42 @@
   }
 }
 
-@media only screen and (max-width: 1789.98px) {
-  .school-PestServices {
-    .container {
-      padding-top: 240px;
-    }
-  }
-}
+// @media only screen and (max-width: 1789.98px) {
+//   .school-PestServices {
+//     .container {
+//       padding-top: 240px;
+//     }
+//   }
+// }
 
-@media only screen and (max-width: 1519.98px) {
-  .school-PestServices {
-    .container {
-      padding-bottom: 149px;
-    }
-  }
-}
+// @media only screen and (max-width: 1519.98px) {
+//   .school-PestServices {
+//     .container {
+//       padding-bottom: 149px;
+//     }
+//   }
+// }
 
-@media only screen and (max-width: 1289.98px) {
-  .school-PestServices {
-    .container {
-      padding-top: 150px;
-    }
-  }
-}
+// @media only screen and (max-width: 1289.98px) {
+//   .school-PestServices {
+//     .container {
+//       padding-top: 150px;
+//     }
+//   }
+// }
 
 @media only screen and (max-width: 991.98px) {
   .school-PestServices {
     .container {
       max-width: 90%;
-      padding-top: 200px;
-      padding-bottom: 200px;
+      // padding-top: 200px;
+      // padding-bottom: 200px;
     }
   }
 }
 
 @media only screen and (max-width: 767.98px) {
   .school-PestServices {
-    background: url("../../../assets/info/pest-small-bg.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-color: #eff2f7;
     .container {
       // padding-top: 100px;
       // padding-bottom: 70px;

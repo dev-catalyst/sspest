@@ -18,6 +18,8 @@ import Blog from "../components/home/blog"
 import Call from "../components/home/call"
 import divider1 from "../assets/home/divider1.png"
 
+import { Helmet } from "react-helmet"
+
 import { graphql } from "gatsby"
 
 export default function Home({ data }) {
@@ -53,6 +55,10 @@ export default function Home({ data }) {
 
   return (
     <div>
+      <Helmet>
+        <meta name="description" content="" />
+        <title>SSPest - expertise.service.trust</title>
+      </Helmet>
       <Layout>
         <Hero data={heroSection} />
         <img src={divider1} style={{ width: "100%" }} alt="" />

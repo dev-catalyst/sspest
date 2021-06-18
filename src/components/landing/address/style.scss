@@ -1,11 +1,12 @@
 .landing-address {
-  background-color: #eff2f7;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  // background-attachment: fixed;
+  position: relative;
+  z-index: 9;
+  background-attachment: fixed;
   .container {
-    padding-top: 378px;
-    padding-bottom: 362px;
+    padding-top: 28px;
+    padding-bottom: 120px;
     display: flex;
     justify-content: space-between;
     .landing-address-content {
@@ -78,7 +79,7 @@
 @media only screen and (max-width: 1519.98px) {
   .landing-address {
     .container {
-      padding-bottom: 232px;
+      // padding-bottom: 232px;
       .landing-address-map {
         margin-top: 80px;
         iframe {
@@ -94,8 +95,8 @@
   .landing-address {
     .container {
       flex-direction: column;
-      padding-top: 200px;
-      padding-bottom: 300px;
+      // padding-top: 200px;
+      // padding-bottom: 300px;
       .landing-address-content {
         max-width: 90%;
         margin: auto;
@@ -119,7 +120,7 @@
 @media only screen and (max-width: 991.98px) {
   .landing-address {
     .container {
-      padding-bottom: 200px;
+      // padding-bottom: 200px;
       .row {
         img {
           margin-top: 10px;

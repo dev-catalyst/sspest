@@ -1,44 +1,25 @@
 .termite-chooseUs {
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  // background-attachment: fixed;
+  background-attachment: fixed;
   .container {
-    padding-top: 329px;
-    padding-bottom: 339px;
+    padding-top: 9px;
+    padding-bottom: 9px;
     h1 {
       color: #fff;
       text-align: center;
       margin: auto;
       margin-bottom: 30px;
     }
-    p {
-      color: #fff;
-    }
-  }
-}
-
-@media only screen and (max-width: 1789.98px) {
-  .termite-chooseUs {
-    .container {
-      padding-top: 250px;
-    }
-  }
-}
-
-@media only screen and (max-width: 1519.98px) {
-  .termite-chooseUs {
-    .container {
-      padding-top: 180px;
-      padding-bottom: 149px;
-    }
-  }
-}
-
-@media only screen and (max-width: 767.98px) {
-  .termite-chooseUs {
-    .container {
-      padding-top: 200px;
-      padding-bottom: 200px;
+    .termite-chooseUs-content {
+      p {
+        color: #fff;
+      }
+      ul {
+        li {
+          color: #fff;
+        }
+      }
     }
   }
 }

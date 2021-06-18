@@ -37,6 +37,11 @@
 }
 
 .circle-container {
+  animation-name: rotate-s-loader;
+  animation-iteration-count: infinite;
+  animation-duration: 240s;
+  animation-timing-function: linear;
+  position: relative;
   @include on-circle($item-count: 12, $circle-size: 30em, $item-size: 6.5em);
   @media only screen and (max-width: 1519.98px) {
     @include on-circle($item-count: 12, $circle-size: 25em, $item-size: 5em);
@@ -114,5 +119,14 @@
   }
   @media only screen and (max-width: 767px) {
     width: 70px !important;
+  }
+}
+
+@keyframes rotate-s-loader {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }

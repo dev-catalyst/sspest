@@ -3,56 +3,72 @@
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  @media only screen and (max-width: 1805.98px) {
+  width: 95%;
+  margin: auto;
+  @media only screen and (max-width: 1289.98px) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   .termite-exp-carousel-content-para {
-    max-width: 800px;
+    width: 48%;
+    @media only screen and (max-width: 1289.98px) {
+      width: 90%;
+    }
+
     h1 {
       margin-top: 0 !important;
       color: #231f20;
     }
   }
   .carousel-image {
-    margin-left: 90px;
     align-items: center;
+    width: 48%;
+    @media only screen and (max-width: 1289.98px) {
+      width: 90%;
+    }
     img {
       border-radius: 20px;
+      width: 100%;
     }
+  }
+}
+
+.carousel-section {
+  width: 100%;
+  .carousel_container {
+    width: 100%;
   }
 }
 
 .termite-experience {
   background-color: #eff2f7;
   .container {
-    padding-top: 369px;
-    padding-bottom: 337px;
+    padding-top: 19px;
+    padding-bottom: 17px;
   }
 }
 
-@media only screen and (max-width: 1789.98px) {
-  .termite-experience {
-    .container {
-      padding-top: 180px;
-    }
-  }
-}
+// @media only screen and (max-width: 1789.98px) {
+//   .termite-experience {
+//     .container {
+//       padding-top: 180px;
+//     }
+//   }
+// }
 
-@media only screen and (max-width: 1519.98px) {
-  .termite-experience {
-    .container {
-      padding-bottom: 149px;
-    }
-  }
-}
+// @media only screen and (max-width: 1519.98px) {
+//   .termite-experience {
+//     .container {
+//       padding-bottom: 149px;
+//     }
+//   }
+// }
 
 @media only screen and (max-width: 1289.98px) {
   .termite-experience {
     .container {
       max-width: 900px;
-      padding-top: 100px;
     }
   }
 }

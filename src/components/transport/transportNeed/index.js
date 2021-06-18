@@ -9,7 +9,7 @@ const Need = props => {
   return (
     <div className="transport-need-structure">
       <img src={tick} alt="" />
-      <p>{props.children}</p>
+      {props.children}
     </div>
   )
 }
@@ -20,18 +20,23 @@ export default function transportNeed({ data }) {
       <div className="container">
         <h1>
           <img src={stone} alt="" />
-          {RichText.asText(data.primary.title.raw)}
+          <RichText render={data.primary.title} />
         </h1>
-        <p className="p1">{RichText.asText(data.primary.description.raw)}</p>
-        <p className="p2">{RichText.asText(data.primary.following.raw)}</p>
+        <RichText render={data.primary.description} />
+        <br />
+        <RichText render={data.primary.following} />
         <div className="transport-need-points-container">
           <div className="transport-need-points">
             {data.items.map((para, index) => {
-              return <Need key={index}>{RichText.asText(para.points.raw)}</Need>
+              return (
+                <Need key={index}>
+                  <RichText render={para.needs} />
+                </Need>
+              )
             })}
           </div>
         </div>
-        <p>{RichText.asText(data.primary.conclusion.raw)}</p>
+        <RichText render={data.primary.conclusion} />
         <div className="transport-need-btn-container">
           <Button themeType="contained" className="transport-need-btn">
             CONTACT US NOW

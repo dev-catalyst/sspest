@@ -1,14 +1,14 @@
 .home-service-team {
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-color: #eff2f7;
-  // background-attachment: fixed;
+  // background-color: #eff2f7;
+  background-attachment: fixed;
   // background-position: center;
   &-container {
     max-width: 1600px;
     margin: auto;
-    padding-top: 150px;
-    padding-bottom: 363px;
+    padding-top: 100px;
+    padding-bottom: 33px;
     h1 {
       color: #fff;
       text-align: center;
@@ -33,7 +33,7 @@
     &-container {
       max-width: 1320px;
       padding-top: 100px;
-      padding-bottom: 263px;
+      // padding-bottom: 263px;
       .home-service-team-images {
         img {
           width: 250px;

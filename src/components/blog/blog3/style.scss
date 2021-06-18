@@ -2,10 +2,10 @@
   background-color: #eff2f7;
   background-repeat: no-repeat;
   background-size: cover;
-  // background-attachment: fixed;
+  background-attachment: fixed;
   .container {
-    padding-top: 152px;
-    padding-bottom: 200px;
+    padding-top: 42px;
+    padding-bottom: 40px;
   }
 }
 
@@ -65,11 +65,11 @@
 }
 
 @media only screen and (max-width: 1289.98px) {
-  .blog-blog3 {
-    .container {
-      padding-top: 150px;
-    }
-  }
+  // .blog-blog3 {
+  //   .container {
+  //     padding-top: 150px;
+  //   }
+  // }
   .blog-blog1-content {
     max-width: 80%;
   }

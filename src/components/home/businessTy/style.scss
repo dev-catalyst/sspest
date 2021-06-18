@@ -1,10 +1,10 @@
 .home-business-types {
   background-color: #eff2f7;
+  margin-top: -2px;
   &-container {
     max-width: 1700px;
     margin: auto;
-    padding-top: 130px;
-    padding-bottom: 145px;
+    padding-bottom: 30px;
     .home-business-type {
       display: flex;
       flex-direction: row;
@@ -189,7 +189,7 @@
       padding: 45px 42px 36px;
       .home-business-type {
         &-content {
-          padding-top: 80px;
+          padding-top: 60px;
           &-stone {
             top: 70px !important;
             left: -46px !important;
@@ -219,6 +219,7 @@
 @media only screen and (max-width: 480.98px) {
   .home-business-types {
     &-container {
+      padding-top: 0;
       .home-business-type {
         &-image {
           max-width: 90%;

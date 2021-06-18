@@ -13,9 +13,9 @@ export default function transportControl({ data }) {
           <GeneralPest />
         </div>
         <div className="transport-pest-content">
-          <h1>{RichText.asText(data.title.raw)}</h1>
+          <RichText render={data.primary.title} />
           <img src={stone} alt="stone" className="transport-pest-stone" />
-          <p>{RichText.asText(data.description.raw)}</p>
+          <RichText render={data.primary.description} />
         </div>
         <Video
           videoSrcURL="https://www.youtube.com/embed/qh0lvkSQOLY"

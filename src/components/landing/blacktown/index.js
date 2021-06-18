@@ -14,11 +14,9 @@ export default function blackTown({ data }) {
         <div className="landing-blackTown-content">
           <h1>
             <img src={stone} alt="" />
-            {RichText.asText(data.primary.title.raw)}
+            <RichText render={data.primary.title} />
           </h1>
-          {data.items.map((para, index) => {
-            return <p key={index}>{RichText.asText(para.content.raw)}</p>
-          })}
+          <RichText render={data.primary.description} />
         </div>
       </div>
     </div>

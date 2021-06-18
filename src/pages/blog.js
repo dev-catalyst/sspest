@@ -7,6 +7,7 @@ import Blog2 from "../components/blog/blog2"
 import Blog3 from "../components/blog/blog3"
 import divider1 from "../assets/home/divider1.png"
 import { graphql } from "gatsby"
+import { Helmet } from "react-helmet"
 
 export default function Home({ data }) {
   if (!data) return null
@@ -23,6 +24,10 @@ export default function Home({ data }) {
   }
   return (
     <div>
+      <Helmet>
+        <meta name="description" content="" />
+        <title>SSPest - expertise.service.trust</title>
+      </Helmet>
       <Layout>
         <Hero data={heroSection} />
         <img src={divider1} style={{ width: "100%" }} alt="" />
