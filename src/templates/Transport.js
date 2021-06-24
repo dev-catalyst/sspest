@@ -1,13 +1,13 @@
 import React from "react"
 import Layout from "../components/layout"
 import Hero from "../components/home/hero"
-import Order from "../components/home/order"
-import Call from "../components/home/call"
-import BlogPost from "../components/termiteInspection/blogPosts"
-import ChoosePest from "../components/info/choosePest"
-import TransportServices from "../components/transport/transportServices"
 import TransportPest from "../components/transport/transportControl"
+import TransportServices from "../components/transport/transportServices"
 import TransportNeed from "../components/transport/transportNeed"
+import ChoosePest from "../components/info/choosePest"
+import Order from "../components/home/order"
+import BlogPost from "../components/termiteInspection/blogPosts"
+import Call from "../components/home/call"
 import divider1 from "../assets/home/divider1.png"
 import separator2 from "../assets/info/separator2.png"
 import { graphql } from "gatsby"
@@ -33,11 +33,13 @@ const Transport = props => {
   const heroSection = {
     src: hero.home_page_about_image,
   }
+  const title = data.title[0].text
+  const description = data.metdescription[0].text
   return (
     <div>
       <Helmet>
-        <meta name="description" content="" />
-        <title>SSPest - expertise.service.trust</title>
+        <meta name="description" content={description} />
+        <title>{title}</title>
       </Helmet>
       <Layout>
         <Hero data={heroSection} />
@@ -50,6 +52,7 @@ const Transport = props => {
           style={{ width: "100%", backgroundColor: "#dde4ec" }}
           alt=""
         />
+
         <ChoosePest data={choose} />
         <Order data={order} />
         <BlogPost blogs={blogs} />

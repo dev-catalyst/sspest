@@ -1,10 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
-import Order from "../components/home/order"
-import Call from "../components/home/call"
 import Hero from "../components/home/hero"
-import BlogPost from "../components/termiteInspection/blogPosts"
 import CommercialPest from "../components/info/commercialPest"
 import CommercialPestServices from "../components/info/commercialPestServices"
 import TreatmentServices from "../components/info/treatmentServices"
@@ -12,6 +9,9 @@ import ControlPlan from "../components/info/controlPlan"
 import Extermination from "../components/info/extermination"
 import PestPrevention from "../components/info/pestPrevention"
 import ChoosePest from "../components/info/choosePest"
+import Order from "../components/home/order"
+import BlogPost from "../components/termiteInspection/blogPosts"
+import Call from "../components/home/call"
 import divider1 from "../assets/home/divider1.png"
 import { Helmet } from "react-helmet"
 
@@ -39,12 +39,14 @@ const Info = props => {
   const heroSection = {
     src: hero.home_page_about_image,
   }
+  const title = data.title[0].text
+  const description = data.metadescription[0].text
 
   return (
     <>
       <Helmet>
-        <meta name="description" content="" />
-        <title>SSPest - expertise.service.trust</title>
+        <meta name="description" content={description} />
+        <title>{title}</title>
       </Helmet>
       <Layout>
         <Hero data={heroSection} />

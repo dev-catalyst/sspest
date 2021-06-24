@@ -9,14 +9,14 @@ export default function secondaryFooter() {
         <div className="secondary-footer-links">
           <ul className="link-container">
             <Link to="/">HOME</Link>
-            <Link to="#">PEST CONTROL SERVICES</Link>
-            <Link to="#">PEST SOLUTIONS</Link>
-            <Link to="#">AREAS COVERED</Link>
-            <Link to="#">BLOG</Link>
+            <Link to="#">SHOP</Link>
+            <Link to="/blog">BLOG</Link>
           </ul>
         </div>
         <div className="secondary-footer-copyright">
-          <p>© 2021 SSPESTCONTROL. All rights reserved.</p>
+          <p>
+            © {new Date().getFullYear()} SSPESTCONTROL. All rights reserved.
+          </p>
         </div>
       </div>
     </div>

@@ -14,7 +14,7 @@ import twitter from "../../../../assets/layout/footer/twitter.svg"
 import facebookS from "../../../../assets/layout/footer/face-s.svg"
 import instaS from "../../../../assets/layout/footer/insta-s.svg"
 import twitterS from "../../../../assets/layout/footer/twit-s.svg"
-import logo from "../../../../assets/layout/footer/logo.svg"
+import logo from "../../../../assets/layout/header/logo.svg"
 import logoSmall from "../../../../assets/layout/footer/logo-small.svg"
 
 import "./style.scss"

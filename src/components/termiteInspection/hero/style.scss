@@ -130,3 +130,10 @@
     }
   }
 }
+
+@media only screen and (max-width: 576.98px) {
+  .termite-hero {
+    background-size: contain;
+    background-position: right center;
+  }
+}

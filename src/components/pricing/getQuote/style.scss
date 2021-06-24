@@ -1,4 +1,4 @@
-.transport-PestServices {
+.pricing-PestServices {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -16,11 +16,11 @@
     p {
       color: #fff;
     }
-    .transport-PestServices-btn-container {
+    .pricing-PestServices-btn-container {
       margin: auto;
       text-align: center;
       margin-top: 50px;
-      .transport-PestServices-btn {
+      .pricing-PestServices-btn {
         color: #fff;
         background-color: #017cc0;
         border: none;
@@ -43,7 +43,7 @@
 }
 
 @media only screen and (max-width: 991.98px) {
-  .transport-PestServices {
+  .pricing-PestServices {
     .container {
       max-width: 90%;
     }
@@ -51,10 +51,10 @@
 }
 
 @media only screen and (max-width: 767.98px) {
-  .transport-PestServices {
+  .pricing-PestServices {
     .container {
-      .transport-PestServices-btn-container {
-        .transport-PestServices-btn {
+      .pricing-PestServices-btn-container {
+        .pricing-PestServices-btn {
           padding: 18px 30px;
           font-size: 12px !important;
           margin-top: 16px;

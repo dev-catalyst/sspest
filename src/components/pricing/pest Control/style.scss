@@ -1,0 +1,130 @@
+@import "../../../styles/utilities/variables/variables.scss";
+.pricing-pest {
+  background-color: #eff2f7;
+  margin-top: -7px;
+  .container {
+    padding-top: 10px;
+    padding-bottom: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .pricing-general-pest {
+      display: none;
+    }
+    .pricing-pest-content {
+      max-width: 700px;
+      padding-top: 100px;
+      position: relative;
+      h1 {
+        margin-top: 0;
+        text-transform: uppercase;
+      }
+      .pricing-pest-stone {
+        position: absolute;
+        top: 50px;
+        left: -80px;
+        @media only screen and (max-width: 1789.98px) {
+          top: -40px;
+        }
+      }
+    }
+  }
+}
+
+.video {
+  height: 542.5px;
+  width: 800px;
+}
+
+@media only screen and (max-width: 1789.98px) {
+  .pricing-pest {
+    .container {
+      .transport-pest-content {
+        max-width: 600px;
+        padding-top: 0;
+      }
+    }
+  }
+  .video {
+    height: 400.5px;
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 1519.98px) {
+  .pricing-pest {
+    .container {
+      .pricing-pest-content {
+        max-width: 550px;
+        h1 {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  .video {
+    height: 370.5px;
+    width: 520px;
+  }
+}
+
+@media only screen and (max-width: 1289.98px) {
+  .pricing-pest {
+    .container {
+      .pricing-pest-content {
+        max-width: 450px;
+        margin-left: 40px;
+      }
+    }
+  }
+  .video {
+    height: 340.5px;
+    width: 480px;
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  .pricing-pest {
+    .container {
+      flex-direction: column;
+      padding-top: 50px;
+      text-align: center;
+      justify-content: center;
+      .pricing-general-pest {
+        display: block;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 50px;
+      }
+      .pricing-pest-content {
+        margin-left: 0;
+        max-width: 90%;
+        margin: auto;
+        text-align: start;
+        margin-bottom: 20px;
+        p {
+          max-width: 90%;
+        }
+      }
+    }
+  }
+  .video {
+    height: 370.5px;
+    width: 480px;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 576.98px) {
+  .pricing-pest {
+    .container {
+      padding-bottom: 30px;
+    }
+  }
+  .video {
+    height: auto;
+    width: auto;
+    margin-bottom: 0;
+  }
+}

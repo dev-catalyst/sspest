@@ -17,9 +17,7 @@ import Order from "../components/home/order"
 import Blog from "../components/home/blog"
 import Call from "../components/home/call"
 import divider1 from "../assets/home/divider1.png"
-
 import { Helmet } from "react-helmet"
-
 import { graphql } from "gatsby"
 
 export default function Home({ data }) {

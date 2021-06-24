@@ -36,7 +36,7 @@ export default function order({ data }) {
             info@sspestcontrol.com.au
           </a>
         </h4>
-        <Link to="#">
+        <Link to="/pest-control-pricing">
           <Button themeType="outline" className="btn">
             READ MORE
           </Button>

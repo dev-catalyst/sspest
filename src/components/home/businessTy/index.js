@@ -1,6 +1,7 @@
 import React from "react"
 import { RichText } from "prismic-reactjs"
 import stone from "../../../assets/layout/stone.svg"
+import { Link } from "gatsby"
 import "./style.scss"
 
 export default function serviceType({ data, data2, data3 }) {
@@ -22,9 +23,10 @@ export default function serviceType({ data, data2, data3 }) {
             <div className="image-container">
               <div className="overlay"></div>
               <img src={data.image.url} alt="" className="btn2" />
-              {/* <h1>{RichText.asText(data.title.raw)}</h1> */}
             </div>
-            <h4>FIND OUT MORE</h4>
+            <Link to="/residential-pest-control">
+              <h4>FIND OUT MORE</h4>
+            </Link>
           </div>
         </div>
         {/* commercial block */}
@@ -34,7 +36,9 @@ export default function serviceType({ data, data2, data3 }) {
               <img src={data2.image.url} alt="" className="btn2" />
               {/* <h1>{RichText.asText(data2.title.raw)}</h1> */}
             </div>
-            <h4>FIND OUT MORE</h4>
+            <Link to="/commercial-pest-control">
+              <h4>FIND OUT MORE</h4>
+            </Link>
           </div>
           <div className="home-business-type-content">
             <img
@@ -63,7 +67,9 @@ export default function serviceType({ data, data2, data3 }) {
               <img src={data3.image.url} alt="" className="btn2" />
               {/* <h1 className="termite-h1">{RichText.asText(data3.title.raw)}</h1> */}
             </div>
-            <h4>FIND OUT MORE</h4>
+            <Link to="#">
+              <h4>FIND OUT MORE</h4>
+            </Link>
           </div>
         </div>
       </div>

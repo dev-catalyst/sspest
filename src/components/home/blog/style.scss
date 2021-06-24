@@ -44,7 +44,6 @@
         padding: 50px;
         position: relative;
         text-align: start;
-        z-index: 99;
         margin-top: -70px;
         h4 {
           margin: 0;
@@ -126,7 +125,7 @@
       .posts {
         flex-direction: column;
         .post-conatiner {
-          max-width: 80%;
+          max-width: 100%;
         }
         .post-card {
           max-width: 100%;

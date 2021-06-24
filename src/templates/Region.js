@@ -1,8 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
 import Hero from "../components/home/hero"
-import Call from "../components/home/call"
-import BlogPost from "../components/termiteInspection/blogPosts"
 import BlackTown from "../components/landing/blacktown"
 import Address from "../components/landing/address"
 import Reliable from "../components/landing/reliable"
@@ -10,11 +8,13 @@ import Qualified from "../components/landing/qualified"
 import Proficient from "../components/landing/proficient"
 import Services from "../components/landing/services"
 import Quote from "../components/landing/quote"
+import BlogPost from "../components/termiteInspection/blogPosts"
+import Call from "../components/home/call"
 import divider1 from "../assets/home/divider1.png"
 import { graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 
-export default function Home(props) {
+export default function Region(props) {
   React.useEffect(() => {
     document.body.scrollTop = 0 // For Safari
     document.documentElement.scrollTop = 0 // For Chrome, Firefox, IE and Opera

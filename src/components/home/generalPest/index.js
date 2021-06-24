@@ -10,15 +10,62 @@ import Crew from "../../../assets/home/icons/crew.svg"
 import Ten from "../../../assets/home/icons/ten.svg"
 import Shield from "../../../assets/home/icons/shield.svg"
 import callSmall from "../../../assets/home/icons/hero-call.svg"
+import { useLocation } from "@reach/router"
 
 import "./style.scss"
 
-export default function generalPest() {
+const stripSlashes = path => {
+  return path.split("/").join("")
+}
+
+export default function GeneralPest() {
+  const location = useLocation()
+  const [currentPath, setCurrenpath] = React.useState("")
+  const [title, setTitle] = React.useState("")
+  const [price, setPrice] = React.useState("")
+
+  React.useEffect(() => {
+    setCurrenpath(stripSlashes(location.pathname))
+    console.log(currentPath)
+    switch (currentPath) {
+      case "the-end-of-lease":
+        setTitle("THE END OF LEASE")
+        setPrice("150")
+        break
+      case "the-german":
+        setTitle("THE GERMAN")
+        setPrice("150")
+        break
+      case "the-bed-bug":
+        setTitle("THE BED BUG")
+        setPrice("340")
+        break
+      case "the-spider":
+        setTitle("THE SPIDER")
+        setPrice("120")
+        break
+      case "the-termite":
+        setTitle("THE TERMITE INSPECTION")
+        setPrice("189")
+        break
+      case "the-rodent":
+        setTitle("THE RODENT")
+        setPrice("150")
+        break
+      case "the-ant":
+        setTitle("THE ANT")
+        setPrice("160")
+        break
+      default:
+        setTitle("THE GENERAL PEST")
+        setPrice("170")
+    }
+  }, [currentPath])
   return (
     <div className="features">
       <div className="features-general">
-        <h4>THE GENERAL PEST</h4>
-        <h2>$170</h2>
+        <h4>{title}</h4>
+        <h2>${price}</h2>
         <span className="place">ANY HOUSE</span>
         <img src={ellipse} alt="" />
         <span className="place">INSIDE AND OUT</span>
@@ -50,7 +97,7 @@ export default function generalPest() {
           <p className="quote">
             Service was great and Jeff was helpful. Have already recommended him
             to my son. <br /> <br />
-            <span>May & Dennis</span>, Padstow
+            <span>May {"&"} Dennis</span>, Padstow
           </p>
         </div>
         <div className="quote-conatiner">

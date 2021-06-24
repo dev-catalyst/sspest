@@ -4,6 +4,7 @@ import { RichText } from "prismic-reactjs"
 import ReactPaginate from "react-paginate"
 import left from "../../../assets/blog/prev.svg"
 import right from "../../../assets/blog/next.svg"
+import { Link } from "gatsby"
 import "./style.scss"
 const PER_PAGE = 1
 
@@ -12,6 +13,7 @@ export default function Paginate({ data }) {
   function handlePageClick({ selected: selectedPage }) {
     setCurrentPage(selectedPage)
   }
+  // console.log(data)
 
   const offset = currentPage * PER_PAGE
 
@@ -29,19 +31,17 @@ export default function Paginate({ data }) {
         <p>{RichText.asText(info.node.data.content.raw)}</p>
         <div className="bottom-text">
           <div className="button-container">
-            <Button themeType="outline" className="blog3-button">
-              Termites
-            </Button>
-            <Button themeType="outline" className="blog3-button">
-              Pest Control
-            </Button>
-            <Button themeType="outline" className="blog3-button">
-              Inspection
-            </Button>
+            {info.node.data.body[0].items.slice(0, 3).map((btn, index) => {
+              const link = btn.button_link.url
+              return (
+                <Link to={link} key={index}>
+                  <Button themeType="outline" className="blog1-button">
+                    {RichText.asText(btn.button.raw)}
+                  </Button>
+                </Link>
+              )
+            })}
           </div>
-          <p className="comments">
-            {RichText.asText(info.node.data.comments)} Comments
-          </p>
         </div>
       </div>
     ))

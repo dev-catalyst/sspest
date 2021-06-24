@@ -1,5 +1,5 @@
 .home-order {
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   margin-top: -2px;
   background-attachment: fixed;
@@ -57,8 +57,6 @@
   .home-order {
     &-container {
       max-width: 1320px;
-      // padding-top: 236px;
-      // padding-bottom: 236px;
       h2 {
         font-size: 45px;
         margin-top: 0;
@@ -71,8 +69,6 @@
   .home-order {
     &-container {
       max-width: 1120px;
-      // padding-top: 236px;
-      // padding-bottom: 206px;
     }
   }
 }
@@ -81,7 +77,6 @@
   .home-order {
     &-container {
       max-width: 900px;
-      // padding-top: 196px;
     }
   }
 }
@@ -91,14 +86,5 @@
     &-container {
       max-width: 90%;
     }
-  }
-}
-
-@media only screen and (max-width: 767.98px) {
-  .home-order {
-    background-image: url("../../../assets/home/mobile/order-bgs.png"),
-      linear-gradient(#dde4ec, #eff2f7);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
   }
 }

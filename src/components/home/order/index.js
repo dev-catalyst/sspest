@@ -36,7 +36,7 @@ export default function order({ data }) {
             {RichText.asText(data.email_id.raw)}
           </a>
         </h4>
-        <Link to={data.button.url}>
+        <Link to="/pest-control-pricing">
           <Button themeType="outline" className="btn">
             READ MORE
           </Button>

@@ -5,10 +5,10 @@ import curve1 from "../../../assets/curves/curve-top-light-01.png"
 import curve2 from "../../../assets/curves/curve-bottom-light-02.png"
 import "./style.scss"
 
-export default function transportPestServices({ data }) {
+export default function GetQuote({ data }) {
   return (
     <div
-      className="transport-PestServices"
+      className="pricing-PestServices"
       style={{
         backgroundImage: `linear-gradient(#333333, #1E1D18), url(${data.primary.bg_image.url})`,
         backgroundBlendMode: "multiply",
@@ -23,10 +23,10 @@ export default function transportPestServices({ data }) {
         alt=""
       />
       <div className="container">
-        <RichText render={data.primary.title} />
-        <RichText render={data.primary.description} />
-        <div className="transport-PestServices-btn-container">
-          <Button themeType="contained" className="transport-PestServices-btn">
+        <RichText render={data.primary.title1} />
+        <RichText render={data.primary.description1} />
+        <div className="pricing-PestServices-btn-container">
+          <Button themeType="contained" className="pricing-PestServices-btn">
             CONTACT US NOW
           </Button>
         </div>

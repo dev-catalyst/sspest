@@ -40,6 +40,7 @@ module.exports = {
           info: require("./src/schemas/info.json"),
           transport: require("./src/schemas/transport.json"),
           region: require("./src/schemas/region.json"),
+          pricing: require("./src/schemas/pricing.json"),
         },
       },
     },

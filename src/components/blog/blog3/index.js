@@ -4,7 +4,6 @@ import cutter from "../../../assets/blog/cutter.png"
 import "./style.scss"
 
 export default function Blog3({ bg, data }) {
-  const len = data.length
   return (
     <div
       className="blog-blog3"
@@ -16,7 +15,7 @@ export default function Blog3({ bg, data }) {
       <img src={cutter} alt="" style={{ width: "100%", marginTop: "-7px" }} />
       <div className="container">
         {/* <Carousel data={data} /> */}
-        <Paginate data={data.slice(2, len)} />
+        <Paginate data={data} />
       </div>
     </div>
   )

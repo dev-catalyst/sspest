@@ -19,22 +19,22 @@ export default function image({ data }) {
     <div className="image-container">
       <img src={data.image.url} alt="" className="main-image" />
       <ul className="circle-container">
-        <Link to="#">
+        <Link to="/cockroach-pest-control-sydney">
           <li>
             <img src={icon1} alt="" className="pest" />
           </li>
         </Link>
-        <Link to="#">
+        <Link to="/the-termite">
           <li>
             <img src={icon2} alt="" className="pest" />
           </li>
         </Link>
-        <Link to="#">
+        <Link to="/bird-pest-control-sydney">
           <li>
             <img src={icon3} alt="" className="pest" />
           </li>
         </Link>
-        <Link to="#">
+        <Link to="/ant-pest-control-sydney">
           <li>
             <img src={icon4} alt="" className="pest" />
           </li>
@@ -44,12 +44,12 @@ export default function image({ data }) {
             <img src={icon5} alt="" className="pest" />
           </li>
         </Link>
-        <Link to="#">
+        <Link to="/spider-pest-control-sydney">
           <li>
             <img src={icon6} alt="" className="pest" />
           </li>
         </Link>
-        <Link to="#">
+        <Link to="/the-end-of-lease">
           <li>
             <img src={icon7} alt="" className="pest" />
           </li>
@@ -59,22 +59,22 @@ export default function image({ data }) {
             <img src={icon8} alt="" className="pest" />
           </li>
         </Link>
-        <Link to="#">
+        <Link to="/possum-pest-control">
           <li>
             <img src={icon9} alt="" className="pest" />
           </li>
         </Link>
-        <Link to="#">
+        <Link to="/bed-bug-control">
           <li>
             <img src={icon10} alt="" className="pest" />
           </li>
         </Link>
-        <Link to="#">
+        <Link to="/rodent-control-sydney">
           <li>
             <img src={icon11} alt="" className="pest" />
           </li>
         </Link>
-        <Link to="#">
+        <Link to="/the-termite">
           <li>
             <img src={icon12} alt="" className="pest" />
           </li>

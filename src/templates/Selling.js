@@ -1,15 +1,15 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
-import Order from "../components/termiteInspection/order"
-import Call from "../components/home/call"
-import ChooseUs from "../components/termiteInspection/chooseUs"
 import Hero from "../components/termiteInspection/hero"
 import WhyTermite from "../components/termiteInspection/whyTermite"
 import OurServices from "../components/termiteInspection/ourServices"
 import InspectionTypes from "../components/termiteInspection/inspectionTypes"
+import ChooseUs from "../components/termiteInspection/chooseUs"
 import Experinece from "../components/termiteInspection/experience"
+import Order from "../components/termiteInspection/order"
 import BlogPost from "../components/termiteInspection/blogPosts"
+import Call from "../components/home/call"
 import envelope1 from "../assets/termite/envelope1.png"
 import { Helmet } from "react-helmet"
 
@@ -38,8 +38,8 @@ const Selling = props => {
   return (
     <>
       <Helmet>
-        <meta name="description" content={title} />
-        <title>{description}</title>
+        <meta name="description" content={description} />
+        <title>{title}</title>
       </Helmet>
       <Layout>
         <Hero data={data} />

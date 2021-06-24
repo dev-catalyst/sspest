@@ -1,11 +1,11 @@
 import React from "react"
 import { Button } from "@react-md/button"
 import { RichText } from "prismic-reactjs"
+import { Link } from "gatsby"
 import "./style.scss"
 
 export default function Blog2({ data }) {
   const date = RichText.asText(data.date.raw)
-  const count = data.comments
   return (
     <div className="blog-blog2">
       <div className="container">
@@ -18,17 +18,17 @@ export default function Blog2({ data }) {
           <p>{RichText.asText(data.content.raw)}</p>
           <div className="bottom-text">
             <div className="button-container">
-              <Button themeType="outline" className="blog2-button">
-                Termites
-              </Button>
-              <Button themeType="outline" className="blog2-button">
-                Pest Control
-              </Button>
-              <Button themeType="outline" className="blog2-button">
-                Inspection
-              </Button>
+              {data.body[0].items.slice(0, 3).map((btn, index) => {
+                const link = btn.button_link.url
+                return (
+                  <Link to={link} key={index}>
+                    <Button themeType="outline" className="blog1-button">
+                      {RichText.asText(btn.button.raw)}
+                    </Button>
+                  </Link>
+                )
+              })}
             </div>
-            <p className="comments">{count} Comments</p>
           </div>
         </div>
       </div>

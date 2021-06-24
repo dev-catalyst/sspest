@@ -1,8 +1,8 @@
 .fixed-widget-layout {
   position: fixed;
   right: 0px;
-  top: 100px;
-  z-index: 999;
+  top: 120px;
+  z-index: 99;
   display: flex;
   flex-direction: column;
 }
@@ -34,10 +34,10 @@
     font-weight: 800;
     color: #017cc0;
     cursor: pointer;
-    transition: width 0.1s ease-out;
+    transition: width 0.3s ease;
     span {
       text-transform: uppercase;
-      font-size: 18px;
+      font-size: 17px;
       padding: 0;
       overflow-x: hidden;
       white-space: nowrap;
@@ -227,7 +227,11 @@
     visibility: hidden;
     width: 120px;
   }
-  50% {
+  20% {
+    visibility: visible;
+    width: 230px;
+  }
+  80% {
     visibility: visible;
     width: 230px;
   }
@@ -243,7 +247,11 @@
       visibility: hidden;
       width: 110px;
     }
-    50% {
+    20% {
+      visibility: visible;
+      width: 200px;
+    }
+    80% {
       visibility: visible;
       width: 200px;
     }
@@ -260,7 +268,11 @@
       visibility: hidden;
       width: 110px;
     }
-    50% {
+    20% {
+      visibility: visible;
+      width: 160px;
+    }
+    80% {
       visibility: visible;
       width: 160px;
     }
@@ -277,7 +289,11 @@
       visibility: hidden;
       width: 110px;
     }
-    50% {
+    20% {
+      visibility: visible;
+      width: 200px;
+    }
+    80% {
       visibility: visible;
       width: 200px;
     }

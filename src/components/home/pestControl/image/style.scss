@@ -107,7 +107,10 @@
 .pest {
   width: 160px;
   border-radius: 50%;
-  transition: all 0.3s ease-in;
+  animation-name: inner-circle;
+  animation-iteration-count: infinite;
+  animation-duration: 240s;
+  animation-timing-function: linear;
   &:hover {
     transform: scale(1.2);
     opacity: 0.95;
@@ -128,5 +131,14 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes inner-circle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
   }
 }

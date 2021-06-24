@@ -3,6 +3,7 @@ import { Button } from "@react-md/button"
 import { RichText } from "prismic-reactjs"
 import curve1 from "../../../assets/curves/curve-top-light-01.png"
 import curve2 from "../../../assets/curves/curve-bottom-light-02.png"
+import { Link } from "gatsby"
 import "./style.scss"
 
 export default function Blog1({ data, bg }) {
@@ -34,17 +35,17 @@ export default function Blog1({ data, bg }) {
           <p>{RichText.asText(data.content.raw)}</p>
           <div className="bottom-text">
             <div className="button-container">
-              <Button themeType="outline" className="blog1-button">
-                Termites
-              </Button>
-              <Button themeType="outline" className="blog1-button">
-                Pest Control
-              </Button>
-              <Button themeType="outline" className="blog1-button">
-                Inspection
-              </Button>
+              {data.body[0].items.slice(0, 3).map((btn, index) => {
+                const link = btn.button_link.url
+                return (
+                  <Link to={link} key={index}>
+                    <Button themeType="outline" className="blog1-button">
+                      {RichText.asText(btn.button.raw)}
+                    </Button>
+                  </Link>
+                )
+              })}
             </div>
-            <p className="comments">{count} Comments</p>
           </div>
         </div>
       </div>
