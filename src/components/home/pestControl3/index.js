@@ -9,7 +9,6 @@ export default function pestControl3({ data }) {
     <div
       className="home-pestControl3"
       style={{
-        // backgroundImage: `url(${data.primary.bg_image.url}),linear-gradient(#dde4ec, #eff2f7)`,
         backgroundImage: ` linear-gradient(#0A6A9C, #01639A), url(${data.primary.bg_image.url})`,
         backgroundBlendMode: "multiply",
       }}

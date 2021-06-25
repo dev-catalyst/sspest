@@ -74,24 +74,30 @@ export default function primaryFooter() {
           </div>
         </div>
         <div className="primary-footer-social-media-desktop">
-          <a href="#">
+          <a
+            href="https://www.facebook.com/SydneySidePestControl"
+            target="_blank"
+          >
             <img src={facebook} alt="facebook" />
           </a>
-          <a href="#">
+          <a href="https://twitter.com/SSPESTCON" target="_blank">
             <img src={twitter} alt="twitter" />
           </a>
-          <a href="#">
+          <a href="https://www.instagram.com/sspest/" target="_blank">
             <img src={insta} alt="insta" />
           </a>
         </div>
         <div className="primary-footer-social-media-mobile">
-          <a href="#">
+          <a
+            href="https://www.facebook.com/SydneySidePestControl"
+            target="_blank"
+          >
             <img src={facebookS} alt="facebook" />
           </a>
-          <a href="#">
+          <a href="https://twitter.com/SSPESTCON" target="_blank">
             <img src={twitterS} alt="twitter" />
           </a>
-          <a href="#">
+          <a href="https://www.instagram.com/sspest/" target="_blank">
             <img src={instaS} alt="insta" />
           </a>
         </div>

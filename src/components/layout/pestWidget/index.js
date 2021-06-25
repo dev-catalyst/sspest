@@ -95,7 +95,7 @@ const PestWidgetInner = () => {
             <img src={Ten} alt="" /> 10 Years experience
           </p>
           <p className="widget-info">
-            <img src={Shield} alt="" /> All pests & bugs treated
+            <img src={Shield} alt="" /> All pests {"&"} bugs treated
           </p>
         </div>
 

@@ -3,6 +3,7 @@ import { Button } from "@react-md/button"
 import { RichText } from "prismic-reactjs"
 import stone from "../../../assets/layout/stone.svg"
 import Video from "./video"
+import { Link } from "gatsby"
 import "./style.scss"
 
 export default function whoAreWe({ data }) {
@@ -22,9 +23,11 @@ export default function whoAreWe({ data }) {
 
           <p>{RichText.asText(data.description.raw)}</p>
           <div className="btn-container">
-            <Button themeType="contained" className="btn">
-              MORE ABOUT SSPEST
-            </Button>
+            <Link to="/about-us">
+              <Button themeType="contained" className="btn">
+                MORE ABOUT SSPEST
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

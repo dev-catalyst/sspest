@@ -130,7 +130,7 @@ export default function GeneralPest() {
           <img src={Ten} alt="" /> 10 Years experience
         </p>
         <p>
-          <img src={Shield} alt="" /> All pests & bugs treated
+          <img src={Shield} alt="" /> All pests {"&"} bugs treated
         </p>
       </div>
     </div>

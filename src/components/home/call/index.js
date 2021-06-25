@@ -7,10 +7,6 @@ export default function Call({ data }) {
   return (
     <div
       className="home-call"
-      // style={{
-      //   backgroundImage: `linear-gradient(to-right, #000000, #010102,#020306,#020306,#252326), url(${data.bg_image.url})`,
-      //   backgroundBlendMode: "multiply",
-      // }}
       style={{
         backgroundImage: ` linear-gradient(to right,#020306,#020306,#252326,#221A1C), url(${data.bg_image.url})`,
         backgroundBlendMode: "multiply",

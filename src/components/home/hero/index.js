@@ -19,7 +19,6 @@ export default function Hero({ data }) {
           <img src={ratings} alt="google-ratings" />
         </div>
       </div>
-      {/* <img src={imhdy} className="po" /> */}
     </div>
   )
 }

@@ -12,14 +12,6 @@ import "@szhsin/react-menu/dist/index.css"
 import "./style.scss"
 
 export default function Index() {
-  // const history = useHistory()
-  // const routeToCommercial = () => {
-  //   console.log("yay")
-  //   history.push({
-  //     pathname: "/commercial-pest-control",
-  //   })
-  // }
-
   return (
     <>
       <header>
@@ -238,9 +230,6 @@ export default function Index() {
                 <MenuButton className="ul-menu-button">Blog</MenuButton>
               </Link>
             </div>
-
-            {/* <ul className="main-menu desktop-menu">
-            </ul> */}
           </div>
           <div className="header-telephone">
             <a href="tel:1300 007 772">

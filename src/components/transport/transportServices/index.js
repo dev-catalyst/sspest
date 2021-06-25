@@ -3,6 +3,7 @@ import { Button } from "@react-md/button"
 import { RichText } from "prismic-reactjs"
 import curve1 from "../../../assets/curves/curve-top-light-01.png"
 import curve2 from "../../../assets/curves/curve-bottom-light-02.png"
+import { Link } from "gatsby"
 import "./style.scss"
 
 export default function transportPestServices({ data }) {
@@ -26,9 +27,14 @@ export default function transportPestServices({ data }) {
         <RichText render={data.primary.title} />
         <RichText render={data.primary.description} />
         <div className="transport-PestServices-btn-container">
-          <Button themeType="contained" className="transport-PestServices-btn">
-            CONTACT US NOW
-          </Button>
+          <Link to="/about-us">
+            <Button
+              themeType="contained"
+              className="transport-PestServices-btn"
+            >
+              CONTACT US NOW
+            </Button>
+          </Link>
         </div>
       </div>
       <img

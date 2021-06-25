@@ -18,16 +18,21 @@ export default function Blog2({ data }) {
           <p>{RichText.asText(data.content.raw)}</p>
           <div className="bottom-text">
             <div className="button-container">
-              {data.body[0].items.slice(0, 3).map((btn, index) => {
-                const link = btn.button_link.url
-                return (
-                  <Link to={link} key={index}>
-                    <Button themeType="outline" className="blog1-button">
-                      {RichText.asText(btn.button.raw)}
-                    </Button>
-                  </Link>
-                )
-              })}
+              <Link to="/the-termite">
+                <Button themeType="outline" className="blog2-button">
+                  Termite
+                </Button>
+              </Link>
+              <Link to="/commercial-pest-control">
+                <Button themeType="outline" className="blog2-button">
+                  Pest Control
+                </Button>
+              </Link>
+              <Link to="/pest-inspection">
+                <Button themeType="outline" className="blog2-button">
+                  Inspection
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

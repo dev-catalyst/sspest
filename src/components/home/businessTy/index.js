@@ -34,7 +34,6 @@ export default function serviceType({ data, data2, data3 }) {
           <div className="home-business-type-image">
             <div className="image-container">
               <img src={data2.image.url} alt="" className="btn2" />
-              {/* <h1>{RichText.asText(data2.title.raw)}</h1> */}
             </div>
             <Link to="/commercial-pest-control">
               <h4>FIND OUT MORE</h4>
@@ -65,7 +64,6 @@ export default function serviceType({ data, data2, data3 }) {
           <div className="home-business-type-image">
             <div className="image-container">
               <img src={data3.image.url} alt="" className="btn2" />
-              {/* <h1 className="termite-h1">{RichText.asText(data3.title.raw)}</h1> */}
             </div>
             <Link to="#">
               <h4>FIND OUT MORE</h4>

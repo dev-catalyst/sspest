@@ -17,9 +17,6 @@ export default function inspectionTypes({ data, data2, data3 }) {
               <RichText render={data.primary.title} />
             </h1>
             <RichText render={data.primary.description} />
-            {/* {data.items.map((para, index) => {
-              return <RichText key={index} render={para.description} />
-            })} */}
           </div>
           <div className="termite-inspectionTypes-inspection-image">
             <img src={data.primary.image.url} alt="" />
@@ -36,13 +33,6 @@ export default function inspectionTypes({ data, data2, data3 }) {
               <RichText render={data2.primary.title} />
             </h1>
             <RichText render={data2.primary.description} />
-            {/* {data2.items.map((para, index) => {
-              return (
-                <>
-                  <RichText key={index} render={para.description} />
-                </>
-              )
-            })} */}
           </div>
         </div>
         {/* row3 */}
@@ -53,13 +43,6 @@ export default function inspectionTypes({ data, data2, data3 }) {
               <RichText render={data3.primary.title} />
             </h1>
             <RichText render={data3.primary.description} />
-            {/* {data3.items.map((para, index) => {
-              return (
-                <>
-                  <RichText key={index} render={para.description} />
-                </>
-              )
-            })} */}
           </div>
           <div className="termite-inspectionTypes-inspection-image">
             <img src={data3.primary.image.url} alt="" />

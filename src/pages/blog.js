@@ -106,19 +106,6 @@ export const query2 = graphql`
       edges {
         node {
           data {
-            body {
-              ... on PrismicBlogSectionBodyButtons {
-                id
-                items {
-                  button {
-                    raw
-                  }
-                  button_link {
-                    url
-                  }
-                }
-              }
-            }
             blog_id
             content {
               raw

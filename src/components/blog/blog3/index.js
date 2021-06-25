@@ -14,7 +14,6 @@ export default function Blog3({ bg, data }) {
     >
       <img src={cutter} alt="" style={{ width: "100%", marginTop: "-7px" }} />
       <div className="container">
-        {/* <Carousel data={data} /> */}
         <Paginate data={data} />
       </div>
     </div>

@@ -2,6 +2,7 @@ import React from "react"
 import { Button } from "@react-md/button"
 import { RichText } from "prismic-reactjs"
 import curve2 from "../../../assets/curves/curve-bottom-dark-02.png"
+import { Link } from "gatsby"
 import "./style.scss"
 
 export default function pestPrevention({ data }) {
@@ -18,9 +19,11 @@ export default function pestPrevention({ data }) {
         <RichText render={data.primary.description} />
 
         <div className="info-pestPrevention-btn-container">
-          <Button themeType="contained" className="info-pestPrevention-btn">
-            CONTACT US NOW
-          </Button>
+          <Link to="/about-us">
+            <Button themeType="contained" className="info-pestPrevention-btn">
+              CONTACT US NOW
+            </Button>
+          </Link>
         </div>
       </div>
       <img

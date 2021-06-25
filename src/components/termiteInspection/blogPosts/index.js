@@ -2,6 +2,7 @@ import React from "react"
 import { Button } from "@react-md/button"
 import { RichText } from "prismic-reactjs"
 import stone from "../../../assets/layout/stone.svg"
+import { Link } from "gatsby"
 import "./style.scss"
 
 export default function BlogPosts({ blogs }) {
@@ -31,9 +32,11 @@ export default function BlogPosts({ blogs }) {
                 <div className="termite-post-card">
                   <h4> {RichText.asText(blog.node.data.title.raw)}</h4>
                   <p>{blog.node.data.content.text.slice(0, 100) + "..."}</p>
-                  <Button themeType="contained" className="read">
-                    READ MORE
-                  </Button>
+                  <Link to="/blog">
+                    <Button themeType="contained" className="read">
+                      READ MORE
+                    </Button>
+                  </Link>
                 </div>
               </div>
             )

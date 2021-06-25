@@ -18,9 +18,6 @@ export default function WhyTermite({ data, data2 }) {
               <RichText render={data.primary.title} />
             </h1>
             <RichText render={data.primary.description} />
-            {/* {data.items.map((para, index) => {
-              return <RichText key={index} render={para.description} />
-            })} */}
           </div>
           <div className="termite-whyTermite-inspection-image">
             <img src={data.primary.image.url} alt="" className="termite1" />
@@ -37,9 +34,6 @@ export default function WhyTermite({ data, data2 }) {
             </h1>
             <div>
               <RichText render={data2.primary.description} />
-              {/* {data2.items.map((para, index) => {
-                return <RichText key={index} render={para.description} />
-              })} */}
             </div>
           </div>
         </div>

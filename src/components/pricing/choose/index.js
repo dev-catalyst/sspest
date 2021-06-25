@@ -3,6 +3,7 @@ import { Button } from "@react-md/button"
 import { RichText } from "prismic-reactjs"
 import stone from "../../../assets/layout/stone.svg"
 import tick from "../../../assets/home/icons/tick.svg"
+import { Link } from "gatsby"
 import "./style.scss"
 
 const Point = props => {
@@ -35,11 +36,12 @@ export default function PricingChoose({ data }) {
           })}
         </div>
         <RichText render={data.primary.conclusion} />
-        {/* <p>{RichText.asText(data.primary.conclusion.raw)}</p> */}
         <div className="pricing-treatment-btn-container">
-          <Button themeType="contained" className="pricing-treatment-btn">
-            CONTACT US NOW
-          </Button>
+          <Link to="/about-us">
+            <Button themeType="contained" className="pricing-treatment-btn">
+              CONTACT US NOW
+            </Button>
+          </Link>
         </div>
       </div>
     </div>

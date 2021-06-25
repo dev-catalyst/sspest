@@ -10,7 +10,6 @@ export default function commercialPestServices({ data }) {
       className="info-commercialPestServices"
       style={{
         backgroundImage: `linear-gradient(#333333, #1E1D18),url(${data.primary.bg_image.url})`,
-        // backgroundImage: ` linear-gradient(#0A6A9C, #01639A), url(${data.primary.bg_image.url})`,
         backgroundBlendMode: "multiply",
       }}
     >

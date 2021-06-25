@@ -24,9 +24,6 @@ export default function ourServices({ data }) {
       <div className="container">
         <RichText render={data.primary.title} />
         <RichText render={data.primary.description} />
-        {/* {data.items.map((para, index) => {
-          return <RichText key={index} render={para.description} />
-        })} */}
       </div>
       <img
         src={curve2}

@@ -2,7 +2,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  // background-position: center;
   &-container {
     max-width: 1600px;
     margin: auto;
@@ -23,7 +22,6 @@
   .home-pestControl2 {
     &-container {
       max-width: 1320px;
-      // padding-top: 180px;
     }
   }
 }
@@ -32,8 +30,6 @@
   .home-pestControl2 {
     &-container {
       max-width: 1120px;
-      //padding-top: 180px;
-      // padding-bottom: 149px;
     }
   }
 }
@@ -42,8 +38,6 @@
   .home-pestControl2 {
     &-container {
       max-width: 900px;
-      // padding-top: 130px;
-      // padding-bottom: 149px;
     }
   }
 }

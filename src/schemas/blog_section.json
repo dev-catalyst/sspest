@@ -1,38 +1,5 @@
 {
   "Main": {
-    "body": {
-      "type": "Slices",
-      "fieldset": "Slice zone",
-      "config": {
-        "labels": null,
-        "choices": {
-          "buttons": {
-            "type": "Slice",
-            "fieldset": "Buttons",
-            "description": "Buttons",
-            "icon": "add_to_photos",
-            "display": "list",
-            "non-repeat": {},
-            "repeat": {
-              "button": {
-                "type": "StructuredText",
-                "config": {
-                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
-                  "label": "button"
-                }
-              },
-              "button_link": {
-                "type": "Link",
-                "config": {
-                  "label": "button link",
-                  "select": null
-                }
-              }
-            }
-          }
-        }
-      }
-    },
     "blog_id": {
       "type": "Number",
       "config": {
@@ -64,7 +31,7 @@
     "date": {
       "type": "StructuredText",
       "config": {
-        "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+        "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
         "label": "date"
       }
     }

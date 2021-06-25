@@ -98,7 +98,6 @@ header {
     .header-container {
       max-width: 1600px;
       margin: auto;
-      // flex-direction: column;
       justify-content: space-around;
       align-items: center;
       padding-left: 40px;
@@ -561,10 +560,7 @@ a.nav-link.accordion-header {
   }
   .home-pest-control {
     margin-top: -10px !important;
-    // h1 {
-    //   font-size: 30px;
-    //   line-height: 30px;
-    // }
+
     .home-pest-control-container {
       max-width: 100%;
       padding: 0 40px;
@@ -621,12 +617,6 @@ a.nav-link.accordion-header {
     }
   }
   .home-service-team-container {
-    // .home-service-team-images {
-    //   img {
-    //     width: 200px !important;
-    //     height: 266.67px;
-    //   }
-    // }
     .home-service-team-description {
       padding-left: 42px !important;
       padding-right: 42px !important;
@@ -677,7 +667,6 @@ a.nav-link.accordion-header {
   }
   .home-service-type-commercial,
   .home-service-type-residential {
-    // margin-bottom: 60px;
     margin-bottom: 0;
   }
   .home-service-types-container
@@ -719,7 +708,6 @@ a.nav-link.accordion-header {
     max-width: 100%;
     padding-bottom: 70px;
     padding: 0 42px 70px;
-    // padding-top: 0 !important;
     margin-top: -46px !important;
   }
   .home-pestControl2-container {
@@ -842,9 +830,6 @@ a.nav-link.accordion-header {
     width: 100% !important;
     height: auto !important;
   }
-  // .fixed-widget-layout {
-  //   display: none !important;
-  // }
 }
 
 .mobile-navbar {
