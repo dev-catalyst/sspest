@@ -11,20 +11,12 @@ import { Helmet } from "react-helmet"
 
 export default function Blog({ data }) {
   if (!data) return null
-  console.log(data.allPrismicBlogSection.edges)
-  data.allPrismicBlogSection.edges.sort(
-    (a, b) => b.node.data.blog_id - a.node.data.blog_id
-  )
-  console.log(data.allPrismicBlogSection.edges)
-  const blog = data.allPrismicBlogSection.edges.sort(
-    (a, b) => b.node.data.blog_id - a.node.data.blog_id
-  )
   const len = data.allPrismicBlogSection.edges.length
 
   const hero = data.allPrismicUniversalBlock1.edges[0].node.data
-  const blog1 = blog[0].node.data
-  const blog2 = blog[1].node.data
-  const blog3 = blog.slice(2, len)
+  const blog1 = data.allPrismicBlogSection.edges[0].node.data
+  const blog2 = data.allPrismicBlogSection.edges[1].node.data
+  const blog3 = data.allPrismicBlogSection.edges.slice(2, len)
   const latest = data.allPrismicBlogPageBodyLatest.edges[0].node.primary
   const blog1_bg = data.allPrismicBlogPageBodyBlog1.edges[0].node.primary
   const blog3_bg = data.allPrismicBlogPageBodyBlog3.edges[0].node.primary
@@ -102,17 +94,17 @@ export const query2 = graphql`
         }
       }
     }
-    allPrismicBlogSection {
+    allPrismicBlogSection(
+      filter: {}
+      sort: { fields: data___date, order: DESC }
+    ) {
       edges {
         node {
           data {
-            blog_id
             content {
               raw
             }
-            date {
-              raw
-            }
+            date(formatString: "MMMM DD, YYYY")
             image {
               url
             }

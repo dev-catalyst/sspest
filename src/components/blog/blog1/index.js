@@ -31,7 +31,7 @@ export default function Blog1({ data, bg }) {
             <img src={data.image.url} alt="" />
           </div>
           <h3>{RichText.asText(data.title.raw)}</h3>
-          <p className="center-p">Posted {date}</p>
+          <p className="center-p">Posted {data.date}</p>
           <p>{RichText.asText(data.content.raw)}</p>
           <div className="bottom-text">
             <div className="button-container">

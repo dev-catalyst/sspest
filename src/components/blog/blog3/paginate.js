@@ -24,9 +24,7 @@ export default function Paginate({ data }) {
           <img src={info.node.data.image.url} alt="" />
         </div>
         <h3>{RichText.asText(info.node.data.title.raw)}</h3>
-        <p className="center-p">
-          Posted {RichText.asText(info.node.data.date.raw)}
-        </p>
+        <p className="center-p">Posted {info.node.data.date}</p>
         <p>{RichText.asText(info.node.data.content.raw)}</p>
         <div className="bottom-text">
           <div className="button-container">
