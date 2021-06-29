@@ -7,8 +7,6 @@ import { Link } from "gatsby"
 import "./style.scss"
 
 export default function Blog1({ data, bg }) {
-  const date = RichText.asText(data.date.raw)
-  const count = data.comments
   return (
     <div
       className="blog-blog1"

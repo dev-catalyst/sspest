@@ -39,7 +39,7 @@ export default function image({ data }) {
             <img src={icon4} alt="" className="pest" />
           </li>
         </Link>
-        <Link to="#">
+        <Link to="/the-bed-bug">
           <li>
             <img src={icon5} alt="" className="pest" />
           </li>

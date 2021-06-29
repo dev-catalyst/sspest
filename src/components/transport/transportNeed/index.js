@@ -3,7 +3,6 @@ import { Button } from "@react-md/button"
 import { RichText } from "prismic-reactjs"
 import stone from "../../../assets/layout/stone.svg"
 import tick from "../../../assets/home/icons/tick.svg"
-import { Link } from "gatsby"
 import "./style.scss"
 
 const Need = props => {
@@ -39,11 +38,11 @@ export default function transportNeed({ data }) {
         </div>
         <RichText render={data.primary.conclusion} />
         <div className="transport-need-btn-container">
-          <Link to="/about-us">
+          <a href="tel:1300 007 772 ">
             <Button themeType="contained" className="transport-need-btn">
               CONTACT US NOW
             </Button>
-          </Link>
+          </a>
         </div>
       </div>
     </div>

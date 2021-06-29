@@ -14,7 +14,7 @@ export default function commercialPest({ data }) {
         </div>
         <div className="info-commercialPest-content">
           <RichText render={data.primary.title} />
-          <img src={stone} alt="stone" className="info-commercialPest-stone" />
+          <img src={stone} alt="" className="info-commercialPest-stone" />
           <RichText render={data.primary.description} />
         </div>
         <Video

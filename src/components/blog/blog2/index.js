@@ -5,7 +5,6 @@ import { Link } from "gatsby"
 import "./style.scss"
 
 export default function Blog2({ data }) {
-  const date = RichText.asText(data.date.raw)
   return (
     <div className="blog-blog2">
       <div className="container">

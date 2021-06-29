@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 import { Menu, MenuItem, MenuButton, SubMenu } from "@szhsin/react-menu"
-import { useHistory } from "react-router-dom"
 import logo from "../../../assets/layout/header/logo.svg"
 import phoneIcon from "../../../assets/layout/header/phone-icon.svg"
 import dropDownIcon from "../../../assets/layout/header/dropdown-icon.svg"
@@ -76,9 +75,13 @@ export default function Index() {
                   </MenuButton>
                 }
               >
-                <MenuItem href="#">Termite Treatment</MenuItem>
-                <MenuItem href="#">Termite Inspection</MenuItem>
-                <MenuItem href="#">Termite Prevention</MenuItem>
+                <MenuItem href="/termite-treatment">Termite Treatment</MenuItem>
+                <MenuItem href="/termite-inspection">
+                  Termite Inspection
+                </MenuItem>
+                <MenuItem href="/termite-prevention">
+                  Termite Prevention
+                </MenuItem>
               </Menu>
               <Menu
                 menuButton={
@@ -133,11 +136,15 @@ export default function Index() {
                   </MenuItem>
                 </SubMenu>
                 <SubMenu label="Fly Control">
+                  <MenuItem href="/fly-control">Fly Control</MenuItem>
                   <MenuItem href="/flying-insect-control">
                     Flying insect Control
                   </MenuItem>
                   <MenuItem href="/mosquito-control-sydney">
                     Mosquito Pest Control
+                  </MenuItem>
+                  <MenuItem href="/bee-wasp-control-sydney">
+                    Bee {"&"} Wasp Control
                   </MenuItem>
                 </SubMenu>
                 <MenuItem href="/rodent-control-sydney">
@@ -341,13 +348,13 @@ export default function Index() {
                   <AccordionDetails>
                     <ul className="accordion-submenu-ul">
                       <li>
-                        <Link to="#">Termite Treatment</Link>
+                        <Link to="/termite-treatment">Termite Treatment</Link>
                       </li>
                       <li>
-                        <Link to="#">Termite Inspection</Link>
+                        <Link to="/termite-inspection">Termite Inspection</Link>
                       </li>
                       <li>
-                        <Link to="#">Termite Prevention</Link>
+                        <Link to="/termite-prevention">Termite Prevention</Link>
                       </li>
                     </ul>
                   </AccordionDetails>
@@ -479,15 +486,18 @@ export default function Index() {
                             aria-controls="panel2a-content"
                             id="panel2a-header"
                           >
-                            <Link to="/flying-insect-control">
-                              Flying Pest Control{" "}
-                            </Link>
+                            <Link to="/fly-control">Flying Pest Control </Link>
                           </AccordionSummary>
                           <AccordionDetails>
                             <ul className="accordion-submenu-ul">
                               <li>
                                 <Link to="/mosquito-control-sydney">
                                   Mosquito Pest Control
+                                </Link>
+                              </li>
+                              <li>
+                                <Link to="/bee-wasp-control-sydney">
+                                  Bee {"&"} Wasp Control
                                 </Link>
                               </li>
                             </ul>

@@ -28,6 +28,7 @@ module.exports = {
         accessToken:
           "MC5ZQ1NucXhJQUFDSUFTZ2hZ.77-977-977-977-9K--_ve-_ve-_vW1d77-977-977-9dUZZ77-9eTNv77-9e--_vXweR--_vUxwYRzvv70",
         linkResolver: ({ node, key, value }) => post => `/${post.uid}`,
+
         schemas: {
           universal_block_1: require("./src/schemas/universal_block_1.json"),
           hero_banner: require("./src/schemas/hero-banner.json"),
@@ -42,6 +43,7 @@ module.exports = {
           region: require("./src/schemas/region.json"),
           pricing: require("./src/schemas/pricing.json"),
         },
+        fetchLinks: ["page.parent"],
       },
     },
   ],

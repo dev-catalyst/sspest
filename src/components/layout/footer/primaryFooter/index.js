@@ -77,13 +77,22 @@ export default function primaryFooter() {
           <a
             href="https://www.facebook.com/SydneySidePestControl"
             target="_blank"
+            rel="noreferrer"
           >
             <img src={facebook} alt="facebook" />
           </a>
-          <a href="https://twitter.com/SSPESTCON" target="_blank">
+          <a
+            href="https://twitter.com/SSPESTCON"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={twitter} alt="twitter" />
           </a>
-          <a href="https://www.instagram.com/sspest/" target="_blank">
+          <a
+            href="https://www.instagram.com/sspest/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={insta} alt="insta" />
           </a>
         </div>
@@ -91,13 +100,22 @@ export default function primaryFooter() {
           <a
             href="https://www.facebook.com/SydneySidePestControl"
             target="_blank"
+            rel="noreferrer"
           >
             <img src={facebookS} alt="facebook" />
           </a>
-          <a href="https://twitter.com/SSPESTCON" target="_blank">
+          <a
+            href="https://twitter.com/SSPESTCON"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={twitterS} alt="twitter" />
           </a>
-          <a href="https://www.instagram.com/sspest/" target="_blank">
+          <a
+            href="https://www.instagram.com/sspest/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={instaS} alt="insta" />
           </a>
         </div>

@@ -3,7 +3,6 @@ import { Button } from "@react-md/button"
 import { RichText } from "prismic-reactjs"
 import stone from "../../../assets/layout/stone.svg"
 import tick from "../../../assets/home/icons/tick.svg"
-import { Link } from "gatsby"
 import "./style.scss"
 
 const Point = props => {
@@ -38,11 +37,11 @@ export default function treatmentServices({ data }) {
         <RichText render={data.primary.conclusion} />
 
         <div className="info-treatment-btn-container">
-          <Link to="/about-us">
+          <a href="tel:1300 007 772 ">
             <Button themeType="contained" className="info-treatment-btn">
               CONTACT US NOW
             </Button>
-          </Link>
+          </a>
         </div>
       </div>
     </div>

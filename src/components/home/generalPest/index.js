@@ -26,7 +26,6 @@ export default function GeneralPest() {
 
   React.useEffect(() => {
     setCurrenpath(stripSlashes(location.pathname))
-    console.log(currentPath)
     switch (currentPath) {
       case "the-end-of-lease":
         setTitle("THE END OF LEASE")
