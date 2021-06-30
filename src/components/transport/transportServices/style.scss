@@ -20,6 +20,7 @@
       margin: auto;
       text-align: center;
       margin-top: 50px;
+
       .transport-PestServices-btn {
         color: #fff;
         background-color: #017cc0;
@@ -32,6 +33,8 @@
         font-weight: bold;
         cursor: pointer;
         transition: all 0.3s ease-in;
+        margin-left: 20px;
+        margin-right: 20px;
         &:hover {
           transform: scaleY(1.045);
           box-shadow: none;

@@ -20,6 +20,13 @@
         "label": "metdescription"
       }
     },
+    "parent_name": {
+      "type": "Text",
+      "config": {
+        "label": "Parent Name",
+        "placeholder": "parent_name"
+      }
+    },
     "body": {
       "type": "Slices",
       "fieldset": "Slice zone",

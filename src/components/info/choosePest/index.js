@@ -14,7 +14,7 @@ const Reason = props => {
   )
 }
 
-export default function choosePest({ data }) {
+export default function choosePest({ data, id }) {
   return (
     <div className="info-choosePest">
       <div className="container">
@@ -35,13 +35,21 @@ export default function choosePest({ data }) {
           })}
         </div>
         <RichText render={data.primary.conclusion} />
-        <div className="info-btn-container">
-          <a href="tel:1300 007 772 ">
-            <Button themeType="contained" className="info-btn">
-              CONTACT US NOW
-            </Button>
-          </a>
-        </div>
+        {id === "strata-pest-control" ||
+        id === "school-pest-control" ||
+        id === "transport-pest-control" ||
+        id === "government-pest-control" ||
+        id === "pest-inspection" ||
+        id === "aged-care-pest-control" ||
+        id === "flying-insect-control" ? (
+          <div className="info-btn-container">
+            <a href="tel:1300 007 772 ">
+              <Button themeType="contained" className="info-btn">
+                CONTACT US NOW
+              </Button>
+            </a>
+          </div>
+        ) : null}
       </div>
     </div>
   )

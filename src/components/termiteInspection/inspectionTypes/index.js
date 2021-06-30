@@ -4,8 +4,6 @@ import stone from "../../../assets/layout/stone.svg"
 import "./style.scss"
 
 export default function inspectionTypes({ data, data2, data3 }) {
-  console.log(data2.items)
-  console.log(data3.items)
   return (
     <div className="termite-inspectionTypes">
       <div className="container">

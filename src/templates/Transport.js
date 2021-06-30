@@ -21,6 +21,7 @@ const Transport = props => {
 
   if (!props.data) return null
   const data = props.data.allPrismicTransport.edges[0].node.dataRaw
+  const id = props.data.allPrismicTransport.edges[0].node.uid
   // data sources
   const call = props.data.allPrismicHomeCall.edges[0].node.data
   const blogs = props.data.allPrismicBlogSection.edges
@@ -45,7 +46,7 @@ const Transport = props => {
         <Hero data={heroSection} />
         <img src={divider1} style={{ width: "100%" }} alt="" />
         <TransportPest data={control} />
-        <TransportServices data={services} />
+        <TransportServices data={services} id={id} />
         <TransportNeed data={need} />
         <img
           src={separator2}
@@ -53,7 +54,7 @@ const Transport = props => {
           alt=""
         />
 
-        <ChoosePest data={choose} />
+        <ChoosePest data={choose} id={id} />
         <Order data={order} />
         <BlogPost blogs={blogs} />
         <Call data={call} />

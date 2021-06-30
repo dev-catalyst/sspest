@@ -13,7 +13,6 @@ import { Helmet } from "react-helmet"
 export default function Blog({ data }) {
   if (!data) return null
   const pricingData = data.allPrismicPricing.edges[0].node.dataRaw
-  console.log(pricingData)
   const getQuote = pricingData.body[0]
   const choose = pricingData.body[1]
   const hero = data.allPrismicUniversalBlock1.edges[0].node.data

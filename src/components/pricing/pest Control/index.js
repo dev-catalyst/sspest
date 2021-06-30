@@ -6,7 +6,6 @@ import Video from "../../home/whoAreWe/video"
 import "./style.scss"
 
 export default function PricingControl({ data }) {
-  console.log(data)
   return (
     <div className="pricing-pest">
       <div className="container">

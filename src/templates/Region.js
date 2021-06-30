@@ -22,11 +22,10 @@ export default function Region(props) {
 
   if (!props.data) return null
   const data = props.data.allPrismicRegion.edges[0].node.dataRaw
-  console.log(data)
   // data sources
   const call = props.data.allPrismicHomeCall.edges[0].node.data
   const blogs = props.data.allPrismicBlogSection.edges
-
+  console.log(data)
   const hero = props.data.allPrismicUniversalBlock1.edges[0].node.data
   const black = data.body[0]
   const address = data.body[1]
@@ -38,11 +37,18 @@ export default function Region(props) {
   const heroSection = {
     src: hero.home_page_about_image,
   }
+  const title = data.title[0].text
+
   return (
     <div>
       <Helmet>
-        <meta name="description" content="" />
-        <title>SSPest - expertise.service.trust</title>
+        <meta
+          name="description"
+          content={
+            data.metadescription[0] ? data.metadescription[0].text : null
+          }
+        />
+        <title>{title}</title>
       </Helmet>
       <Layout>
         <Hero data={heroSection} />

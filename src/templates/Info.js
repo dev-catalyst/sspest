@@ -23,6 +23,7 @@ const Info = props => {
 
   if (!props.data) return null
   const data = props.data.allPrismicInfo.edges[0].node.dataRaw
+  const id = props.data.allPrismicInfo.edges[0].node.uid
   // data sources
   const call = props.data.allPrismicHomeCall.edges[0].node.data
   const blogs = props.data.allPrismicBlogSection.edges
@@ -52,12 +53,12 @@ const Info = props => {
         <Hero data={heroSection} />
         <img src={divider1} style={{ width: "100%" }} alt="" />
         <CommercialPest data={commercialPest} />
-        <CommercialPestServices data={commercialServices} />
+        <CommercialPestServices data={commercialServices} id={id} />
         <TreatmentServices data={treatmentServices} />
         <ControlPlan data={pestInspection} data1={pestPlan} />
-        <Extermination data={extermination} />
+        <Extermination data={extermination} id={id} />
         <PestPrevention data={prevention} />
-        <ChoosePest data={choose} />
+        <ChoosePest data={choose} id={id} />
         <Order data={order} />
         <BlogPost blogs={blogs} />
         <Call data={call} />
