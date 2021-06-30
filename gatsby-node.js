@@ -8,6 +8,13 @@
 
 const path = require("path")
 
+const generatePathname = (input) => {
+  console.log(input)
+  const output = input.replace(/ +/g, '-').toLowerCase();
+  console.log(output)
+  return output
+}
+
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
@@ -26,7 +33,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   sellings.data.allPrismicSelling.nodes.forEach(selling => {
     createPage({
-      path: selling.uid,
+      path: `${selling.type}/${selling.uid}`,
       component: path.resolve(__dirname, "src/templates/Selling.js"),
       context: { ...selling },
     })
@@ -47,7 +54,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   infos.data.allPrismicInfo.nodes.forEach(info => {
     createPage({
-      path: info.uid,
+      path: `${info.type}/${info.uid}`,
       component: path.resolve(__dirname, "src/templates/Info.js"),
       context: { ...info },
     })
@@ -68,7 +75,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   transports.data.allPrismicTransport.nodes.forEach(transport => {
     createPage({
-      path: transport.uid,
+      path: `${transport.type}/${transport.uid}`,
       component: path.resolve(__dirname, "src/templates/Transport.js"),
       context: { ...transport },
     })
@@ -82,6 +89,9 @@ exports.createPages = async ({ graphql, actions }) => {
           uid
           lang
           type
+          data {
+            parent_name
+          }
         }
       }
     }
@@ -89,7 +99,8 @@ exports.createPages = async ({ graphql, actions }) => {
 
   regions.data.allPrismicRegion.nodes.forEach(region => {
     createPage({
-      path: region.uid,
+      path: region.data.parent_name !== null ? `${generatePathname(region.data.parent_name)}/${region.uid}` : region.uid,
+      // gernratePathname will return hyphenated lowercase string. For example, 'Next Page' will return as 'next-page'
       component: path.resolve(__dirname, "src/templates/Region.js"),
       context: { ...region },
     })
