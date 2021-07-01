@@ -17,13 +17,17 @@ export default function inspectionTypes({ data, data2, data3 }) {
             <RichText render={data.primary.description} />
           </div>
           <div className="termite-inspectionTypes-inspection-image">
-            <img src={data.primary.image.url} alt="" />
+            {data.primary.image ? (
+              <img src={data.primary.image.url} alt="" />
+            ) : null}
           </div>
         </div>
         {/* row2 */}
         <div className="termite-inspectionTypes-inspection col-rev">
           <div className="termite-inspectionTypes-inspection-image">
-            <img src={data2.primary.image.url} alt="" />
+            {data2.primary.image ? (
+              <img src={data2.primary.image.url} alt="" />
+            ) : null}
           </div>
           <div className="termite-inspectionTypes-inspection-content space">
             <h1>
@@ -43,7 +47,9 @@ export default function inspectionTypes({ data, data2, data3 }) {
             <RichText render={data3.primary.description} />
           </div>
           <div className="termite-inspectionTypes-inspection-image">
-            <img src={data3.primary.image.url} alt="" />
+            {data3.primary.image ? (
+              <img src={data3.primary.image.url} alt="" />
+            ) : null}
           </div>
         </div>
       </div>

@@ -10,21 +10,8 @@
     "content": {
       "type": "StructuredText",
       "config": {
-        "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+        "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
         "label": "content"
-      }
-    },
-    "button": {
-      "type": "Link",
-      "config": {
-        "label": "Button"
-      }
-    },
-    "contact_no": {
-      "type": "StructuredText",
-      "config": {
-        "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
-        "label": "contact no"
       }
     },
     "bg_image": {
@@ -33,13 +20,6 @@
         "constraint": {},
         "thumbnails": [],
         "label": "bg image"
-      }
-    },
-    "email_id": {
-      "type": "StructuredText",
-      "config": {
-        "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
-        "label": "email id"
       }
     }
   }

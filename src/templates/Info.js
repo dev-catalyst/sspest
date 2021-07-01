@@ -131,16 +131,7 @@ export const query = graphql`
       edges {
         node {
           data {
-            button {
-              url
-            }
-            contact_no {
-              raw
-            }
             content {
-              raw
-            }
-            email_id {
               raw
             }
             bg_image {

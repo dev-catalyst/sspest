@@ -8,7 +8,9 @@ export default function Hero({ data }) {
     <div
       className="termite-hero"
       style={{
-        backgroundImage: `url(${data.banner_image.url})`,
+        backgroundImage: `url(${
+          data.banner_image ? data.banner_image.url : null
+        })`,
       }}
     >
       <div className="termite-hero-container">

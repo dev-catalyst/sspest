@@ -8,7 +8,9 @@ export default function Call({ data }) {
     <div
       className="home-call"
       style={{
-        backgroundImage: ` linear-gradient(to right,#020306,#020306,#252326,#221A1C), url(${data.bg_image.url})`,
+        backgroundImage: ` linear-gradient(to right,#020306,#020306,#252326,#221A1C), url(${
+          data.bg_image ? data.bg_image.url : null
+        })`,
         backgroundBlendMode: "multiply",
       }}
     >
@@ -19,7 +21,7 @@ export default function Call({ data }) {
           <p>{RichText.asText(data.paragraph.raw)}</p>
         </div>
         <div className="home-call-image">
-          <img src={data.image.url} alt="" />
+          {data.image ? <img src={data.image.url} alt="" /> : null}
         </div>
       </div>
     </div>

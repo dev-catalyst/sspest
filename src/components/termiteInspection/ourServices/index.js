@@ -9,7 +9,9 @@ export default function ourServices({ data }) {
     <div
       className="termite-ourServices"
       style={{
-        backgroundImage: `linear-gradient(#333333, #1E1D18), url(${data.primary.bg_image.url})`,
+        backgroundImage: `linear-gradient(#333333, #1E1D18), url(${
+          data.primary.bg_image ? data.primary.bg_image.url : null
+        })`,
         backgroundBlendMode: "multiply",
       }}
     >

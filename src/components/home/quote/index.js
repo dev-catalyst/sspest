@@ -9,7 +9,9 @@ export default function quote({ data }) {
     <div
       className="home-quote"
       style={{
-        backgroundImage: `linear-gradient(#333333, #1E1D18), url(${data.bg_image.url})`,
+        backgroundImage: `linear-gradient(#333333, #1E1D18), url(${
+          data.bg_image ? data.bg_image.url : null
+        })`,
         backgroundBlendMode: "multiply",
       }}
     >

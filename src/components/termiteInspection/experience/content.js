@@ -10,7 +10,7 @@ export default function content({ data }) {
         <RichText render={data.description} />
       </div>
       <div className="carousel-image">
-        <img src={data.image.url} alt="" />
+        {data.image ? <img src={data.image.url} alt="" /> : null}
       </div>
     </div>
   )

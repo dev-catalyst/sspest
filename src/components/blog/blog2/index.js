@@ -10,7 +10,7 @@ export default function Blog2({ data }) {
       <div className="container">
         <div className="blog-blog2-content">
           <div className="blog-blog2-content-image">
-            <img src={data.image.url} alt="" />
+            {data.image ? <img src={data.image.url} alt="" /> : null}
           </div>
           <h3>{RichText.asText(data.title.raw)}</h3>
           <p className="center-p">Posted {data.date}</p>

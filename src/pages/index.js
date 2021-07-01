@@ -111,9 +111,6 @@ export const query = graphql`
             bg_image {
               url
             }
-            bg_image_small {
-              url
-            }
             description {
               raw
             }
@@ -324,16 +321,7 @@ export const query = graphql`
       edges {
         node {
           data {
-            button {
-              url
-            }
-            contact_no {
-              raw
-            }
             content {
-              raw
-            }
-            email_id {
               raw
             }
             bg_image {

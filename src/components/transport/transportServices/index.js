@@ -10,7 +10,9 @@ export default function transportPestServices({ data, id }) {
     <div
       className="transport-PestServices"
       style={{
-        backgroundImage: `linear-gradient(#333333, #1E1D18), url(${data.primary.bg_image.url})`,
+        backgroundImage: `linear-gradient(#333333, #1E1D18), url(${
+          data.primary.bg_image ? data.primary.bg_image.url : null
+        })`,
         backgroundBlendMode: "multiply",
       }}
     >

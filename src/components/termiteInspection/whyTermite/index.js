@@ -20,12 +20,16 @@ export default function WhyTermite({ data, data2 }) {
             <RichText render={data.primary.description} />
           </div>
           <div className="termite-whyTermite-inspection-image">
-            <img src={data.primary.image.url} alt="" className="termite1" />
+            {data.primary.image ? (
+              <img src={data.primary.image.url} alt="" className="termite1" />
+            ) : null}
           </div>
         </div>
         <div className="termite-whyTermite-inspection container2">
           <div className="termite-whyTermite-inspection-image">
-            <img src={data2.primary.image.url} alt="" className="termite2" />
+            {data2.primary.image ? (
+              <img src={data2.primary.image.url} alt="" className="termite2" />
+            ) : null}
           </div>
           <div className="termite-whyTermite-inspection-content content2">
             <h1>

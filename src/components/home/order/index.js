@@ -11,7 +11,9 @@ export default function order({ data }) {
     <div
       className="home-order"
       style={{
-        backgroundImage: `linear-gradient(#0A6A9C, #01639A), url(${data.bg_image.url})`,
+        backgroundImage: `linear-gradient(#0A6A9C, #01639A), url(${
+          data.bg_image ? data.bg_image.url : null
+        })`,
         backgroundBlendMode: "multiply",
       }}
     >
@@ -27,13 +29,10 @@ export default function order({ data }) {
         <h2>{RichText.asText(data.title.raw)}</h2>
         <p>{RichText.asText(data.content.raw)}</p>
         <h4>
-          Call{" "}
-          <a href="tel:RichText.asText(data.contact_no.raw)">
-            {RichText.asText(data.contact_no.raw)}{" "}
-          </a>
+          Call <a href="tel:1300 007 772">1300 007 772 </a>
           or email{" "}
-          <a href="mailto:RichText.asText(data.email_id.raw)">
-            {RichText.asText(data.email_id.raw)}
+          <a href="mailto:info@sspestcontrol.com.au">
+            info@sspestcontrol.com.au
           </a>
         </h4>
         <Link to="/pest-control-pricing">

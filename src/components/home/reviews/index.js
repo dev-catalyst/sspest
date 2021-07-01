@@ -31,7 +31,7 @@ export default function pestControl3({ data, data2 }) {
             </p>
           </div>
           <div className="review-image">
-            <img src={data2.image.url} alt="" />
+            {data2.image ? <img src={data2.image.url} alt="" /> : null}
           </div>
         </div>
         <p>{RichText.asText(data2.finally.raw)}</p>

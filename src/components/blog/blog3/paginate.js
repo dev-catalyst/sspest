@@ -21,7 +21,9 @@ export default function Paginate({ data }) {
     .map((info, index) => (
       <div key={index} className="blog-blog3-content">
         <div className="blog-blog3-content-image">
-          <img src={info.node.data.image.url} alt="" />
+          {info.node.data.image ? (
+            <img src={info.node.data.image.url} alt="" />
+          ) : null}
         </div>
         <h3>{RichText.asText(info.node.data.title.raw)}</h3>
         <p className="center-p">Posted {info.node.data.date}</p>

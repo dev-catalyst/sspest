@@ -11,7 +11,9 @@ export default function Blog1({ data, bg }) {
     <div
       className="blog-blog1"
       style={{
-        backgroundImage: `linear-gradient(#333333, #1E1D18), url(${bg.bg_image.url})`,
+        backgroundImage: `linear-gradient(#333333, #1E1D18), url(${
+          bg.bg_image ? bg.bg_image.url : null
+        })`,
         backgroundBlendMode: "multiply",
       }}
     >
@@ -26,7 +28,7 @@ export default function Blog1({ data, bg }) {
       <div className="container">
         <div className="blog-blog1-content">
           <div className="blog-blog1-content-image">
-            <img src={data.image.url} alt="" />
+            {data.image ? <img src={data.image.url} alt="" /> : null}
           </div>
           <h3>{RichText.asText(data.title.raw)}</h3>
           <p className="center-p">Posted {data.date}</p>

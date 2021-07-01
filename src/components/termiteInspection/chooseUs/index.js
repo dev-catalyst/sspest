@@ -9,7 +9,11 @@ export default function chooseUs({ data }) {
     <div
       className="termite-chooseUs"
       style={{
-        backgroundImage: `linear-gradient(#333333, #1E1D18), url(${data.primary.background_image.url})`,
+        backgroundImage: `linear-gradient(#333333, #1E1D18), url(${
+          data.primary.background_image
+            ? data.primary.background_image.url
+            : null
+        })`,
         backgroundBlendMode: "multiply",
       }}
     >

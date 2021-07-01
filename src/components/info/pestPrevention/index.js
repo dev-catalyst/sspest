@@ -16,7 +16,9 @@ export default function pestPrevention({ data }) {
     >
       <div className="container">
         <div className="info-pestPrevention-content">
-          <img src={data.primary.bg_image.url} alt="" />
+          {data.primary.bg_image ? (
+            <img src={data.primary.bg_image.url} alt="" className="termite1" />
+          ) : null}
         </div>
         <div className="info-pestPrevention-content">
           <RichText render={data.primary.title} />

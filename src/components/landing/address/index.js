@@ -20,7 +20,9 @@ export default function address({ data }) {
     <div
       className="landing-address"
       style={{
-        backgroundImage: `linear-gradient(#333333, #1E1D18), url(${data.primary.bg_image.url})`,
+        backgroundImage: `linear-gradient(#333333, #1E1D18), url(${
+          data.primary.bg_image ? data.primary.bg_image.url : null
+        })`,
         backgroundBlendMode: "multiply",
       }}
     >
@@ -76,7 +78,9 @@ export default function address({ data }) {
         <div className="landing-address-map">
           <iframe
             title="map"
-            src={data.primary.address_link.url}
+            src={
+              data.primary.address_link ? data.primary.address_link.url : null
+            }
             allowFullScreen=""
             loading="lazy"
           ></iframe>

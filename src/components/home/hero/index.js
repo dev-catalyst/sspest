@@ -8,7 +8,7 @@ export default function Hero({ data }) {
     <div
       className="home-hero"
       style={{
-        backgroundImage: `url(${data.src.url})`,
+        backgroundImage: `url(${data.src ? data.src.url : null})`,
       }}
     >
       <div className="home-hero-container">

@@ -22,12 +22,16 @@ export default function controlPlan({ data, data1 }) {
             <RichText render={data.primary.description} />
           </div>
           <div className="info-controlPlan-inspection-image">
-            <img src={data.primary.image.url} alt="" className="termite1" />
+            {data.primary.image ? (
+              <img src={data.primary.image.url} alt="" className="termite1" />
+            ) : null}
           </div>
         </div>
         <div className="info-controlPlan-inspection container2">
           <div className="info-controlPlan-inspection-image">
-            <img src={data1.primary.image.url} alt="" className="termite2" />
+            {data1.primary.image ? (
+              <img src={data1.primary.image.url} alt="" className="termite1" />
+            ) : null}
           </div>
           <div className="info-controlPlan-inspection-content content2">
             <h1>

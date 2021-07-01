@@ -27,7 +27,13 @@ export default function extermination({ data, id }) {
             )}
           </div>
           <div className="info-extermination-image">
-            <img src={data.primary.bg_image.url} alt="" />
+            {data.primary.bg_image ? (
+              <img
+                src={data.primary.bg_image.url}
+                alt=""
+                className="termite1"
+              />
+            ) : null}
           </div>
         </div>
       </div>

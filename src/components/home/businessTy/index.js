@@ -22,7 +22,9 @@ export default function serviceType({ data, data2, data3 }) {
           <div className="home-business-type-image">
             <div className="image-container">
               <div className="overlay"></div>
-              <img src={data.image.url} alt="" className="btn2" />
+              {data.image ? (
+                <img src={data.image.url} alt="" className="btn2" />
+              ) : null}
             </div>
             <Link to="/residential-pest-control">
               <h4>FIND OUT MORE</h4>
@@ -33,7 +35,9 @@ export default function serviceType({ data, data2, data3 }) {
         <div className="home-business-type commercial">
           <div className="home-business-type-image">
             <div className="image-container">
-              <img src={data2.image.url} alt="" className="btn2" />
+              {data2.image ? (
+                <img src={data2.image.url} alt="" className="btn2" />
+              ) : null}
             </div>
             <Link to="/commercial-pest-control">
               <h4>FIND OUT MORE</h4>
@@ -63,7 +67,9 @@ export default function serviceType({ data, data2, data3 }) {
           </div>
           <div className="home-business-type-image">
             <div className="image-container">
-              <img src={data3.image.url} alt="" className="btn2" />
+              {data3.image ? (
+                <img src={data3.image.url} alt="" className="btn2" />
+              ) : null}
             </div>
             <Link to="#">
               <h4>FIND OUT MORE</h4>

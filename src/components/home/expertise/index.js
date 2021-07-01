@@ -13,7 +13,7 @@ export default function Expertise({ data }) {
           {data.items.map((info, index) => {
             return (
               <div key={index} className="points">
-                <img src={info.icons.url} alt=" fleas" />
+                {info.icons ? <img src={info.icons.url} alt=" fleas" /> : null}
                 <p>{RichText.asText(info.pest_types.raw)}</p>
               </div>
             )

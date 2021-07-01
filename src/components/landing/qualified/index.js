@@ -11,7 +11,9 @@ export default function qualified({ data }) {
         <div className="landing-qualified-content">
           <Carousel data={data} />
           <div className="landing-qualified-image">
-            <img src={data.primary.image.url} alt="" />
+            {data.primary.image ? (
+              <img src={data.primary.image.url} alt="" />
+            ) : null}
           </div>
         </div>
       </div>

@@ -17,11 +17,14 @@ export default function Blog({ data }) {
           {data.slice(0, 3).map((blog, index) => {
             return (
               <div key={index} className="post-conatiner">
-                <img
-                  src={blog.node.data.image.url}
-                  alt=""
-                  className="post-image"
-                />
+                {blog.node.data.image ? (
+                  <img
+                    src={blog.node.data.image.url}
+                    alt=""
+                    className="post-image"
+                  />
+                ) : null}
+
                 <div className="post-card">
                   <h4>{RichText.asText(blog.node.data.title.raw)}</h4>
                   <p>{blog.node.data.content.text.slice(0, 130) + "..."}</p>

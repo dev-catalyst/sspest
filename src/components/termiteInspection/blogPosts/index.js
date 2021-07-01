@@ -24,11 +24,13 @@ export default function BlogPosts({ blogs }) {
           {blogs.slice(0, 3).map((blog, index) => {
             return (
               <div className="termite-post" key={index}>
-                <img
-                  src={blog.node.data.image.url}
-                  alt=""
-                  className="termite-post-image"
-                />
+                {blog.node.data.image.url ? (
+                  <img
+                    src={blog.node.data.image.url}
+                    alt=""
+                    className="termite-post-image"
+                  />
+                ) : null}
                 <div className="termite-post-card">
                   <h4> {RichText.asText(blog.node.data.title.raw)}</h4>
                   <p>{blog.node.data.content.text.slice(0, 100) + "..."}</p>

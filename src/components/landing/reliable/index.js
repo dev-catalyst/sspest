@@ -8,7 +8,9 @@ export default function reliable({ data }) {
     <div
       className="landing-reliable"
       style={{
-        backgroundImage: `linear-gradient(#EEE3DB, #F3E8E2), url(${data.primary.bg_image.url})`,
+        backgroundImage: `linear-gradient(#EEE3DB, #F3E8E2), url(${
+          data.primary.bg_image ? data.primary.bg_image.url : null
+        })`,
         backgroundBlendMode: "hard-light",
       }}
     >

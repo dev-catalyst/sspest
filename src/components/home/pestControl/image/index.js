@@ -17,7 +17,9 @@ import "./style.scss"
 export default function image({ data }) {
   return (
     <div className="image-container">
-      <img src={data.image.url} alt="" className="main-image" />
+      {data.image ? (
+        <img src={data.image.url} alt="" className="main-image" />
+      ) : null}
       <ul className="circle-container">
         <Link to="/cockroach-pest-control-sydney">
           <li>

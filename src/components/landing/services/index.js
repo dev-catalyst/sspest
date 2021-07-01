@@ -8,7 +8,9 @@ export default function Services({ data }) {
       <div className="container">
         <RichText render={data.primary.title} />
         <div className="landing-services-image">
-          <img src={data.primary.image.url} alt="" />
+          {data.primary.image ? (
+            <img src={data.primary.image.url} alt="" />
+          ) : null}
         </div>
         {data.items.map((para, index) => {
           return (

@@ -8,7 +8,9 @@ export default function Blog3({ bg, data }) {
     <div
       className="blog-blog3"
       style={{
-        backgroundImage: `linear-gradient(#0A6A9C, #01639A),url(${bg.bg_image.url})`,
+        backgroundImage: `linear-gradient(#0A6A9C, #01639A),url(${
+          bg.bg_image ? bg.bg_image.url : null
+        })`,
         backgroundBlendMode: "multiply",
       }}
     >
