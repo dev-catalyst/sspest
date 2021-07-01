@@ -88,3 +88,22 @@
     }
   }
 }
+
+@media only screen and (max-width: 767px) {
+  .home-order-container h2 {
+    font-size: 28px !important;
+    line-height: 34px;
+  }
+  .home-order-container
+    button.rmd-button.rmd-button--text.rmd-button--outline.btn {
+    width: 198px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 0;
+  }
+}

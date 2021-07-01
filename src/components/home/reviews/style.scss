@@ -105,3 +105,23 @@
     }
   }
 }
+
+@media only screen and (max-width: 767px) {
+  .home-reviews-container {
+    max-width: 100%;
+    padding: 0 42px 0;
+  }
+  .home-reviews-container h2 {
+    margin-top: 45px !important;
+    margin-bottom: 25px !important;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .home-reviews-container br {
+    display: none;
+  }
+  .review-image img {
+    width: 200px;
+    height: auto;
+  }
+}

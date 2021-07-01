@@ -38,7 +38,7 @@ const Info = props => {
   const choose = data.body[7]
   const order = props.data.allPrismicHomeOrder.edges[0].node.data
   const heroSection = {
-    src: hero.home_page_about_image,
+    src: hero.home_page_hero_banner,
   }
   const title = data.title[0].text
   const description = data.metadescription[0].text
@@ -120,7 +120,7 @@ export const query = graphql`
       edges {
         node {
           data {
-            home_page_about_image {
+            home_page_hero_banner {
               url
             }
           }

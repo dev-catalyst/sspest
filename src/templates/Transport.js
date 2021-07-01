@@ -32,7 +32,7 @@ const Transport = props => {
   const choose = data.body[3]
   const order = props.data.allPrismicHomeOrder.edges[0].node.data
   const heroSection = {
-    src: hero.home_page_about_image,
+    src: hero.home_page_hero_banner,
   }
   const title = data.title[0].text
   const description = data.metdescription[0].text
@@ -116,7 +116,7 @@ export const query3 = graphql`
       edges {
         node {
           data {
-            home_page_about_image {
+            home_page_hero_banner {
               url
             }
           }

@@ -99,3 +99,10 @@
     }
   }
 }
+
+@media only screen and (max-width: 767px) {
+  .secondary-footer .secondary-footer-container .secondary-footer-copyright p {
+    font-size: 10px !important;
+    line-height: 12px;
+  }
+}

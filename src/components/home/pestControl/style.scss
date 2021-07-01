@@ -81,3 +81,25 @@
     }
   }
 }
+
+@media only screen and (max-width: 767px) {
+  .home-pest-control {
+    margin-top: -10px !important;
+    .home-pest-control-container {
+      max-width: 100%;
+      padding: 0 40px;
+      .pest-control-stone {
+        top: -17px !important;
+        left: -43px !important;
+        width: 115px;
+        height: 103.97px;
+      }
+      .image-holder {
+        margin-left: 0;
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -25,7 +25,6 @@ export default function Region(props) {
   // data sources
   const call = props.data.allPrismicHomeCall.edges[0].node.data
   const blogs = props.data.allPrismicBlogSection.edges
-  console.log(data)
   const hero = props.data.allPrismicUniversalBlock1.edges[0].node.data
   const black = data.body[0]
   const address = data.body[1]
@@ -35,7 +34,7 @@ export default function Region(props) {
   const services = data.body[5]
   const quote = data.body[6]
   const heroSection = {
-    src: hero.home_page_about_image,
+    src: hero.home_page_hero_banner,
   }
   const title = data.title[0].text
 
@@ -120,7 +119,7 @@ export const query5 = graphql`
       edges {
         node {
           data {
-            home_page_about_image {
+            home_page_hero_banner {
               url
             }
           }

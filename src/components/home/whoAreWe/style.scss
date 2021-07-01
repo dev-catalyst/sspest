@@ -146,6 +146,40 @@
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .home-whoAreWe-container {
+    max-width: 100%;
+    padding: 100px 40px 65px !important;
+    .video {
+      max-width: 100%;
+      height: 206.25px;
+    }
+  }
+  .home-whoAreWe-container-content {
+    padding-top: 16px !important;
+    .whoAreWe-control-stone {
+      top: -17px !important;
+      left: -43px !important;
+      width: 115px;
+      height: 103.97px;
+    }
+    .btn-container {
+      button.rmd-button.rmd-button--text.rmd-button--contained.btn {
+        width: 198px;
+        height: 45px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        font-size: 12px;
+        line-height: 15px;
+        margin-top: 22px;
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 576.98px) {
   .video {
     height: auto;

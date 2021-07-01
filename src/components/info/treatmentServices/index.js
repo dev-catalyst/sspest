@@ -3,6 +3,7 @@ import { Button } from "@react-md/button"
 import { RichText } from "prismic-reactjs"
 import stone from "../../../assets/layout/stone.svg"
 import tick from "../../../assets/home/icons/tick.svg"
+import { Link } from "gatsby"
 import "./style.scss"
 
 const Point = props => {
@@ -29,7 +30,13 @@ export default function treatmentServices({ data }) {
           {data.items.map((para, index) => {
             return (
               <Point key={index}>
-                <RichText render={para.points} />
+                {para.link[0] ? (
+                  <Link to={para.link[0].text}>
+                    <RichText render={para.points} />
+                  </Link>
+                ) : (
+                  <RichText render={para.points} />
+                )}
               </Point>
             )
           })}

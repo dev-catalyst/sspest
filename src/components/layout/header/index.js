@@ -826,7 +826,7 @@ export default function Index() {
                     aria-controls="panel2a-content"
                     id="panel2a-header"
                   >
-                    <Link to="#">PEST CONTROL SERVICES</Link>
+                    <Link to="#">AREAS</Link>
                   </AccordionSummary>
                   <AccordionDetails>
                     <ul className="accordion-submenu-ul">

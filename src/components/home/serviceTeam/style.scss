@@ -83,6 +83,23 @@
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .home-service-team-container {
+    h1 {
+      font-size: 30px;
+      line-height: 37px;
+      margin-bottom: 20px;
+    }
+  }
+  .home-service-team-container {
+    .home-service-team-description {
+      padding-left: 42px !important;
+      padding-right: 42px !important;
+      text-align: justify;
+    }
+  }
+}
+
 @media only screen and (max-width: 576.98px) {
   .home-service-team {
     &-container {

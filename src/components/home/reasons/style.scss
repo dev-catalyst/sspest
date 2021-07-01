@@ -46,3 +46,11 @@
     }
   }
 }
+
+@media only screen and (max-width: 767px) {
+  .home-reasons-container {
+    max-width: 100%;
+    padding-bottom: 70px;
+    padding: 0 42px 70px;
+  }
+}

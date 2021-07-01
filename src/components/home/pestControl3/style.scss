@@ -52,3 +52,10 @@
     }
   }
 }
+
+@media only screen and (max-width: 767px) {
+  .home-pestControl3-container {
+    max-width: 100%;
+    padding: 0 42px 0;
+  }
+}

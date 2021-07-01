@@ -22,7 +22,7 @@ export default function Blog({ data }) {
   const blog3_bg = data.allPrismicBlogPageBodyBlog3.edges[0].node.primary
 
   const heroSection = {
-    src: hero.home_page_about_image,
+    src: hero.home_page_hero_banner,
   }
   return (
     <div>
@@ -48,7 +48,7 @@ export const query2 = graphql`
       edges {
         node {
           data {
-            home_page_about_image {
+            home_page_hero_banner {
               url
             }
           }

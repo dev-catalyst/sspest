@@ -18,7 +18,7 @@ export default function Blog({ data }) {
   const hero = data.allPrismicUniversalBlock1.edges[0].node.data
   const blogs = data.allPrismicBlogSection.edges
   const heroSection = {
-    src: hero.home_page_about_image,
+    src: hero.home_page_hero_banner,
   }
   return (
     <div>
@@ -47,7 +47,7 @@ export const queryPricing = graphql`
       edges {
         node {
           data {
-            home_page_about_image {
+            home_page_hero_banner {
               url
             }
           }
