@@ -13,7 +13,16 @@ module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
+
     {
+      // resolve: `gatsby-plugin-prefetch-google-fonts`,
+      // options: {
+      //   fonts: [{
+      //     family: 'Montserrat',
+      //     variants: ['200','400','600','700','800','900']
+      //   }
+      //   ],
+      // },
       resolve: `gatsby-source-prismic`,
       options: {
         repositoryName: "pestcontrol",
