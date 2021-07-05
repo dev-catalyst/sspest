@@ -56,12 +56,12 @@ export default function image({ data }) {
             <img src={icon7} alt="" className="pest" />
           </li>
         </Link>
-        <Link to="#">
+        <Link to="/fly-control/bee-wasp-control-sydney">
           <li>
             <img src={icon8} alt="" className="pest" />
           </li>
         </Link>
-        <Link to="/possum-pest-control">
+        <Link to="/feral-animal-removal/possum-pest-control">
           <li>
             <img src={icon9} alt="" className="pest" />
           </li>
@@ -76,7 +76,7 @@ export default function image({ data }) {
             <img src={icon11} alt="" className="pest" />
           </li>
         </Link>
-        <Link to="/the-termite">
+        <Link to="/fly-control">
           <li>
             <img src={icon12} alt="" className="pest" />
           </li>

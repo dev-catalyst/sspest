@@ -71,7 +71,7 @@ export default function serviceType({ data, data2, data3 }) {
                 <img src={data3.image.url} alt="" className="btn2" />
               ) : null}
             </div>
-            <Link to="#">
+            <Link to="/the-termite">
               <h4>FIND OUT MORE</h4>
             </Link>
           </div>

@@ -25,7 +25,7 @@ export default function Index() {
                 <li>HOME</li>
               </Link>
               {/* Pest Control Services */}
-              <Link to="">
+              <Link to="#">
                 <li className="pcs">
                   PEST CONTROL SERVICES{" "}
                   <img src={dropDownIcon} alt="dropDownIcon" />
@@ -114,7 +114,7 @@ export default function Index() {
                 </li>
               </Link>
               {/* Pest solutions */}
-              <Link to="">
+              <Link to="#">
                 <li className="pcs">
                   PEST SOLUTIONS <img src={dropDownIcon} alt="dropDownIcon" />
                   <div className="sub-menu-dropdown">
@@ -282,7 +282,7 @@ export default function Index() {
                 </li>
               </Link>
               {/* pest types */}
-              <Link to="/the-termite">
+              <Link to="#">
                 <li className="pcs">
                   PEST TYPES <img src={dropDownIcon} alt="dropDownIcon" />
                   <div className="sub-menu-dropdown pest_types">
@@ -298,7 +298,7 @@ export default function Index() {
                 </li>
               </Link>
               {/* areas covered */}
-              <Link to="/the-termite">
+              <Link to="#">
                 <li className="pcs">
                   AREAS COVERED <img src={dropDownIcon} alt="dropDownIcon" />
                   <div className="sub-menu-dropdown areas-dropdown">
@@ -476,7 +476,7 @@ export default function Index() {
                 </li>
               </Link>
               <Link to="#">
-                <li>SHOP </li>
+                <li className="empty-link">SHOP</li>
               </Link>
               <Link to="/blog">
                 <li>BLOG </li>
@@ -1010,10 +1010,10 @@ export default function Index() {
                   </AccordionDetails>
                 </Accordion>
               </li>
-              <li>
-                <Link to="/" className="nav-link nav-imp-sizes">
+              <li className="empty-link">
+                {/* <Link to="/" className="nav-link nav-imp-sizes"> */}
                   SHOP
-                </Link>
+                {/* </Link> */}
               </li>
               <li>
                 <Link to="/blog" className="nav-link nav-imp-sizes">

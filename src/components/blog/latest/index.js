@@ -12,10 +12,10 @@ export default function latest({ data }) {
           <GeneralPest />
         </div>
         <h4> {RichText.asText(data.subtitle.raw)}</h4>
-        <h1>
+        <h2>
           <img src={stone} alt="" />
           {RichText.asText(data.title.raw)}
-        </h1>
+        </h2>
         <p>{RichText.asText(data.description.raw)}</p>
       </div>
     </div>

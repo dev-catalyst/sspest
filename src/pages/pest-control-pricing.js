@@ -6,6 +6,7 @@ import PricingControl from "../components/pricing/pest Control"
 import GetQuote from "../components/pricing/getQuote"
 import PricingChoose from "../components/pricing/choose"
 import BlogPost from "../components/termiteInspection/blogPosts"
+import Call from "../components/home/call"
 import divider1 from "../assets/home/divider1.png"
 import { graphql } from "gatsby"
 import { Helmet } from "react-helmet"
@@ -17,6 +18,7 @@ export default function Blog({ data }) {
   const choose = pricingData.body[1]
   const hero = data.allPrismicUniversalBlock1.edges[0].node.data
   const blogs = data.allPrismicBlogSection.edges
+  const call = data.allPrismicHomeCall.edges[0].node.data
   const heroSection = {
     src: hero.home_page_hero_banner,
   }
@@ -36,6 +38,7 @@ export default function Blog({ data }) {
         <GetQuote data={getQuote} />
         <PricingChoose data={choose} />
         <BlogPost blogs={blogs} />
+        <Call data={call} />
       </Layout>
     </div>
   )
@@ -59,6 +62,26 @@ export const queryPricing = graphql`
         node {
           dataRaw
           id
+        }
+      }
+    }
+    allPrismicHomeCall {
+      edges {
+        node {
+          data {
+            image {
+              url
+            }
+            bg_image {
+              url
+            }
+            paragraph {
+              raw
+            }
+            title {
+              raw
+            }
+          }
         }
       }
     }

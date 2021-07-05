@@ -17,7 +17,7 @@ export default function Call({ data }) {
       <img src={divider5} alt="" style={{ width: "100%", marginTop: "-7px" }} />
       <div className="home-call-container">
         <div className="home-call-content">
-          <h1>{RichText.asText(data.title.raw)}</h1>
+          <h2>{RichText.asText(data.title.raw)}</h2>
           <p>{RichText.asText(data.paragraph.raw)}</p>
         </div>
         <div className="home-call-image">

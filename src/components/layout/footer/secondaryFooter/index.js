@@ -9,6 +9,7 @@ export default function secondaryFooter() {
         <div className="secondary-footer-links">
           <ul className="link-container">
             <Link to="/">HOME</Link>
+            <Link to="/about-us">ABOUT US</Link>
             <Link to="#">SHOP</Link>
             <Link to="/blog">BLOG</Link>
           </ul>
