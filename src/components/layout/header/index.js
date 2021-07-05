@@ -256,6 +256,9 @@ export default function Index() {
                         <Link to="/bed-bug-control">Bed Bug Pest Control</Link>
                       </li>
                       <li>
+                        <Link to="/bird-mites-control">Bird Mites Control</Link>
+                      </li>
+                      <li>
                         <Link to="/carpet-beetle-control">
                           Carpet Beetle Pest Control
                         </Link>
@@ -766,6 +769,9 @@ export default function Index() {
                       </li>
                       <li>
                         <Link to="/bed-bug-control">Bed Bug Pest Control</Link>
+                      </li>
+                      <li>
+                        <Link to="/bird-mites-control">Bird Mites Control</Link>
                       </li>
                       <li>
                         <Link to="/carpet-beetle-control">
