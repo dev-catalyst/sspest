@@ -172,6 +172,7 @@
 @media only screen and (max-width: 767px) {
   .fixed-widget-layout {
     top: 70px;
+    z-index: 90;
   }
   .pest-widget-holder {
     padding: 6px 5px;

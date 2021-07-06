@@ -564,7 +564,14 @@ a.nav-link.accordion-header {
     font-size: 16px;
     @media only screen and (max-width: 767px) {
       font-size: 16px;
-    }
+    }  
+  }
+  .empty-link{
+      font-size: 16px;
+      line-height: 2em;
+      color: #7b7b7b;
+      font-weight: 500;
+      font-family: "Montserrat";
   }
   .MuiPaper-elevation1 {
     box-shadow: none;
@@ -573,7 +580,11 @@ a.nav-link.accordion-header {
   .MuiIconButton-root {
     padding: 0;
     padding-top: 12px;
+    @media only screen and (max-width: 767px) {
+      padding-top: 0px;
+    } 
   }
+
   .MuiAccordionSummary-root {
     padding: 0;
   }
