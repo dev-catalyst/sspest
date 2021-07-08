@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import logo from "../../../assets/layout/header/logo.svg"
+import logo from "../../../assets/layout/header/logo.png"
 import phoneIcon from "../../../assets/layout/header/phone-icon.svg"
 import dropDownIcon from "../../../assets/layout/header/dropdown-icon.svg"
 import Accordion from "@material-ui/core/Accordion"
@@ -15,26 +15,26 @@ export default function Index() {
       <header>
         <div className="header-container">
           <div className="header-logo">
-            <Link to="/">
+            <a href="/">
               <img className="logo" src={logo} alt="logo" />
-            </Link>
+            </a>
           </div>
           <div className="navbar">
-            <div className="navbar-menu">
-              <Link to="/">
+            <div id="navbar-header" className="navbar-menu">
+              <a href="/">
                 <li>HOME</li>
-              </Link>
+              </a>
               {/* Pest Control Services */}
-              <Link to="#">
+              <a href="#">
                 <li className="pcs">
                   PEST CONTROL SERVICES{" "}
                   <img src={dropDownIcon} alt="dropDownIcon" />
                   <div className="sub-menu-dropdown pcs-dropdown">
                     <ul className="sub-menu-dropdown-ul">
                       <li className="sub-menu-field">
-                        <Link to="/commercial-pest-control">
+                        <a href="/commercial-pest-control">
                           Commercial Pest Control
-                        </Link>
+                        </a>
                         <img
                           src={dropDownIcon}
                           alt="dropDownIcon"
@@ -43,91 +43,91 @@ export default function Index() {
                         <div className="inner-side-menu cpc">
                           <ul>
                             <li>
-                              <Link to="/commercial-pest-control/strata-pest-control">
+                              <a href="/commercial-pest-control/strata-pest-control">
                                 Strata Pest Control
-                              </Link>
+                              </a>
                             </li>
                             <li>
-                              <Link to="/commercial-pest-control/school-pest-control">
+                              <a href="/commercial-pest-control/school-pest-control">
                                 School Pest Control
-                              </Link>
+                              </a>
                             </li>
                             <li>
-                              <Link to="/commercial-pest-control/transport-pest-control">
+                              <a href="/commercial-pest-control/transport-pest-control">
                                 Transport Pest Control
-                              </Link>
+                              </a>
                             </li>
                             <li>
-                              <Link to="/commercial-pest-control/government-pest-control">
+                              <a href="/commercial-pest-control/government-pest-control">
                                 Government Pest Control
-                              </Link>
+                              </a>
                             </li>
                             <li>
-                              <Link to="/commercial-pest-control/pest-inspection">
+                              <a href="/commercial-pest-control/pest-inspection">
                                 Pest Inspection
-                              </Link>
+                              </a>
                             </li>
                             <li>
-                              <Link to="/commercial-pest-control/aged-care-pest-control">
+                              <a href="/commercial-pest-control/aged-care-pest-control">
                                 Aged Care Pest Control
-                              </Link>
+                              </a>
                             </li>
                           </ul>
                         </div>
                       </li>
                       <li>
-                        <Link to="/residential-pest-control">
+                        <a href="/residential-pest-control">
                           Residential Pest Control
-                        </Link>
+                        </a>
                       </li>
                       <li>
-                        <Link to="/pet-and-kid-friendly-pest-control">
+                        <a href="/pet-and-kid-friendly-pest-control">
                           Pet and Kid Friendly Pest Control
-                        </Link>
+                        </a>
                       </li>
                       <li>
-                        <Link to="/organic-pest-control">
+                        <a href="/organic-pest-control">
                           Organic Pest Control
-                        </Link>
+                        </a>
                       </li>
                     </ul>
                   </div>
                 </li>
-              </Link>
+              </a>
               {/* TERMITE CONTROL */}
-              <Link to="/the-termite">
+              <a href="/the-termite">
                 <li className="pcs">
                   TERMITE CONTROL <img src={dropDownIcon} alt="dropDownIcon" />
                   <div className="sub-menu-dropdown termite-dropdown">
                     <ul className="sub-menu-dropdown-ul">
                       <li>
-                        <Link to="/termite-treatment">Termite Treatment</Link>
+                        <a href="/termite-treatment">Termite Treatment</a>
                       </li>
                       <li>
-                        <Link to="/termite-inspection">Termite Inspection</Link>
+                        <a href="/termite-inspection">Termite Inspection</a>
                       </li>
                       <li>
-                        <Link to="/termite-prevention">Termite Prevention</Link>
+                        <a href="/termite-prevention">Termite Prevention</a>
                       </li>
                     </ul>
                   </div>
                 </li>
-              </Link>
+              </a>
               {/* Pest solutions */}
-              <Link to="#">
+              <a href="#">
                 <li className="pcs">
                   PEST SOLUTIONS <img src={dropDownIcon} alt="dropDownIcon" />
                   <div className="sub-menu-dropdown">
                     <ul className="sub-menu-dropdown-ul">
                       <li>
-                        <Link to="/cockroach-pest-control-sydney">
+                        <a href="/cockroach-pest-control-sydney">
                           Cockroach Pest Control
-                        </Link>
+                        </a>
                       </li>
                       <li className="sub-menu-field">
-                        <Link to="/spider-pest-control-sydney">
+                        <a href="/spider-pest-control-sydney">
                           Spider Pest Control
-                        </Link>
+                        </a>
                         <img
                           src={dropDownIcon}
                           alt="dropDownIcon"
@@ -136,22 +136,22 @@ export default function Index() {
                         <div className="inner-side-menu pssm">
                           <ul>
                             <li>
-                              <Link to="/spider-pest-control/redback-spider-pest-control-sydney">
+                              <a href="/spider-pest-control/redback-spider-pest-control-sydney">
                                 Redback Spider Pest Control
-                              </Link>
+                              </a>
                             </li>
                             <li>
-                              <Link to="/spider-pest-control/funnel-web-spider-pest-control">
+                              <a href="/spider-pest-control/funnel-web-spider-pest-control">
                                 Funnel-Web Spider Pest Control
-                              </Link>
+                              </a>
                             </li>
                           </ul>
                         </div>
                       </li>
                       <li className="sub-menu-field">
-                        <Link to="/ant-pest-control-sydney">
+                        <a href="/ant-pest-control-sydney">
                           Ant Pest Control
-                        </Link>
+                        </a>
                         <img
                           src={dropDownIcon}
                           alt="dropDownIcon"
@@ -160,17 +160,17 @@ export default function Index() {
                         <div className="inner-side-menu pssm">
                           <ul>
                             <li>
-                              <Link to="/ant-pest-control-sydney/white-ant-pest-control">
+                              <a href="/ant-pest-control-sydney/white-ant-pest-control">
                                 White Ant Pest Control
-                              </Link>
+                              </a>
                             </li>
                           </ul>
                         </div>
                       </li>
                       <li className="sub-menu-field">
-                        <Link to="/bird-pest-control-sydney">
+                        <a href="/bird-pest-control-sydney">
                           Bird Pest Control
-                        </Link>
+                        </a>
                         <img
                           src={dropDownIcon}
                           alt="dropDownIcon"
@@ -179,17 +179,17 @@ export default function Index() {
                         <div className="inner-side-menu pssm">
                           <ul>
                             <li>
-                              <Link to="/bird-pest-control/pigeon-pest-control">
+                              <a href="/bird-pest-control/pigeon-pest-control">
                                 Pigeon Pest Control
-                              </Link>
+                              </a>
                             </li>
                           </ul>
                         </div>
                       </li>
                       <li className="sub-menu-field">
-                        <Link to="/feral-animal-removal">
+                        <a href="/feral-animal-removal">
                           Feral Animal Removal
-                        </Link>
+                        </a>
                         <img
                           src={dropDownIcon}
                           alt="dropDownIcon"
@@ -198,25 +198,25 @@ export default function Index() {
                         <div className="inner-side-menu pssm">
                           <ul>
                             <li>
-                              <Link to="/feral-animal-removal/possum-pest-control">
+                              <a href="/feral-animal-removal/possum-pest-control">
                                 Possum Pest Control
-                              </Link>
+                              </a>
                             </li>
                             <li>
-                              <Link to="/feral-animal-removal/rabbit-control">
+                              <a href="/feral-animal-removal/rabbit-control">
                                 Rabbit Pest Control
-                              </Link>
+                              </a>
                             </li>
                             <li>
-                              <Link to="/feral-animal-removal/feral-cat-control">
+                              <a href="/feral-animal-removal/feral-cat-control">
                                 Feral Cat Pest Control
-                              </Link>
+                              </a>
                             </li>
                           </ul>
                         </div>
                       </li>
                       <li className="sub-menu-field">
-                        <Link to="/fly-control">Fly Control</Link>
+                        <a href="/fly-control">Fly Control</a>
                         <img
                           src={dropDownIcon}
                           alt="dropDownIcon"
@@ -225,46 +225,46 @@ export default function Index() {
                         <div className="inner-side-menu pssm">
                           <ul>
                             <li>
-                              <Link to="/flying-insect-control">
+                              <a href="/flying-insect-control">
                                 Flying insect Control
-                              </Link>
+                              </a>
                             </li>
                             <li>
-                              <Link to="/fly-control/mosquito-control-sydney">
+                              <a href="/fly-control/mosquito-control-sydney">
                                 Mosquito Pest Control
-                              </Link>
+                              </a>
                             </li>
                             <li>
-                              <Link to="/fly-control/bee-wasp-control-sydney">
+                              <a href="/fly-control/bee-wasp-control-sydney">
                                 Bee {"&"} Wasp Control
-                              </Link>
+                              </a>
                             </li>
                           </ul>
                         </div>
                       </li>
                       <li>
-                        <Link to="/rodent-control-sydney">
+                        <a href="/rodent-control-sydney">
                           Rodent Pest Control
-                        </Link>
+                        </a>
                       </li>
                       <li>
-                        <Link to="/silverfish-control">
+                        <a href="/silverfish-control">
                           Silverfish Pest Control
-                        </Link>
+                        </a>
                       </li>
                       <li>
-                        <Link to="/bed-bug-control">Bed Bug Pest Control</Link>
+                        <a href="/bed-bug-control">Bed Bug Pest Control</a>
                       </li>
                       <li>
-                        <Link to="/bird-mites-control">Bird Mites Control</Link>
+                        <a href="/bird-mites-control">Bird Mites Control</a>
                       </li>
                       <li>
-                        <Link to="/carpet-beetle-control">
+                        <a href="/carpet-beetle-control">
                           Carpet Beetle Pest Control
-                        </Link>
+                        </a>
                       </li>
                       <li className="sub-menu-field">
-                        <Link to="/moth-control">Moth Pest Control</Link>
+                        <a href="/moth-control">Moth Pest Control</a>
                         <img
                           src={dropDownIcon}
                           alt="dropDownIcon"
@@ -273,9 +273,9 @@ export default function Index() {
                         <div className="inner-side-menu pssm">
                           <ul>
                             <li>
-                              <Link to="/moth-control/pantry-moth-control">
+                              <a href="/moth-control/pantry-moth-control">
                                 Pantry Moth Pest Control
-                              </Link>
+                              </a>
                             </li>
                           </ul>
                         </div>
@@ -283,31 +283,31 @@ export default function Index() {
                     </ul>
                   </div>
                 </li>
-              </Link>
+              </a>
               {/* pest types */}
-              <Link to="#">
+              <a href="#">
                 <li className="pcs">
                   PEST TYPES <img src={dropDownIcon} alt="dropDownIcon" />
                   <div className="sub-menu-dropdown pest_types">
                     <ul className="sub-menu-dropdown-ul">
                       <li>
-                        <Link to="/the-end-of-lease">Dog Fleas</Link>
+                        <a href="/the-end-of-lease">Dog Fleas</a>
                       </li>
                       <li>
-                        <Link to="/the-ant">Ants</Link>
+                        <a href="/the-ant">Ants</a>
                       </li>
                     </ul>
                   </div>
                 </li>
-              </Link>
+              </a>
               {/* areas covered */}
-              <Link to="#">
+              <a href="#">
                 <li className="pcs">
                   AREAS COVERED <img src={dropDownIcon} alt="dropDownIcon" />
                   <div className="sub-menu-dropdown areas-dropdown">
                     <ul className="sub-menu-dropdown-ul">
                       <li className="sub-menu-field">
-                        <Link to="/the-end-of-lease">Regions</Link>
+                        <a href="/the-end-of-lease">Regions</a>
                         <img
                           src={dropDownIcon}
                           alt="dropDownIcon"
@@ -316,83 +316,83 @@ export default function Index() {
                         <div className="inner-side-menu regions-side-menu">
                           <ul>
                             <li>
-                              <Link to="/regions/blue-mountains">
+                              <a href="/regions/blue-mountains">
                                 Blue Mountains
-                              </Link>
+                              </a>
                             </li>
                             <li>
-                              <Link to="/regions/central-coast">
+                              <a href="/regions/central-coast">
                                 Central Coast
-                              </Link>
+                              </a>
                             </li>
                             <li>
-                              <Link to="/regions/eastern-suburbs">
+                              <a href="/regions/eastern-suburbs">
                                 Eastern Suburbs
-                              </Link>
+                              </a>
                             </li>
                             <li>
-                              <Link to="/regions/hawkesbury">Hawkesbury</Link>
+                              <a href="/regions/hawkesbury">Hawkesbury</a>
                             </li>
                             <li>
-                              <Link to="/regions/hills-district">
+                              <a href="/regions/hills-district">
                                 Hills District
-                              </Link>
+                              </a>
                             </li>
                             <li>
-                              <Link to="/regions/wollongong">Wollongong</Link>
+                              <a href="/regions/wollongong">Wollongong</a>
                             </li>
                             <li>
-                              <Link to="/regions/inner-west">Inner West</Link>
+                              <a href="/regions/inner-west">Inner West</a>
                             </li>
                             <li>
-                              <Link to="/regions/macarthur">Macarthur</Link>
+                              <a href="/regions/macarthur">Macarthur</a>
                             </li>
                             <li>
-                              <Link to="/regions/campbelltown">
+                              <a href="/regions/campbelltown">
                                 Campbelltown
-                              </Link>
+                              </a>
                             </li>
                             <li>
-                              <Link to="/regions/newcastle">Newcastle</Link>
+                              <a href="/regions/newcastle">Newcastle</a>
                             </li>
                             <li>
-                              <Link to="/regions/northern-suburbs">
+                              <a href="/regions/northern-suburbs">
                                 Northern Suburbs
-                              </Link>
+                              </a>
                             </li>
                             <li>
-                              <Link to="/regions/st-george">St George</Link>
+                              <a href="/regions/st-george">St George</a>
                             </li>
                             <li>
-                              <Link to="/regions/south-sydney">
+                              <a href="/regions/south-sydney">
                                 South Sydney
-                              </Link>
+                              </a>
                             </li>
                             <li>
-                              <Link to="/regions/western-sydney">
+                              <a href="/regions/western-sydney">
                                 Western Sydney
-                              </Link>
+                              </a>
                             </li>
                             <li>
-                              <Link to="/regions/bankstown">Bankstown</Link>
+                              <a href="/regions/bankstown">Bankstown</a>
                             </li>
                             <li>
-                              <Link to="/regions/bondi">Bondi</Link>
+                              <a href="/regions/bondi">Bondi</a>
                             </li>
                             <li>
-                              <Link to="/regions/camden">Camden</Link>
+                              <a href="/regions/camden">Camden</a>
                             </li>
                             <li>
-                              <Link to="/regions/gosford">Gosford</Link>
+                              <a href="/regions/gosford">Gosford</a>
                             </li>
                             <li>
-                              <Link to="/regions/kellyville">Kellyville</Link>
+                              <a href="/regions/kellyville">Kellyville</a>
                             </li>
                           </ul>
                         </div>
                       </li>
                       <li className="sub-menu-field">
-                        <Link to="/the-ant">Suburbs</Link>
+                        <a href="/the-ant">Suburbs</a>
                         <img
                           src={dropDownIcon}
                           alt="dropDownIcon"
@@ -401,75 +401,75 @@ export default function Index() {
                         <div className="inner-side-menu regions-side-menu">
                           <ul>
                             <li>
-                              <Link to="/suburbs/liverpool">Liverpool</Link>
+                              <a href="/suburbs/liverpool">Liverpool</a>
                             </li>
                             <li>
-                              <Link to="/suburbs/narellan">Narellan</Link>
+                              <a href="/suburbs/narellan">Narellan</a>
                             </li>
                             <li>
-                              <Link to="/suburbs/nowra">Nowra</Link>
+                              <a href="/suburbs/nowra">Nowra</a>
                             </li>
                             <li>
-                              <Link to="/suburbs/parramatta">Parramatta</Link>
+                              <a href="/suburbs/parramatta">Parramatta</a>
                             </li>
                             <li>
-                              <Link to="/suburbs/penrith">Penrith</Link>
+                              <a href="/suburbs/penrith">Penrith</a>
                             </li>
                             <li>
-                              <Link to="/suburbs/sutherland-shire">
+                              <a href="/suburbs/sutherland-shire">
                                 Sutherland shire
-                              </Link>
+                              </a>
                             </li>
                             <li>
-                              <Link to="/suburbs/castle-hill">Castle Hill</Link>
+                              <a href="/suburbs/castle-hill">Castle Hill</a>
                             </li>
                             <li>
-                              <Link to="/suburbs/austral">Austral</Link>
+                              <a href="/suburbs/austral">Austral</a>
                             </li>
                             <li>
-                              <Link to="/suburbs/dee-why">Dee Why</Link>
+                              <a href="/suburbs/dee-why">Dee Why</a>
                             </li>
                             <li>
-                              <Link to="/suburbs/manly">Manly</Link>
+                              <a href="/suburbs/manly">Manly</a>
                             </li>
                             <li>
-                              <Link to="/suburbs/caringbah">Caringbah</Link>
+                              <a href="/suburbs/caringbah">Caringbah</a>
                             </li>
                             <li>
-                              <Link to="/suburbs/dapto">Dapto</Link>
+                              <a href="/suburbs/dapto">Dapto</a>
                             </li>
                             <li>
-                              <Link to="/suburbs/epping">Epping</Link>
+                              <a href="/suburbs/epping">Epping</a>
                             </li>
                             <li>
-                              <Link to="/suburbs/hurstville">Hurstville</Link>
+                              <a href="/suburbs/hurstville">Hurstville</a>
                             </li>
                             <li>
-                              <Link to="/suburbs/kiama">Kiama</Link>
+                              <a href="/suburbs/kiama">Kiama</a>
                             </li>
                             <li>
-                              <Link to="/suburbs/lake-macquarie">
+                              <a href="/suburbs/lake-macquarie">
                                 Lake-macquarie
-                              </Link>
+                              </a>
                             </li>
                             <li>
-                              <Link to="/suburbs/marrickville">
+                              <a href="/suburbs/marrickville">
                                 Marrickville
-                              </Link>
+                              </a>
                             </li>
                             <li>
-                              <Link to="/suburbs/randwick">Randwick</Link>
+                              <a href="/suburbs/randwick">Randwick</a>
                             </li>
                             <li>
-                              <Link to="/suburbs/ryde">Ryde</Link>
+                              <a href="/suburbs/ryde">Ryde</a>
                             </li>
                             <li>
-                              <Link to="/suburbs/shellharbour">
+                              <a href="/suburbs/shellharbour">
                                 Shellharbour
-                              </Link>
+                              </a>
                             </li>
                             <li>
-                              <Link to="/suburbs/blacktown">Blacktown</Link>
+                              <a href="/suburbs/blacktown">Blacktown</a>
                             </li>
                           </ul>
                         </div>
@@ -477,13 +477,13 @@ export default function Index() {
                     </ul>
                   </div>
                 </li>
-              </Link>
-              <Link to="#">
+              </a>
+              <a href="#">
                 <li className="empty-link">SHOP</li>
-              </Link>
-              <Link to="/blog">
+              </a>
+              <a href="/blog">
                 <li>BLOG </li>
-              </Link>
+              </a>
             </div>
           </div>
           <div className="header-telephone">
@@ -503,9 +503,9 @@ export default function Index() {
           <nav className="header__nav nav-bar">
             <ul style={{ marginTop: "200px" }} className="mobile-navbar">
               <li>
-                <Link to="/" className="nav-link nav-imp-sizes">
+                <a href="/" className="nav-link nav-imp-sizes">
                   HOME
-                </Link>
+                </a>
               </li>
               <li>
                 <Accordion>
@@ -514,7 +514,7 @@ export default function Index() {
                     aria-controls="panel2a-content"
                     id="panel2a-header"
                   >
-                    <Link to="#">PEST CONTROL SERVICES</Link>
+                    <a href="#">PEST CONTROL SERVICES</a>
                   </AccordionSummary>
                   <AccordionDetails>
                     <ul className="accordion-submenu-ul">
@@ -525,60 +525,60 @@ export default function Index() {
                             aria-controls="panel2a-content"
                             id="panel2a-header"
                           >
-                            <Link to="/commercial-pest-control">
+                            <a href="/commercial-pest-control">
                               Commercial Pest Control
-                            </Link>
+                            </a>
                           </AccordionSummary>
                           <AccordionDetails>
                             <ul className="accordion-submenu-ul">
                               <li>
-                                <Link to="/commercial-pest-control/strata-pest-control">
+                                <a href="/commercial-pest-control/strata-pest-control">
                                   Strata Pest Control
-                                </Link>
+                                </a>
                               </li>
                               <li>
-                                <Link to="/commercial-pest-control/school-pest-control">
+                                <a href="/commercial-pest-control/school-pest-control">
                                   School Pest Control
-                                </Link>
+                                </a>
                               </li>
                               <li>
-                                <Link to="/commercial-pest-control/transport-pest-control">
+                                <a href="/commercial-pest-control/transport-pest-control">
                                   Transport Pest Control
-                                </Link>
+                                </a>
                               </li>
                               <li>
-                                <Link to="/commercial-pest-control/government-pest-control">
+                                <a href="/commercial-pest-control/government-pest-control">
                                   Government Pest Control
-                                </Link>
+                                </a>
                               </li>
                               <li>
-                                <Link to="/commercial-pest-control/pest-inspection">
+                                <a href="/commercial-pest-control/pest-inspection">
                                   Pest Inspection
-                                </Link>
+                                </a>
                               </li>
                               <li>
-                                <Link to="/commercial-pest-control/aged-care-pest-control">
+                                <a href="/commercial-pest-control/aged-care-pest-control">
                                   Aged Care Pest Control
-                                </Link>
+                                </a>
                               </li>
                             </ul>
                           </AccordionDetails>
                         </Accordion>
                       </li>
                       <li>
-                        <Link to="/residential-pest-control">
+                        <a href="/residential-pest-control">
                           Residential Pest Control
-                        </Link>
+                        </a>
                       </li>
                       <li>
-                        <Link to="/pet-and-kid-friendly-pest-control">
+                        <a href="/pet-and-kid-friendly-pest-control">
                           Pet and Kid Friendly Pest Control
-                        </Link>
+                        </a>
                       </li>
                       <li>
-                        <Link to="/organic-pest-control">
+                        <a href="/organic-pest-control">
                           Organic Pest Control
-                        </Link>
+                        </a>
                       </li>
                     </ul>
                   </AccordionDetails>
@@ -591,18 +591,18 @@ export default function Index() {
                     aria-controls="panel2a-content"
                     id="panel2a-header"
                   >
-                    <Link to="#">TERMITE CONTROL</Link>
+                    <a href="#">TERMITE CONTROL</a>
                   </AccordionSummary>
                   <AccordionDetails>
                     <ul className="accordion-submenu-ul">
                       <li>
-                        <Link to="/termite-treatment">Termite Treatment</Link>
+                        <a href="/termite-treatment">Termite Treatment</a>
                       </li>
                       <li>
-                        <Link to="/termite-inspection">Termite Inspection</Link>
+                        <a href="/termite-inspection">Termite Inspection</a>
                       </li>
                       <li>
-                        <Link to="/termite-prevention">Termite Prevention</Link>
+                        <a href="/termite-prevention">Termite Prevention</a>
                       </li>
                     </ul>
                   </AccordionDetails>
@@ -615,14 +615,14 @@ export default function Index() {
                     aria-controls="panel2a-content"
                     id="panel2a-header"
                   >
-                    <Link to="#">PEST SOLUTIONS</Link>
+                    <a href="#">PEST SOLUTIONS</a>
                   </AccordionSummary>
                   <AccordionDetails>
                     <ul className="accordion-submenu-ul">
                       <li>
-                        <Link to="/cockroach-pest-control-sydney">
+                        <a href="/cockroach-pest-control-sydney">
                           Cockroach Pest Control
-                        </Link>
+                        </a>
                       </li>
                       <li>
                         <Accordion>
@@ -631,21 +631,21 @@ export default function Index() {
                             aria-controls="panel2a-content"
                             id="panel2a-header"
                           >
-                            <Link to="/spider-pest-control-sydney">
+                            <a href="/spider-pest-control-sydney">
                               Spider Pest Control
-                            </Link>
+                            </a>
                           </AccordionSummary>
                           <AccordionDetails>
                             <ul className="accordion-submenu-ul">
                               <li>
-                                <Link to="/spider-pest-control/redback-spider-pest-control-sydney">
+                                <a href="/spider-pest-control/redback-spider-pest-control-sydney">
                                   Red Back Spider Pest Control
-                                </Link>
+                                </a>
                               </li>
                               <li>
-                                <Link to="/spider-pest-control/funnel-web-spider-pest-control">
+                                <a href="/spider-pest-control/funnel-web-spider-pest-control">
                                   Funnel-Web Spider Pest Control
-                                </Link>
+                                </a>
                               </li>
                             </ul>
                           </AccordionDetails>
@@ -658,16 +658,16 @@ export default function Index() {
                             aria-controls="panel2a-content"
                             id="panel2a-header"
                           >
-                            <Link to="/ant-pest-control-sydney">
+                            <a href="/ant-pest-control-sydney">
                               Ant Pest Control
-                            </Link>
+                            </a>
                           </AccordionSummary>
                           <AccordionDetails>
                             <ul className="accordion-submenu-ul">
                               <li>
-                                <Link to="/ant-pest-control-sydney/white-ant-pest-control">
+                                <a href="/ant-pest-control-sydney/white-ant-pest-control">
                                   White Ant Pest Control
-                                </Link>
+                                </a>
                               </li>
                             </ul>
                           </AccordionDetails>
@@ -680,16 +680,16 @@ export default function Index() {
                             aria-controls="panel2a-content"
                             id="panel2a-header"
                           >
-                            <Link to="/bird-pest-control-sydney">
+                            <a href="/bird-pest-control-sydney">
                               Bird Pest Control
-                            </Link>
+                            </a>
                           </AccordionSummary>
                           <AccordionDetails>
                             <ul className="accordion-submenu-ul">
                               <li>
-                                <Link to="/bird-pest-control/pigeon-pest-control">
+                                <a href="/bird-pest-control/pigeon-pest-control">
                                   Pigeon Pest Control
-                                </Link>
+                                </a>
                               </li>
                             </ul>
                           </AccordionDetails>
@@ -702,26 +702,26 @@ export default function Index() {
                             aria-controls="panel2a-content"
                             id="panel2a-header"
                           >
-                            <Link to="/feral-animal-removal">
+                            <a href="/feral-animal-removal">
                               Feral Animal Removal
-                            </Link>
+                            </a>
                           </AccordionSummary>
                           <AccordionDetails>
                             <ul className="accordion-submenu-ul">
                               <li>
-                                <Link to="/feral-animal-removal/possum-pest-control">
+                                <a href="/feral-animal-removal/possum-pest-control">
                                   Possum Pest Control
-                                </Link>
+                                </a>
                               </li>
                               <li>
-                                <Link to="/feral-animal-removal/rabbit-control">
+                                <a href="/feral-animal-removal/rabbit-control">
                                   Rabbit Pest Control
-                                </Link>
+                                </a>
                               </li>
                               <li>
-                                <Link to="/feral-animal-removal/feral-cat-control">
+                                <a href="/feral-animal-removal/feral-cat-control">
                                   Feral Cat Pest Control
-                                </Link>
+                                </a>
                               </li>
                             </ul>
                           </AccordionDetails>
@@ -734,49 +734,49 @@ export default function Index() {
                             aria-controls="panel2a-content"
                             id="panel2a-header"
                           >
-                            <Link to="/fly-control">Fly Control </Link>
+                            <a href="/fly-control">Fly Control </a>
                           </AccordionSummary>
                           <AccordionDetails>
                             <ul className="accordion-submenu-ul">
                               <li>
-                                <Link to="/flying-insect-control">
+                                <a href="/flying-insect-control">
                                   Flying Insect Control
-                                </Link>
+                                </a>
                               </li>
                               <li>
-                                <Link to="/fly-control/mosquito-control-sydney">
+                                <a href="/fly-control/mosquito-control-sydney">
                                   Mosquito Pest Control
-                                </Link>
+                                </a>
                               </li>
                               <li>
-                                <Link to="/fly-control/bee-wasp-control-sydney">
+                                <a href="/fly-control/bee-wasp-control-sydney">
                                   Bee {"&"} Wasp Control
-                                </Link>
+                                </a>
                               </li>
                             </ul>
                           </AccordionDetails>
                         </Accordion>
                       </li>
                       <li>
-                        <Link to="/rodent-control-sydney">
+                        <a href="/rodent-control-sydney">
                           Rodent Pest Control
-                        </Link>
+                        </a>
                       </li>
                       <li>
-                        <Link to="/silverfish-control">
+                        <a href="/silverfish-control">
                           Silverfish Pest Control
-                        </Link>
+                        </a>
                       </li>
                       <li>
-                        <Link to="/bed-bug-control">Bed Bug Pest Control</Link>
+                        <a href="/bed-bug-control">Bed Bug Pest Control</a>
                       </li>
                       <li>
-                        <Link to="/bird-mites-control">Bird Mites Control</Link>
+                        <a href="/bird-mites-control">Bird Mites Control</a>
                       </li>
                       <li>
-                        <Link to="/carpet-beetle-control">
+                        <a href="/carpet-beetle-control">
                           Carpet Beetle Pest Control
-                        </Link>
+                        </a>
                       </li>
                       <li>
                         <Accordion>
@@ -785,14 +785,14 @@ export default function Index() {
                             aria-controls="panel2a-content"
                             id="panel2a-header"
                           >
-                            <Link to="/moth-control">Moth Pest Control</Link>
+                            <a href="/moth-control">Moth Pest Control</a>
                           </AccordionSummary>
                           <AccordionDetails>
                             <ul className="accordion-submenu-ul">
                               <li>
-                                <Link to="/moth-control/pantry-moth-control">
+                                <a href="/moth-control/pantry-moth-control">
                                   Pantry Moth Pest Control
-                                </Link>
+                                </a>
                               </li>
                             </ul>
                           </AccordionDetails>
@@ -809,17 +809,17 @@ export default function Index() {
                     aria-controls="panel2a-content"
                     id="panel2a-header"
                   >
-                    <Link to="#" className="nav-link accordion-header">
+                    <a href="#" className="nav-link accordion-header">
                       PEST TYPES
-                    </Link>
+                    </a>
                   </AccordionSummary>
                   <AccordionDetails>
                     <ul className="accordion-submenu-ul">
                       <li>
-                        <Link to="/the-end-of-lease">Dog Fleas</Link>
+                        <a href="/the-end-of-lease">Dog Fleas</a>
                       </li>
                       <li>
-                        <Link to="/the-ant">Ants</Link>
+                        <a href="/the-ant">Ants</a>
                       </li>
                     </ul>
                   </AccordionDetails>
@@ -832,7 +832,7 @@ export default function Index() {
                     aria-controls="panel2a-content"
                     id="panel2a-header"
                   >
-                    <Link to="#">AREAS</Link>
+                    <a href="#">AREAS</a>
                   </AccordionSummary>
                   <AccordionDetails>
                     <ul className="accordion-submenu-ul">
@@ -843,82 +843,82 @@ export default function Index() {
                             aria-controls="panel2a-content"
                             id="panel2a-header"
                           >
-                            <Link to="">Regions </Link>
+                            <a href="">Regions </a>
                           </AccordionSummary>
                           <AccordionDetails>
                             <ul className="accordion-submenu-ul">
                               <li>
-                                <Link to="/regions/blue-mountains">
+                                <a href="/regions/blue-mountains">
                                   Blue Mountains
-                                </Link>
+                                </a>
                               </li>
                               <li>
-                                <Link to="/regions/central-coast">
+                                <a href="/regions/central-coast">
                                   Central Coast
-                                </Link>
+                                </a>
                               </li>
                               <li>
-                                <Link to="/regions/eastern-suburbs">
+                                <a href="/regions/eastern-suburbs">
                                   Eastern Suburbs
-                                </Link>
+                                </a>
                               </li>
                               <li>
-                                <Link to="/regions/hawkesbury">Hawkesbury</Link>
+                                <a href="/regions/hawkesbury">Hawkesbury</a>
                               </li>
                               <li>
-                                <Link to="/regions/hills-district">
+                                <a href="/regions/hills-district">
                                   Hills District
-                                </Link>
+                                </a>
                               </li>
                               <li>
-                                <Link to="/regions/wollongong">Wollongong</Link>
+                                <a href="/regions/wollongong">Wollongong</a>
                               </li>
                               <li>
-                                <Link to="/regions/inner-west">Inner West</Link>
+                                <a href="/regions/inner-west">Inner West</a>
                               </li>
                               <li>
-                                <Link to="/regions/macarthur">Macarthur</Link>
+                                <a href="/regions/macarthur">Macarthur</a>
                               </li>
                               <li>
-                                <Link to="/regions/campbelltown">
+                                <a href="/regions/campbelltown">
                                   Campbelltown
-                                </Link>
+                                </a>
                               </li>
                               <li>
-                                <Link to="/regions/newcastle">Newcastle</Link>
+                                <a href="/regions/newcastle">Newcastle</a>
                               </li>
                               <li>
-                                <Link to="/regions/northern-suburbs">
+                                <a href="/regions/northern-suburbs">
                                   Northern Suburbs
-                                </Link>
+                                </a>
                               </li>
                               <li>
-                                <Link to="/regions/st-george">St George</Link>
+                                <a href="/regions/st-george">St George</a>
                               </li>
                               <li>
-                                <Link to="/regions/south-sydney">
+                                <a href="/regions/south-sydney">
                                   South Sydney
-                                </Link>
+                                </a>
                               </li>
                               <li>
-                                <Link to="/regions/western-sydney">
+                                <a href="/regions/western-sydney">
                                   Western Sydney
-                                </Link>
+                                </a>
                               </li>
                               <li>
-                                <Link to="/regions/bankstown">Bankstown</Link>
+                                <a href="/regions/bankstown">Bankstown</a>
                               </li>
                               <li>
-                                <Link to="/regions/bondi">Bondi</Link>
+                                <a href="/regions/bondi">Bondi</a>
                               </li>
                               <li>
-                                <Link to="/regions/camden">Camden</Link>
+                                <a href="/regions/camden">Camden</a>
                               </li>
                               <li>
-                                <Link to="/regions/gosford">Gosford</Link>
+                                <a href="/regions/gosford">Gosford</a>
                               </li>
                               <li>
-                                <Link to="/regions/kellyville">Kellyville</Link>
+                                <a href="/regions/kellyville">Kellyville</a>
                               </li>
                             </ul>
                           </AccordionDetails>
@@ -931,82 +931,82 @@ export default function Index() {
                             aria-controls="panel2a-content"
                             id="panel2a-header"
                           >
-                            <Link to="">Suburbs </Link>
+                            <a href="">Suburbs </a>
                           </AccordionSummary>
                           <AccordionDetails>
                             <ul className="accordion-submenu-ul">
                               <li>
-                                <Link to="/suburbs/lake-macquarie">
+                                <a href="/suburbs/lake-macquarie">
                                   Lake-macquarie
-                                </Link>
+                                </a>
                               </li>
                               <li>
-                                <Link to="/suburbs/liverpool">Liverpool</Link>
+                                <a href="/suburbs/liverpool">Liverpool</a>
                               </li>
                               <li>
-                                <Link to="/suburbs/narellan">Narellan</Link>
+                                <a href="/suburbs/narellan">Narellan</a>
                               </li>
                               <li>
-                                <Link to="/suburbs/nowra">Nowra</Link>
+                                <a href="/suburbs/nowra">Nowra</a>
                               </li>
                               <li>
-                                <Link to="/suburbs/parramatta">Parramatta</Link>
+                                <a href="/suburbs/parramatta">Parramatta</a>
                               </li>
                               <li>
-                                <Link to="/suburbs/penrith">Penrith</Link>
+                                <a href="/suburbs/penrith">Penrith</a>
                               </li>
                               <li>
-                                <Link to="/suburbs/sutherland-shire">
+                                <a href="/suburbs/sutherland-shire">
                                   Sutherland shire
-                                </Link>
+                                </a>
                               </li>
                               <li>
-                                <Link to="/suburbs/castle-hill">
+                                <a href="/suburbs/castle-hill">
                                   Castle Hill
-                                </Link>
+                                </a>
                               </li>
                               <li>
-                                <Link to="/suburbs/austral">Austral</Link>
+                                <a href="/suburbs/austral">Austral</a>
                               </li>
                               <li>
-                                <Link to="/suburbs/dee-why">Dee Why</Link>
+                                <a href="/suburbs/dee-why">Dee Why</a>
                               </li>
                               <li>
-                                <Link to="/suburbs/manly">Manly</Link>
+                                <a href="/suburbs/manly">Manly</a>
                               </li>
                               <li>
-                                <Link to="/suburbs/caringbah">Caringbah</Link>
+                                <a href="/suburbs/caringbah">Caringbah</a>
                               </li>
                               <li>
-                                <Link to="/suburbs/dapto">Dapto</Link>
+                                <a href="/suburbs/dapto">Dapto</a>
                               </li>
                               <li>
-                                <Link to="/suburbs/epping">Epping</Link>
+                                <a href="/suburbs/epping">Epping</a>
                               </li>
                               <li>
-                                <Link to="/suburbs/hurstville">Hurstville</Link>
+                                <a href="/suburbs/hurstville">Hurstville</a>
                               </li>
                               <li>
-                                <Link to="/suburbs/kiama">Kiama</Link>
+                                <a href="/suburbs/kiama">Kiama</a>
                               </li>
                               <li>
-                                <Link to="/suburbs/marrickville">
+                                <a href="/suburbs/marrickville">
                                   Marrickville
-                                </Link>
+                                </a>
                               </li>
                               <li>
-                                <Link to="/suburbs/randwick">Randwick</Link>
+                                <a href="/suburbs/randwick">Randwick</a>
                               </li>
                               <li>
-                                <Link to="/suburbs/ryde">Ryde</Link>
+                                <a href="/suburbs/ryde">Ryde</a>
                               </li>
                               <li>
-                                <Link to="/suburbs/shellharbour">
+                                <a href="/suburbs/shellharbour">
                                   Shellharbour
-                                </Link>
+                                </a>
                               </li>
                               <li>
-                                <Link to="/suburbs/blacktown">Blacktown</Link>
+                                <a href="/suburbs/blacktown">Blacktown</a>
                               </li>
                             </ul>
                           </AccordionDetails>
@@ -1017,14 +1017,14 @@ export default function Index() {
                 </Accordion>
               </li>
               <li className="empty-link">
-                {/* <Link to="/" className="nav-link nav-imp-sizes"> */}
+                {/* <a href="/" className="nav-link nav-imp-sizes"> */}
                   SHOP
-                {/* </Link> */}
+                {/* </a> */}
               </li>
               <li>
-                <Link to="/blog" className="nav-link nav-imp-sizes">
+                <a href="/blog" className="nav-link nav-imp-sizes">
                   BLOG
-                </Link>
+                </a>
               </li>
             </ul>
           </nav>

@@ -24,7 +24,7 @@ export default function HTML(props) {
       height:"100vh",
       alignItems: "center",
       backgroundColor: "#FFF",
-      display: "flex",
+      display: "none",
       justifyContent: "center",
       position: "fixed",
       left: 0,

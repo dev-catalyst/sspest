@@ -194,12 +194,18 @@ header {
   display: flex;
   padding: 0;
   margin: 70px 0 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-in;
   @media only screen and (max-width: 1799.98px) {
     margin: 30px 0 0;
   }
   a {
     margin-right: 0 !important;
   }
+}
+.mobile-navbar li:first-child {
+  min-height: 35px;
 }
 
 .ul-menu-button {
@@ -492,6 +498,7 @@ ul.main-menu li:hover .submenu {
   @media only screen and (max-width: 767px) {
     font-size: 12px;
     line-height: 15px;
+    padding: 0;
   }
 }
 ul.nav-list.accordion {
@@ -572,6 +579,7 @@ a.nav-link.accordion-header {
       color: #7b7b7b;
       font-weight: 500;
       font-family: "Montserrat";
+      padding: 5px 0;
   }
   .MuiPaper-elevation1 {
     box-shadow: none;
@@ -595,8 +603,8 @@ a.nav-link.accordion-header {
     min-height: fit-content;
   }
   .MuiAccordionSummary-content {
-    margin-bottom: 2px;
-    margin-top: 2px;
+    margin-bottom: 2px !important;
+    margin-top: 2px !important;
     a:link {
       font-size: 16px !important;
       line-height: 2em;
